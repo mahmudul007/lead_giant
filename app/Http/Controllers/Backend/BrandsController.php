@@ -50,9 +50,10 @@ class BrandsController extends Controller
         $service->save();
 
         $serv = new Image();
-        $serv->tag = 'service';
-        $serv->table = 'services';
+        $serv->tag = 'brand';
+        $serv->table = 'brands';
         $serv->ref_id = $service->id;
+        
 
         if ($request->hasfile('link')) {
             $file = $request->file('link');
@@ -60,6 +61,7 @@ class BrandsController extends Controller
             $file->move('frontend/image/', $filename);
             $serv->link = '/frontend/image/' . $filename;
         }
+       
         $serv->save();
 
         return redirect()->route('admin.services.index');
@@ -74,8 +76,8 @@ class BrandsController extends Controller
         ->get()
         ->first();
 
-        $image->tag = 'service';
-        $image->table = 'services';
+        $image->tag = 'brand';
+        $image->table = 'brands';
         $image->ref_id = $id;
 
         if ($request->file('link') != null) {
@@ -101,14 +103,16 @@ class BrandsController extends Controller
     }
     public function show($id)
     {
-
+       
        
         $service = Brand::findOrFail($id);
+    
         return view('backend.services.show', compact('service'));
     }
 
     public function destroy($id)
     {
+        
        
         $service = Brand::findOrFail($id);
         $image = Image::where([['ref_id', $id], ['table', 'services'], ['tag', 'service']])

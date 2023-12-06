@@ -29,18 +29,19 @@
                                 <tr>
 
                                     <td>Slug</td>
-                                    <td>{{ $service->slug }}</td>
+                                    <td>{{ $service->name }}</td>
 
 
                                 </tr>
-                                <tr>
+                                @dd ($service->brandPicture)
+                                {{-- <tr>
 
                                     <td>Picture</td>
-                                    <td> <img style="height: 50px;width:100px;"src="{{ $service->servicePicture->link }}"
+                                    <td> <img style="height: 50px;width:100px;"src="{{ $service->brandPicture->link }}"
                                             alt=""> </td>
 
 
-                                </tr>
+                                </tr> --}}
                                 <tr>
                                     <td>published</td>
                                     <td>
@@ -84,15 +85,8 @@
 
                                      </td>
                                 </tr>
-                                <tr>
-                                    <td>description</td>
-                                    <td>{!!$service->description !!}</td>
-                                </tr>
-                                <tr>
-                                    <td>short desc</td>
-                                    <td>{{ $service->short_description }}</td>
-                                </tr>
-
+                               
+                            
                             </tbody>
                         </table>
                         <!--end /table-->

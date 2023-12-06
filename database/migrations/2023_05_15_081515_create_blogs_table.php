@@ -20,7 +20,7 @@ return new class extends Migration
           
  
             $table->integer('featured')->default(0)->nullable();
-            $table->tinyInteger('published')->nullable()->default(0)->comment('0 - disabled, 1 - enabled');
+            $table->tinyInteger('published')->nullable()->default(1)->comment('0 - disabled, 1 - enabled');
             $table->text('meta_title')->nullable();
             $table->longText('meta_description')->nullable();
             $table->longText('meta_keywords')->nullable();

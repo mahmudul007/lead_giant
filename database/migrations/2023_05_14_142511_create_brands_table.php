@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('brands', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
             $table->string('name');         
-            $table->tinyInteger('published')->nullable()->default(0);
+            $table->tinyInteger('published')->nullable()->default(1);
             $table->integer('status')->default(1)->comment('0 - disabled, 1 - enabled');
 
 

@@ -8,7 +8,7 @@
 @section('content')
     <div class="text-end mb-4">
         <a href="{{ route('admin.services.create') }}">
-            <div class="btn btn-success">Create service +</div>
+            <div class="btn btn-success">Create Brand  +</div>
         </a>
     </div>
     <div class="card-body">
@@ -17,7 +17,7 @@
                 <thead class="thead-light">
                     <tr>
                         <th>Name</th>
-                        <th>slug</th>
+                        <th>image</th>
 
                         <th>published</th>
                         <th>action</th>
@@ -27,7 +27,7 @@
                     @foreach ($services as $item)
                         <tr>
                             <td>{{ $item->name }}</td>
-                            <td>{{ $item->slug }}</td>
+                            <td>{{ $item->name }}</td>
 
                             <td>
                                 @if ($item->published == 1)
