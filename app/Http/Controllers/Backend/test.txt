@@ -1,0 +1,331 @@
+<?php
+
+namespace App\Http\Controllers\Backend;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Blog;
+use App\Models\Image;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Str;
+use File;
+
+class BlogsController extends Controller   
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        if (!Gate::allows('property_access')) {
+            return abort(401);
+        }
+        $properties = BLog::orderby('created_at', 'desc')->get()->all();
+        return view('backend.properties.index', compact('properties'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        if (!Gate::allows('property_create')) {
+            return abort(401);
+        }
+
+        return view('backend.properties.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        if (!Gate::allows('property_create')) {
+            return abort(401);
+        }
+
+        $request->validate([
+            'images' => 'required|array',
+            'images.*' => 'required|image',
+            'name' => 'required',
+        ]);
+
+        $property = new Property();
+        $property->name = $request->name;
+        $property->title = $request->title;
+        $property->price = $request->price;
+        $property->location = $request->location;
+        $property->description = $request->description;
+        $property->benifits = $request->description;
+
+        $property->meta_title = $request->meta_title;
+        $property->meta_description = $request->meta_description;
+        $property->meta_keywords = $request->meta_keywords;
+
+        $temp = new \stdClass();
+        $temp->bedroom = $request->bedroom;
+        $temp->attached_bath = $request->attached_bath;
+        $temp->sq_ft = $request->sq_ft;
+        $temp->common_bath = $request->common_bath;
+        $temp->attached_bath = $request->attached_bath;
+        $temp->floor = $request->floor;
+        $temp->living_room = $request->living_room;
+        $temp->balconies = $request->balconies;
+        $temp->dining_space = $request->dining_space;
+        $temp->new = $request->new == 1 ? '1' : null;
+        $temp->commercial = $request->commercial == 1 ? '1' : null;
+        $temp->residential = $request->residential == 1 ? '1' : null;
+
+        $property->aditional_info = json_encode($temp);
+
+        $temp2 = new \stdClass();
+
+        $temp2->ac_provision = $request->ac_provision == 1 ? '1' : null;
+        $temp2->emergency_exit = $request->emergency_exit == 1 ? '1' : null;
+        $temp2->generator = $request->generator == 1 ? '1' : null;
+        $temp2->cable_tv_provision = $request->cable_tv_provision == 1 ? '1' : null;
+        $temp2->fire_extinguisher = $request->fire_extinguisher == 1 ? '1' : null;
+        $temp2->lift_floor = $request->lift_floor == 1 ? '1' : null;
+        $temp2->electricity_supply = $request->electricity_supply == 1 ? '1' : null;
+        $temp2->gas_supply = $request->gas_supply == 1 ? '1' : null;
+        $temp2->tiled_floor = $request->tiled_floor == 1 ? '1' : null;
+        $temp2->parking = $request->parking == 1 ? '1' : null;
+
+        $property->benifits = json_encode($temp2);
+
+        $property->published = $request->published == 1 ? 1 : 0;
+        $property->featured = $request->featured == 1 ? 1 : 0;
+        $property->status = $request->status == 1 ? 1 : 0;
+
+        $slug = '';
+        if ($request->slug == '' || $request->slug == null) {
+            $property->slug = Str::slug($request->name);
+        } else {
+            $property->slug = $request->slug;
+        }
+        // dd($property);
+        $property->save();
+
+        if ($request->hasfile('images')) {
+            foreach ($request->file('images') as $image) {
+                $serv = new Image();
+                $serv->tag = 'property';
+                $serv->table = 'properties';
+                $serv->ref_id = $property->id;
+
+                $filename = time() . $image->getClientOriginalName();
+                $image->move('frontend/image/', $filename);
+                $serv->link = '/frontend/image/' . $filename;
+                $serv->save();
+            }
+        }
+
+        session()->flash('success', 'Data has been successfully stored.');
+
+
+        return redirect()->route('admin.properties.index');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $property = Property::findOrfail($id);
+        return view('backend.properties.show', compact('property'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        if (!Gate::allows('property_edit')) {
+            return abort(401);
+        }
+        $property = Property::findOrfail($id);
+        return view('backend.properties.edit', compact('property'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        if (!Gate::allows('property_edit')) {
+            return abort(401);
+        }
+
+        $property = Property::findOrFail($id);
+        $property->name = $request->name;
+        $property->title = $request->title;
+        $property->price = $request->price;
+        $property->location = $request->location;
+        $property->description = $request->description;
+        $property->benifits = $request->description;
+
+        $property->meta_title = $request->meta_title;
+        $property->meta_description = $request->meta_description;
+        $property->meta_keywords = $request->meta_keywords;
+
+        $temp = new \stdClass();
+        $temp->bedroom = $request->bedroom;
+        $temp->attached_bath = $request->attached_bath;
+        $temp->sq_ft = $request->sq_ft;
+        $temp->common_bath = $request->common_bath;
+        $temp->attached_bath = $request->attached_bath;
+        $temp->floor = $request->floor;
+        $temp->living_room = $request->living_room;
+        $temp->balconies = $request->balconies;
+        $temp->dining_space = $request->dining_space;
+        $temp->new = $request->new == 1 ? '1' : null;
+        $temp->commercial = $request->commercial == 1 ? '1' : null;
+        $temp->residential = $request->residential == 1 ? '1' : null;
+
+        $property->aditional_info = json_encode($temp);
+
+        $temp2 = new \stdClass();
+
+        $temp2->ac_provision = $request->ac_provision == 1 ? '1' : null;
+        $temp2->emergency_exit = $request->emergency_exit == 1 ? '1' : null;
+        $temp2->generator = $request->generator == 1 ? '1' : null;
+        $temp2->cable_tv_provision = $request->cable_tv_provision == 1 ? '1' : null;
+        $temp2->fire_extinguisher = $request->fire_extinguisher == 1 ? '1' : null;
+        $temp2->lift_floor = $request->lift_floor == 1 ? '1' : null;
+        $temp2->electricity_supply = $request->electricity_supply == 1 ? '1' : null;
+        $temp2->gas_supply = $request->gas_supply == 1 ? '1' : null;
+        $temp2->tiled_floor = $request->tiled_floor == 1 ? '1' : null;
+        $temp2->parking = $request->parking == 1 ? '1' : null;
+
+        $property->benifits = json_encode($temp2);
+
+        $property->published = $request->published == 1 ? 1 : 0;
+        $property->featured = $request->featured == 1 ? 1 : 0;
+        $property->status = $request->status == 1 ? 1 : 0;
+
+        $slug = '';
+        if ($request->slug == '' || $request->slug == null) {
+            $property->slug = Str::slug($request->name);
+        } else {
+            $property->slug = $request->slug;
+        }
+        // dd($property);
+        $property->save();
+        if ($request->hasfile('images')) {
+            foreach ($request->file('images') as $image) {
+                $serv = new Image();
+                $serv->tag = 'property';
+                $serv->table = 'properties';
+                $serv->ref_id = $property->id;
+
+                $filename = time() . $image->getClientOriginalName();
+                $image->move('frontend/image/', $filename);
+                $serv->link = '/frontend/image/' . $filename;
+                $serv->save();
+            }
+        }
+        session()->flash('success', 'Data has been successfully updated.');
+
+        return redirect()->route('admin.properties.index');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+
+        if (!Gate::allows('property_delete')) {
+            return abort(401);
+        }
+        $variable = Property::findOrFail($id);
+        $images = Image::where([['ref_id', $id], ['table', 'properties'], ['tag', 'property']])
+            ->get()
+            ->all();
+        if ($images != null) {
+            foreach ($images as $image) {
+                $destination = public_path($image->link);
+
+                if (file_exists($destination)) {
+                    File::delete($destination);
+                }
+                $image->delete();
+            }
+        }
+        $variable->delete();
+        session()->flash('success', 'Data has been successfully deleted');
+
+
+        return redirect()->back();
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function publish($id)
+    {
+        if (!Gate::allows('property_edit')) {
+            return abort(401);
+        }
+
+        $property = Property::findOrFail($id);
+        if ($property->published == 1) {
+            $property->published = 0;
+        } else {
+            $property->published = 1;
+        }
+        $property->save();
+        session()->flash('success', 'Data has been successfully published');
+
+
+        return back()->withFlashSuccess('published');
+    }
+
+    public function singleImageDelete($id)
+    {
+        if (!Gate::allows('property_delete')) {
+            return abort(401);
+        }
+
+        $image = Image::where([['id', $id], ['table', 'properties'], ['tag', 'property']])
+            ->get()
+            ->first();
+
+        if ($image != null) {
+            $destination = public_path($image->link);
+
+            if (file_exists($destination)) {
+                File::delete($destination);
+            }
+            $image->delete();
+        }
+        session()->flash('success', 'Image has been successfully deleted');
+
+        return redirect()->back();
+    }
+}
+###################333
