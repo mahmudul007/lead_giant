@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
-class brandsController extends Controller
+class ServicesController extends Controller
 {
     public function __construct()
     {
@@ -19,16 +19,16 @@ class brandsController extends Controller
 
             ->firstOrFail();
 
-         $brands = Service::orderby('created_at', 'desc') ->where('published',1)->paginate(7);
+         $services = Service::orderby('created_at', 'desc') ->where('published',1)->paginate(7);
 
-        return view($this->path . '.cleaning.cleaning_service', compact('service','brands'));
+        return view($this->path . '.cleaning.cleaning_service', compact('service','services'));
     }
     public function index()
     {
 
-         $brands = Service::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
+         $services = Service::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
 
-        return view($this->path . '.cleaning.index', compact('brands'));
+        return view($this->path . '.cleaning.index', compact('services'));
     }
 
 }

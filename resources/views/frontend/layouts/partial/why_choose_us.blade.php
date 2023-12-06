@@ -1,149 +1,504 @@
-<div id="about-us" class="container topmargin bottommargin-lg">
-    <div class="heading-block center mx-auto" style="max-width: 700px">
-        <h2 class="mb-2 nott ls0">Why You Choose Us?</h2>
-      
+<section id="content">
+
+    <div class="content-wrap pt-0">
+
+        <!-- Client Carousel
+        ============================================= -->
+        <div class="section bg-transparent m-0 border-bottom py-5">
+            <div class="container">
+                <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true" data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/linkedin.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/nat-geo.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/jetblue.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/zillow.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/amazon.svg" alt="Brands"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features
+        ============================================= -->
+        <div class="section bg-transparent mt-4 mb-0 pb-0">
+            <div class="container">
+                <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
+                    <div class="badge rounded-pill badge-default">Services</div>
+                    <h3 class="nott ls0 mb-3">What We Do</h3>
+                    <p>Dynamically provide access to resource-leveling mindshare vis-a-vis bricks-and-clicks ideas authoritatively.</p>
+                </div>
+                <div class="row justify-content-between align-items-center">
+
+                    <div class="col-lg-4 col-sm-6">
+
+                        <div class="feature-box flex-md-row-reverse text-md-end border-0">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="demos/seo/images/icons/seo.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3 class="nott ls0">SEO optimization</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-box flex-md-row-reverse text-md-end border-0 mt-5">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="demos/seo/images/icons/adword.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3 class="nott ls0">Adwords Campaign</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-box flex-md-row-reverse text-md-end border-0 mt-5">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="demos/seo/images/icons/analysis.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3 class="nott ls0">Digital Analysis</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
+                        <img src="demos/seo/images/sections/2.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+
+                        <div class="feature-box border-0">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="demos/seo/images/icons/social.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3 class="nott ls0">Social Media Marketing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-box border-0 mt-5">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="demos/seo/images/icons/experience.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3 class="nott ls0">Customer Experience</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-box border-0 mt-5">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="demos/seo/images/icons/content_marketing.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            </div>
+                            <div class="fbox-content">
+                                <h3 class="nott ls0">Content Marketing</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Form Section
+        ============================================= -->
+        <div class="section m-0" style="background: url('demos/seo/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+
+                    <div class="col-md-4">
+                        <div class="heading-block border-bottom-0 bottommargin-sm">
+                            <div class="badge rounded-pill badge-default">Careers</div>
+                            <h3 class="nott ls0">Get your free Quote today</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h4 class="mb-3">Apply Now</h4>
+                                <div class="form-widget">
+                                    <div class="form-result"></div>
+                                    <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+                                        <div class="col-12 form-group mb-3">
+                                            <label for="template-contactform-name">Name:*</label>
+                                            <input type="text" id="template-contactform-name" name="template-contactform-name" class="form-control input-sm required" value="">
+                                        </div>
+                                        <div class="col-12 form-group mb-3">
+                                            <label for="template-contactform-email">Email Address:*</label>
+                                            <input type="email" id="template-contactform-email" name="template-contactform-email" class="form-control input-sm required" value="">
+                                        </div>
+                                        <div class="col-12 form-group mb-4">
+                                            <label for="template-contactform-website">Website:*</label>
+                                            <input type="text" id="template-contactform-website" name="template-contactform-website" class="form-control input-sm required" value="">
+                                        </div>
+                                        <div class="col-12 form-group d-none">
+                                            <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                                        </div>
+                                        <div class="col-12 form-group mb-0">
+                                            <button class="button button-rounded w-100 nott ls0 m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Apply Now</button>
+                                        </div>
+
+                                        <input type="hidden" name="prefix" value="template-contactform-">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-5 mt-md-0 center">
+                        <a href="#" data-lightbox="iframe" class="play-icon shadow"><i class="icon-play"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Works/Projects
+        ============================================= -->
+        <div class="section m-0" style="background: url('demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
+            <div class="container">
+                <div class="heading-block border-bottom-0 center">
+                    <div class="badge rounded-pill badge-default">Completed Projects</div>
+                    <h3 class="nott ls0">Our Latest Works</h3>
+                </div>
+
+                <div id="portfolio" class="portfolio row grid-container gutter-20">
+
+                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
+                        <div class="grid-inner">
+                            <div class="portfolio-image">
+                                <img src="demos/seo/images/works/1.jpg" alt="The Atmosphere">
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
+                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3><a href="#">The Atmosphere</a></h3>
+                                <span>Digital Marketing</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-illustrations">
+                        <div class="grid-inner">
+                            <div class="portfolio-image">
+                                <img src="demos/seo/images/works/2.jpg" alt="Wavelength Structure">
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
+                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Wavelength Structure</h3>
+                                <span>SEO</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
+                        <div class="grid-inner">
+                            <div class="portfolio-image">
+                                <img src="demos/seo/images/works/3.jpg" alt="Greenhouse Garden">
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
+                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Simplicity Pages</h3>
+                                <span>Analytics</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
+                        <div class="grid-inner">
+                            <div class="portfolio-image">
+                                <img src="demos/seo/images/works/4.jpg" alt="Industrial Hub">
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
+                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>SEO Analysis</h3>
+                                <span>SEO</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
+                        <div class="grid-inner">
+                            <div class="portfolio-image">
+                                <img src="demos/seo/images/works/5.jpg" alt="Corporate Headquarters">
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
+                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Marketing Strategy</h3>
+                                <span>Digital Marketing</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-illustrations">
+                        <div class="grid-inner">
+                            <div class="portfolio-image">
+                                <img src="demos/seo/images/works/6.jpg" alt="Space Station">
+                                <div class="bg-overlay">
+                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
+                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
+                                    </div>
+                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio-desc">
+                                <h3>Space Station</h3>
+                                <span>Social Media</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="center">
+                    <a href="demo-seo-about.html" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Works</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Features
+        ============================================= -->
+        <div class="container clearfix py-5">
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="feature-box fbox-center border-0">
+                        <div class="fbox-icon">
+                            <a href="#"><img src="demos/seo/images/icons/research.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott ls0">1. Planning &amp; Research</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <div class="feature-box fbox-center border-0">
+                        <div class="fbox-icon">
+                            <a href="#"><img src="demos/seo/images/icons/optimizing.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott ls0">2. Optimizing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <div class="feature-box fbox-center border-0">
+                        <div class="fbox-icon">
+                            <a href="#"><img src="demos/seo/images/icons/result.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott ls0">3. Result</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials
+        ============================================= -->
+        <div class="section mt-0" style="background: url('demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
+            <div class="container">
+                <div class="heading-block border-bottom-0 center">
+                    <div class="badge rounded-pill badge-default">Testimonials</div>
+                    <h3 class="nott ls0">What Clients Says</h3>
+                </div>
+
+                <div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix" data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000" data-items-sm="1" data-items-md="2" data-items-xl="3">
+
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            <div class="testi-image">
+                                <a href="#"><img src="demos/pet/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+                            </div>
+                            <div class="testi-content">
+                                <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
+                                <div class="testi-meta">
+                                    John Doe
+                                    <span>XYZ Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            <div class="testi-image">
+                                <a href="#"><img src="demos/pet/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+                            </div>
+                            <div class="testi-content">
+                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                                <div class="testi-meta">
+                                    Collis Ta'eed
+                                    <span>Envato Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            <div class="testi-image">
+                                <a href="#"><img src="demos/pet/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+                            </div>
+                            <div class="testi-content">
+                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                                <div class="testi-meta">
+                                    Collis Ta'eed
+                                    <span>Envato Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            <div class="testi-image">
+                                <a href="#"><img src="demos/pet/images/testimonials/4.jpg" alt="Customer Testimonails"></a>
+                            </div>
+                            <div class="testi-content">
+                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                                <div class="testi-meta">
+                                    Mary Jane
+                                    <span>Google Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            <div class="testi-image">
+                                <a href="#"><img src="images/testimonials/5.jpg" alt="Customer Testimonails"></a>
+                            </div>
+                            <div class="testi-content">
+                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
+                                <div class="testi-meta">
+                                    Steve Jobs
+                                <span>Apple Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blogs
+        ============================================= -->
+        <div class="container py-4">
+            <div class="heading-block border-bottom-0 center">
+                <div class="badge rounded-pill badge-default">Latest Articles</div>
+                <h3 class="nott ls0">Recently From the Blog</h3>
+            </div>
+
+            <div class="row mt-5 clearfix">
+                <div class="col-md-4">
+                    <article class="entry">
+                        <div class="entry-image mb-3">
+                            <a href="#"><img src="demos/seo/images/blog/1.jpg" alt="Image 3"></a>
+                        </div>
+                        <div class="entry-title">
+                            <h3><a href="#">Top Most SEO Optizied Websites</a></h3>
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="icon-line2-user"></i><a href="#"> John Doe</a></li>
+                                <li><i class="icon-calendar-times1"></i><a href="#"> 11 Mar 2021</a></li>
+                            </ul>
+                        </div>
+                        <div class="entry-content clearfix">
+                            <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem progressive technology through pariatur quibusdam veritatis quisquam. Efficiently communicate alternative.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="entry">
+                        <div class="entry-image mb-3">
+                            <a href="#"><img src="demos/seo/images/blog/2.jpg" alt="Image 3"></a>
+                        </div>
+                        <div class="entry-title">
+                            <h3><a href="#">10 Recent SEO Tips for Startups</a></h3>
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="icon-line2-user"></i><a href="#"> Semicolonweb</a></li>
+                                <li><i class="icon-calendar-times1"></i><a href="#"> 18 Apr 2021</a></li>
+                            </ul>
+                        </div>
+                        <div class="entry-content clearfix">
+                            <p>Interactively predominate progressive technology through distinctive materials. Progressively benchmark extensible intellectual. Exercitationem progressive technology through pariatur.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="entry">
+                        <div class="entry-image mb-3">
+                            <a href="#"><img src="demos/seo/images/blog/3.jpg" alt="Image 3"></a>
+                        </div>
+                        <div class="entry-title">
+                            <h3><a href="#">3 Ways to Transform Your Site Into a SEO</a></h3>
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="icon-line2-user"></i><a href="#"> John Doe</a></li>
+                                <li><i class="icon-calendar-times1"></i><a href="#"> 06 Aug 2021</a></li>
+                            </ul>
+                        </div>
+                        <div class="entry-content clearfix">
+                            <p>Globally synergize premium metrics with holistic e-markets. Professionally morph interoperable networks vis-a-vis value-added methods.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Promo/Contact
+        ============================================= -->
+        <div class="section mt-5 footer-stick promo-section bg-transparent" style="padding: 100px 0; overflow: visible">
+            <div class="container">
+                <div class="heading-block border-bottom-0 center">
+                    <h5 class="text-uppercase ls1 mb-1">Grab your Free Trail and Explore the Options</h5>
+                    <h2 class="nott ls0">Try Keyword Search 30 Days Free With Canvas<span>SEO</span></h2>
+                    <a href="demo-seo-contact.html" class="button button-large button-rounded nott ms-0 ls0 mt-4">Contact Us Now</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="clear"></div>
-    <div class="row col-mb-50 mt-3">
-
-        <div class="col-lg-4 center order-lg-last">
-            <img src="{{asset('frontend/demos/cleaner/images/cleaner-icon.svg')}}" alt="Cleaner" width="340">
-            <small class="d-block tright"><a href="#"
-                    style="color: #DDD"></a></small>
-        </div>
-
-        <div class="col-lg-4 col-md-6 pb-0">
-
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/price.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Comprehensive Support on property service</h3>
-                    <p> From property search and viewings to documentation and closing processes,
-                         we provide end-to-end assistance, making the entire experience smooth and hassle-free.
-                    </p>
-                </div>
-            </div>
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/price.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Client Satisfaction on property service</h3>
-                    <p> We measure our success by the satisfaction of our clients.
-                         We strive to exceed expectations, earning their trust and loyalty for years to come
-                    </p>
-                </div>
-            </div>
-
-
-
-
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/guarantee.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Expert Guidance On property</h3>
-                    <p> Our experienced brokers will navigate you through the complex real estate landscape,
-                         offering valuable insights and helping you make informed decisions.</p>
-                </div>
-            </div>
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/guarantee.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Personalized Approach On property</h3>
-                    <p>We take the time to listen and understand your specific needs,
-                         tailoring our brands to match your requirements and preferences.</p>
-                </div>
-            </div>
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/product.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Negotiation Skills On property</h3>
-                    <p>Our skilled negotiators will work tirelessly to achieve the best possible
-                         outcomes, ensuring favorable terms and prices for our clients.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-
-
-
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/cleaner-man.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">100% Trusted Cleaners</h3>
-                    <p>We understand the importance of security and reliability when it comes to inviting professionals into your space,
-                         which is why we have carefully selected and thoroughly vetted our team of cleaners.</p>
-                </div>
-            </div>
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/product.svg' )}}"alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Eco-Friendly Products on cleaning</h3>
-                    <p>we are committed to promoting a healthier and more sustainable
-                         approach to cleaning. We understand the importance of minimizing our impact
-                         on the environment while ensuring a safe and hygienic space for our clients.</p>
-                </div>
-            </div>
-
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src={{asset("frontend/demos/cleaner/images/icons/time.svg")}} alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Saves Your Time</h3>
-                    <p>Saves your time for cleaning,you can enjoy your time and work properly
-                    </p>
-                </div>
-            </div>
-
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/price.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Flat Rate Price</h3>
-                    <p>We give you attractive cleaning combo package
-                    </p>
-                </div>
-            </div>
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/cleaning-man.svg')}}"
-                        alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">200+ Over Cleaners</h3>
-                    <p>we can work with any typer of space and work,</p>
-                </div>
-            </div>
-
-            <div class="feature-box fbox-plain bottommargin">
-                <div class="fbox-icon">
-                    <img src="{{asset('frontend/demos/cleaner/images/icons/guarantee.svg')}}" alt="Cleaner Icon">
-                </div>
-                <div class="fbox-content">
-                    <h3 class="nott fw-semibold ls0">Satisfaction Guarantee</h3>
-                    <p>we can Guarantee your satisfaction with our brands</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<div class="clear"></div>
+</section><!-- #content end -->
