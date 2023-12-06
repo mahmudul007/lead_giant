@@ -104,14 +104,14 @@
 
                                 <li class="menu-item">
                                     <a href="{{route('property.index')}}" class="menu-link  fs-6 fw-bolder" >
-                                        <div>Properties</div>
+                                        <div>blogs</div>
                                     </a>
                                 </li>
 
                                 <li class="menu-item">
                                     <a href="{{route('service.index')}}"  class="menu-link  fs-6 fw-bolder"
                                        >
-                                        <div>Services</div>
+                                        <div>brands</div>
                                     </a>
                                 </li>
 

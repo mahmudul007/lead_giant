@@ -17,16 +17,16 @@ class PropertyController extends Controller
     {
 
         $property = Property::where('slug', $property_slug)->firstOrFail();
-        $properties = Property::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
+        $blogs = Property::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
 
-        return view($this->path . '.properties.property', compact('property','properties'));
+        return view($this->path . '.blogs.property', compact('property','blogs'));
     }
     public function index()
     {
 
-         $properties = Property::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
+         $blogs = Property::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
 
-        return view($this->path . '.properties.index', compact('properties'));
+        return view($this->path . '.blogs.index', compact('blogs'));
     }
 
 }

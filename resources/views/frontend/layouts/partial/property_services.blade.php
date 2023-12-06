@@ -37,7 +37,7 @@
                     src="{{    $first_image->link}}" alt="Card image cap"></a>
                 @else
                 <a href="{{route('property.show',$item->slug)}}"><img class="card-img-top "
-                    src="{{asset('frontend/images/services/1.jpg')}}" alt="Card image cap"></a>
+                    src="{{asset('frontend/images/brands/1.jpg')}}" alt="Card image cap"></a>
                 @endif
 
                 <div class="card-body">

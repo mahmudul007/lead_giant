@@ -8,7 +8,7 @@
 @section('content')
     <div class="row">
         <div class="text-end mb-4">
-            <a href="{{ route('admin.properties.create') }}">
+            <a href="{{ route('admin.blogs.create') }}">
                 <div class="btn btn-success fs-4">Create Blogs +</div>
             </a>
         </div>
@@ -37,7 +37,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($properties as $item)
+                                @foreach ($blogs as $item)
                                     <tr>
                                         <td>{{ $item->title }}</td>
                                         <td>{{ $item->slug }}</td>
@@ -60,13 +60,13 @@
                                         <td>
                                             <div class="d-flex">
                                                 <div>
-                                                    <a href="{{ route('admin.properties.edit', $item->id) }}">
+                                                    <a href="{{ route('admin.blogs.edit', $item->id) }}">
                                                         <div class="btn btn-success">Edit</div>
                                                     </a>
                                                 </div>
                                                 &nbsp; &nbsp;
                                                 <div>
-                                                    <form action="{{ route('admin.properties.destroy', $item->id) }}"
+                                                    <form action="{{ route('admin.blogs.destroy', $item->id) }}"
                                                         method="POST">
                                                         @csrf
                                                         @method('DELETE')
@@ -78,7 +78,7 @@
                                                 </div>
                                                 &nbsp; &nbsp;
                                                 <div>
-                                                    <a href="{{ route('admin.properties.publish', [$item->id]) }}">
+                                                    <a href="{{ route('admin.blogs.publish', [$item->id]) }}">
 
                                                         @if ($item->published == 1)
                                                             <div class="btn btn-warning text-white">
@@ -95,7 +95,7 @@
                                                 </div>
                                                 &nbsp; &nbsp;
                                                 <div>
-                                                    <a href="{{ route('admin.properties.show', [$item->id]) }}">
+                                                    <a href="{{ route('admin.blogs.show', [$item->id]) }}">
                                                         <div class="btn btn-dark text-white">Show</div>
                                                     </a>
                                                 </div>

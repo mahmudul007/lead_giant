@@ -331,11 +331,11 @@
 
                 <div class="w-100">
 
-                    <h4>More Properties</h4>
+                    <h4>More blogs</h4>
 
                     <div class="owl-carousel product-carousel carousel-widget" data-margin="30" data-pagi="false"
                         data-autoplay="5000" data-items-xs="1" data-items-md="2" data-items-lg="3" data-items-xl="4">
-                        @foreach ($properties as $item)
+                        @foreach ($blogs as $item)
                             @php
                                 $first_image = $item->propertyPicture[0];
                             @endphp

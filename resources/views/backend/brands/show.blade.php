@@ -9,7 +9,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header text-end">
-                 <a href="{{route('admin.services.index')}}">  <h4 class="card-title btn btn-primary text-white">Go to back</h4></a>
+                 <a href="{{route('admin.brands.index')}}">  <h4 class="card-title btn btn-primary text-white">Go to back</h4></a>
 
                 </div>
 
@@ -33,15 +33,15 @@
 
 
                                 </tr>
-                                @dd ($service->brandPicture)
-                                {{-- <tr>
+                              
+                                <tr>
 
                                     <td>Picture</td>
                                     <td> <img style="height: 50px;width:100px;"src="{{ $service->brandPicture->link }}"
                                             alt=""> </td>
 
 
-                                </tr> --}}
+                                </tr>
                                 <tr>
                                     <td>published</td>
                                     <td>

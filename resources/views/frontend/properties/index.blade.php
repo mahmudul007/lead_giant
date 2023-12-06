@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('title')
-Properties
+blogs
 
 @endsection
 @section('content')
@@ -34,7 +34,7 @@ Properties
 
             <!-- Course 1
             ============================================= -->
-            @foreach ($properties as $item)
+            @foreach ($blogs as $item)
             <div class="col-md-6  col-xl-4 mb-5">
               <div class="card course-card hover-effect border-0">
                   @php

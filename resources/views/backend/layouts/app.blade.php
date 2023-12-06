@@ -124,7 +124,7 @@
 
                                 @can('brand_access')
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('admin.services.index')}}">Brands </a>
+                                    <a class="nav-link" href="{{route('admin.brands.index')}}">Brands </a>
                                 </li>
                                 @endcan
 
@@ -134,7 +134,7 @@
                                 @can('brand_access')
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('admin.properties.index')}}">Blogs </a>
+                                    <a class="nav-link" href="{{route('admin.blogs.index')}}">Blogs </a>
                                 </li>
                                 @endcan
 
@@ -335,8 +335,8 @@
                 <footer class="footer text-center text-sm-start">
                     &copy; <script>
                         document.write(new Date().getFullYear())
-                    </script> Spms <span class="text-muted d-none d-sm-inline-block float-end">Crafted with <i
-                            class="mdi mdi-heart text-danger"></i> by Spms</span>
+                    </script> Lead Giant <span class="text-muted d-none d-sm-inline-block float-end">Crafted with <i
+                            class="mdi mdi-heart text-danger"></i> by Mahmudul</span>
                 </footer>
                 <!-- end Footer -->
                 <!--end footer-->

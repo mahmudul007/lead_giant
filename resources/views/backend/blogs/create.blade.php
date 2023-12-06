@@ -23,7 +23,7 @@
 
 
 
-                    {!! Form::open(['route' => 'admin.properties.store', 'method' => 'POST', 'files' => true]) !!}
+                    {!! Form::open(['route' => 'admin.blogs.store', 'method' => 'POST', 'files' => true]) !!}
 
                     <div class="mb-3">
                         <label for="title">Titel Of blog</label>

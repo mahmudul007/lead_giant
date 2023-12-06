@@ -9,7 +9,7 @@
                 <div class="card-header">
 
                     <div class="card-header text-end">
-                        <a href="{{ route('admin.properties.index') }}">
+                        <a href="{{ route('admin.blogs.index') }}">
                             <h4 class="card-title btn btn-success text-white">Go to back</h4>
                         </a>
 
@@ -28,7 +28,7 @@
                 <div class="card-body">
                     {!! Form::model($property, [
                         'method' => 'PUT',
-                        'route' => ['admin.properties.update', $property->id],
+                        'route' => ['admin.blogs.update', $property->id],
                         'files' => true,
                     ]) !!}
 
@@ -54,7 +54,7 @@
                             <ul>
                                 <li> <img src="{{ $item->link }}" width="100px " height="50px" alt="">
                                     <a onclick="return confirm ('are you sure to delete this?')"
-                                        href="{{ route('admin.properties.singleimage.delete', $item->id) }}">
+                                        href="{{ route('admin.blogs.singleimage.delete', $item->id) }}">
                                         <p class="btn btn-danger">delete</p>
                                     </a>
                                 </li>

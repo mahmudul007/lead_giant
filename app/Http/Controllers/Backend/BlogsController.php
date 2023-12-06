@@ -20,8 +20,8 @@ class BlogsController extends Controller
     public function index()
     {
         
-        $properties = BLog::orderby('created_at', 'desc')->get()->all();
-        return view('backend.properties.index', compact('properties'));
+        $blogs = BLog::orderby('created_at', 'desc')->get()->all();
+        return view('backend.blogs.index', compact('blogs'));
     }
 
     /**
@@ -33,7 +33,7 @@ class BlogsController extends Controller
     {
      
 
-        return view('backend.properties.create');
+        return view('backend.blogs.create');
     }
 
     /**
@@ -89,7 +89,7 @@ class BlogsController extends Controller
         session()->flash('success', 'Data has been successfully stored.');
 
 
-        return redirect()->route('admin.properties.index');
+        return redirect()->route('admin.blogs.index');
     }
 
     /**
@@ -101,7 +101,7 @@ class BlogsController extends Controller
     public function show($id)
     {
         $property = BLog::findOrfail($id);
-        return view('backend.properties.show', compact('property'));
+        return view('backend.blogs.show', compact('property'));
     }
 
     /**
@@ -116,7 +116,7 @@ class BlogsController extends Controller
         //     return abort(401);
         // }
         $property = BLog::findOrfail($id);
-        return view('backend.properties.edit', compact('property'));
+        return view('backend.blogs.edit', compact('property'));
     }
 
     /**
@@ -154,7 +154,7 @@ class BlogsController extends Controller
         }
         session()->flash('success', 'Data has been successfully updated.');
 
-        return redirect()->route('admin.properties.index');
+        return redirect()->route('admin.blogs.index');
     }
 
     /**
@@ -170,7 +170,7 @@ class BlogsController extends Controller
         //     return abort(401);
         // }
         $variable = Blog::findOrFail($id);
-        $images = Image::where([['ref_id', $id], ['table', 'properties'], ['tag', 'property']])
+        $images = Image::where([['ref_id', $id], ['table', 'blogs'], ['tag', 'property']])
             ->get()
             ->all();
         if ($images != null) {
@@ -216,7 +216,7 @@ class BlogsController extends Controller
     {
         
 
-        $image = Image::where([['id', $id], ['table', 'properties'], ['tag', 'property']])
+        $image = Image::where([['id', $id], ['table', 'blogs'], ['tag', 'property']])
             ->get()
             ->first();
 

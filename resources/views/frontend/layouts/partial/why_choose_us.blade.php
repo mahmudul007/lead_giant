@@ -57,7 +57,7 @@
                 <div class="fbox-content">
                     <h3 class="nott fw-semibold ls0">Personalized Approach On property</h3>
                     <p>We take the time to listen and understand your specific needs,
-                         tailoring our services to match your requirements and preferences.</p>
+                         tailoring our brands to match your requirements and preferences.</p>
                 </div>
             </div>
             <div class="feature-box fbox-plain bottommargin">
@@ -137,7 +137,7 @@
                 </div>
                 <div class="fbox-content">
                     <h3 class="nott fw-semibold ls0">Satisfaction Guarantee</h3>
-                    <p>we can Guarantee your satisfaction with our services</p>
+                    <p>we can Guarantee your satisfaction with our brands</p>
                 </div>
             </div>
 

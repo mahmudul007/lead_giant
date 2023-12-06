@@ -21,7 +21,7 @@
             <div class="card-body">
 
 
-                <form method="post" action="{{route('admin.services.store')}}" accept-charset="UTF-8"    enctype="multipart/form-data">
+                <form method="post" action="{{route('admin.brands.store')}}" accept-charset="UTF-8"    enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
                         <label for="name">Name of Brand</label>

@@ -7,7 +7,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header text-end">
-                    <a href="{{ route('admin.services.index') }}">
+                    <a href="{{ route('admin.brands.index') }}">
                         <div class="btn btn-success">
                             Back
                         </div>
@@ -22,10 +22,10 @@
 
                     {!! Form::model($service, [
                         'method' => 'PUT',
-                        'route' => ['admin.services.update', $service->id],
+                        'route' => ['admin.brands.update', $service->id],
                         'files' => true,
                     ]) !!}
-                    {{-- <form method="PUT" action="{{ route('admin.services.update',$service->slug) }}"
+                    {{-- <form method="PUT" action="{{ route('admin.brands.update',$service->slug) }}"
                         enctype="multipart/form-data"> --}}
                     @csrf
                     <div class="mb-3">

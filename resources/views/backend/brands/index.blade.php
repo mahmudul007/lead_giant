@@ -7,7 +7,7 @@
 @endsection
 @section('content')
     <div class="text-end mb-4">
-        <a href="{{ route('admin.services.create') }}">
+        <a href="{{ route('admin.brands.create') }}">
             <div class="btn btn-success">Create Brand  +</div>
         </a>
     </div>
@@ -24,10 +24,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($services as $item)
+                    @foreach ($brands as $item)
                         <tr>
                             <td>{{ $item->name }}</td>
-                            <td>{{ $item->name }}</td>
+                          
+                            <td> <img style="height: 50px;width:100px;"src="{{ $item->brandPicture->link }}"
+                                    alt=""> </td>
 
                             <td>
                                 @if ($item->published == 1)
@@ -39,21 +41,25 @@
                             <td>
                                 <div class="d-flex">
                                     <div>
-                                        <a href="{{ route('admin.services.edit', $item->id) }}">
+                                        <a href="{{ route('admin.brands.edit', $item->id) }}">
                                             <div class="btn btn-success">Edit</div>
                                         </a>
                                     </div>
                                     &nbsp; &nbsp;
                                     <div>
-                                        {{ Form::open(['route' => ['admin.services.destroy', $item->id], 'method' => 'delete']) }}
-                                        <div class="btn btn-danger"
-                                            onclick="return confirm ('are you sure to delete this?')" type="submit">Delete
-                                        </div>
-                                        {{ Form::close() }}
+                                        <form action="{{ route('admin.brands.destroy', $item->id) }}"
+                                            method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger"
+                                                onclick="return confirm ('are you sure to delete this?')"
+                                                type="submit">Delete</button>
+                                        </form>
+                                        
                                     </div>
                                     &nbsp; &nbsp;
                                     <div>
-                                        <a href="{{ route('admin.services.publish', [$item->id]) }}">
+                                        <a href="{{ route('admin.brands.publish', [$item->id]) }}">
 
                                                 @if ($item->published == 1)
                                                 <div class="btn btn-danger text-white">
@@ -70,7 +76,7 @@
                                     </div>
                                     &nbsp; &nbsp;
                                     <div>
-                                        <a href="{{ route('admin.services.show', [$item->id]) }}">
+                                        <a href="{{ route('admin.brands.show', [$item->id]) }}">
                                             <div class="btn btn-dark text-white">Show</div>
                                         </a>
                                     </div>

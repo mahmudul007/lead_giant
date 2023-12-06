@@ -8,12 +8,12 @@ Home
     @include('frontend.layouts.partial.slider')
     <!-- #slider end -->
 
-    @include('frontend.layouts.partial.property_services')
+    @include('frontend.layouts.partial.property_brands')
 
 
 
     @include('frontend.layouts.partial.how_we_work_cleaning')
-    @include('frontend.layouts.partial.cleaning_services')
+    @include('frontend.layouts.partial.cleaning_brands')
 
 
     @include('frontend.layouts.partial.shine_and_sparkel')

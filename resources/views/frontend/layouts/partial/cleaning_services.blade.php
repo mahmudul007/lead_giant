@@ -6,8 +6,8 @@
 
     <div class="container" >
         <div class="heading-block center mx-auto" style="max-width: 700px">
-            <h2 id="services" class=" nott ls0">Our Services</h2>
-            <span class="text-primary">We give this  services to our client </span>
+            <h2 id="brands" class=" nott ls0">Our brands</h2>
+            <span class="text-primary">We give this  brands to our client </span>
         </div>
         <div class="container clearfix" >
 
@@ -19,10 +19,10 @@
                     <div class="feature-box media-box">
                         <div class="fbox-media">
                             @if (!empty($item->servicePicture->link))
-                            <img   src="{{$item->servicePicture->link}}" alt="services">
+                            <img   src="{{$item->servicePicture->link}}" alt="brands">
 
                             @else
-                            <img src="{{asset('frontend/images/services/1.jpg')}}" alt="Why choose Us?">
+                            <img src="{{asset('frontend/images/brands/1.jpg')}}" alt="Why choose Us?">
 
                             @endif
                         </div>

@@ -10,8 +10,8 @@ Cleaning service
 
     <div class="container" >
         <div class="heading-block center mx-auto" style="max-width: 700px">
-            <h2  >Our Services</h2>
-            <span>We give this services to our client</span>
+            <h2  >Our brands</h2>
+            <span>We give this brands to our client</span>
         </div>
         <div class="container clearfix" >
 
@@ -19,7 +19,7 @@ Cleaning service
 
             <div class="row col-mb-50">
 
-                    @foreach ($services as $item)
+                    @foreach ($brands as $item)
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-box media-box">
                             <div class="fbox-media">
@@ -27,7 +27,7 @@ Cleaning service
                                 <img src="{{$item->servicePicture->link}}" alt="pic">
 
                                 @else
-                                <img src="frontend/images/services/1.jpg" alt="pic">
+                                <img src="frontend/images/brands/1.jpg" alt="pic">
 
                                 @endif
                             </div>

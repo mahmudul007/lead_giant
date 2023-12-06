@@ -38,10 +38,10 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'user', 'as' => 'admin.', 'm
 
 
 Route::get('property/{slug?}', 'PropertyController@show')->name('property.show');
-Route::get('properties/', 'PropertyController@index')->name('property.index');
+Route::get('blogs/', 'PropertyController@index')->name('property.index');
 
-Route::get('service/{slug?}', 'ServicesController@show')->name('service.show');
-Route::get('services/', 'ServicesController@index')->name('service.index');
+Route::get('service/{slug?}', 'brandsController@show')->name('service.show');
+Route::get('brands/', 'brandsController@index')->name('service.index');
 
 
 Route::post('contact/request/', [ContactReqController::class,'contact_req'])->name('contact.request');

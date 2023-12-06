@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('title')
-    Services
+    brands
 @endsection
 @section('content')
     <!-- Page Title
@@ -33,7 +33,7 @@
                                         @if (!empty($service->servicePicture->link))
                                             <img src="{{ $service->servicePicture->link }}" alt="">
                                         @else
-                                            <img src="{{ asset('frontend/images/properties/1.jfif') }}" alt="">
+                                            <img src="{{ asset('frontend/images/blogs/1.jfif') }}" alt="">
                                         @endif
 
                                     </div>
@@ -229,11 +229,11 @@
 
                 <div class="w-100">
 
-                    <h4>More services</h4>
+                    <h4>More brands</h4>
 
                     <div class="owl-carousel product-carousel carousel-widget" data-margin="30" data-pagi="false"
                         data-autoplay="5000" data-items-xs="1" data-items-md="2" data-items-lg="3" data-items-xl="4">
-                        @foreach ($services as $item)
+                        @foreach ($brands as $item)
                             <div class="oc-item">
                                 <div class="product">
                                     <div class="product-image">
@@ -241,7 +241,7 @@
                                             @if (!empty($item->servicePicture->link))
                                                 <img src="{{ $item->servicePicture->link }}" alt="Why choose Us?">
                                             @else
-                                                <img src="{{ asset('frontend/images/properties/2.jpg') }}"
+                                                <img src="{{ asset('frontend/images/blogs/2.jpg') }}"
                                                     alt="pic">
                                             @endif
 

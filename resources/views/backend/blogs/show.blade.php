@@ -9,7 +9,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header text-end">
-                    <a href="{{ route('admin.properties.index') }}">
+                    <a href="{{ route('admin.blogs.index') }}">
                         <h4 class="card-title btn btn-primary text-white">Go to back</h4>
                     </a>
 

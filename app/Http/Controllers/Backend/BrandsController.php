@@ -19,16 +19,16 @@ class BrandsController extends Controller
         if (!Gate::allows('brand_access')) {
             return abort(401);
         }
-        $services = Brand::orderby('created_at', 'desc')->get() ->all();
+        $brands = Brand::orderby('created_at', 'desc')->get() ->all();
 
-        return view('backend.services.index', compact('services'));
+        return view('backend.brands.index', compact('brands'));
     }
     public function create()
     {
         if (!Gate::allows('brand_create')) {
             return abort(401);
         }
-        return view('backend.services.create');
+        return view('backend.brands.create');
     }
 
     public function store(Request $request)
@@ -64,7 +64,7 @@ class BrandsController extends Controller
        
         $serv->save();
 
-        return redirect()->route('admin.services.index');
+        return redirect()->route('admin.brands.index');
     }
     public function update(Request $request, $id)
     {
@@ -72,7 +72,7 @@ class BrandsController extends Controller
 
         $service->name = $request->name;
    
-        $image = Image::where([['ref_id', $id], ['tag', 'service'],['table', 'services'] ])
+        $image = Image::where([['ref_id', $id], ['tag', 'brand'],['table', 'brands'] ])
         ->get()
         ->first();
 
@@ -98,7 +98,7 @@ class BrandsController extends Controller
         $service->save();
 
         return redirect()
-            ->route('admin.services.index')
+            ->route('admin.brands.index')
          ;
     }
     public function show($id)
@@ -107,7 +107,7 @@ class BrandsController extends Controller
        
         $service = Brand::findOrFail($id);
     
-        return view('backend.services.show', compact('service'));
+        return view('backend.brands.show', compact('service'));
     }
 
     public function destroy($id)
@@ -115,7 +115,7 @@ class BrandsController extends Controller
         
        
         $service = Brand::findOrFail($id);
-        $image = Image::where([['ref_id', $id], ['table', 'services'], ['tag', 'service']])
+        $image = Image::where([['ref_id', $id], ['table', 'brands'], ['tag', 'brand']])
             ->get()
             ->first();
         if ($image != null) {
@@ -130,8 +130,8 @@ class BrandsController extends Controller
         $service->delete();
 
         return redirect()
-            ->route('admin.services.index')
-            ->withFlashSuccess('Services deleted succesfully');
+            ->route('admin.brands.index')
+            ->withFlashSuccess('brands deleted succesfully');
     }
     public function edit($id)
     {
@@ -139,7 +139,7 @@ class BrandsController extends Controller
 
         $service = Brand::findOrFail($id);
 
-        return view('backend.services.edit', compact('service'));
+        return view('backend.brands.edit', compact('service'));
     }
 
     public function publish($id)
