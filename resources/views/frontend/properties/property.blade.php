@@ -1,9 +1,9 @@
 @extends('frontend.layouts.app')
 @section('title')
-    Property
+   Blog
 @endsection
 @section('content')
-    <!-- Page Title
+    {{-- <!-- Page Title
                                                           ============================================= -->
     <section id="page-title">
         @php
@@ -15,370 +15,235 @@
 
         </div>
 
-    </section><!-- #page-title end -->
+    </section><!-- #page-title end --> --}}
 
     <!-- Content
                                                           ============================================= -->
-    <section id="content">
-        <div class="content-wrap">
-            <div class="container clearfix">
-
-                <div class="single-product">
-                    <div class="product">
-                        <div class="row gutter-40">
-
-                            <div class="col-md-5">
-
-
-                                <div class="product-image">
-                                    <div class="fslider" data-pagi="false" data-arrows="false" data-thumbs="true">
-                                        <div class="flexslider">
-                                            <div class="slider-wrap" data-lightbox="gallery">
-                                                @foreach ($property->propertyPicture as $item)
-                                                    <div class="slide" data-thumb="{{ $item->link }}">
-                                                        <p title="Pink Printed Dress - Side View"
-                                                            data-lightbox="gallery-item">
-
-                                                            <img src="{{ $item->link }}" alt="Pink Printed Dress">
-                                                        </p>
-
-                                                    </div>
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sale-flash badge bg-danger p-2">Sale!</div>
-                                </div><!-- Product Single - Gallery End -->
-
-                            </div>
-
-                            <div class="col-md-4 ">
-
-                                <div class="d-flex align-items-center justify-content-between">
-
-                                    <div class="product-price">BDT <ins>{{ $property->price }}</ins> Total</div>
-                                    <!-- Product Single - Price End -->
-
-
-
-                                </div>
-                                <hr>
-                                <div class="card border-0 p-3 " style="background-color: rgba(255,255,255,0.85)">
-                                    <div class=" card-body" data-alert-type="inline">
-                                        <form action="{{ route('contact.request') }}" enctype="multipart/form-data"
-                                            method="post" class="row form-cleaning mb-0" >
-                                            @csrf
-                                            <div class="col-sm-12">
-                                                <div class="input-group form-group">
-                                                    <span class="input-group-text bg-color text-white"><i
-                                                            class="icon-line2-envelope-letter"></i></span>
-                                                    <input type="email" name="email" id="email"
-                                                        class="form-control required" value=""
-                                                        placeholder="Your Email" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="input-group form-group">
-                                                    <span class="input-group-text bg-color text-white"><i
-                                                            class="icon-line2-bubbles"></i></span>
-                                                    <input type="text" name="property_requester_name"
-                                                        id="property_requester_name" class="form-control required"
-                                                        value="" placeholder="Your Name" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-sm-12">
-                                                <div class="input-group form-group">
-                                                    <span class="input-group-text bg-color text-white"><i
-                                                            class="icon-line2-call-out"></i></span>
-                                                    <input type="text" name="contact_no" id="contact_no"
-                                                        class="form-control required" value=""
-                                                        placeholder="Contact Number" required>
-                                                </div>
-                                            </div>
-                                            <div class="form-floating">
-                                                <textarea name="property_description_msg" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                                    style="height: 100px">I am interested on {{ $property->name }}</textarea>
-
-                                            </div>
-
-
-                                            <input type="hidden" name="ref_id" value="{{ $property->id }}">
-                                            <input type="hidden" name="type" value="1">
-
-
-                                            <div class="col-12">
-                                                <button type="submit" name="form-cleaning-submit"
-                                                    class="btn btn-lg bg-color text-white fw-semibold w-100 mt-2">Contact
-                                                    Now</button>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                </div>
-
-
-
-                                <hr>
-
-
-
-                                <!-- Product Single - Meta  ============================================= -->
-                                <div class="card product-meta">
-                                    <div class="card-body">
-                                        <span itemprop="productID" class="sku_wrapper badge bg-warning text-dark fs-6 rounded-pill">ID: <span
-                                                class="sku ">
-                                               {{ $property->id }}
-
-                                              </span></span>
-                                        <span itemprop="productID" class="sku_wrapper"><span class="sku">
-                                                @if ($additional_info->residential)
-                                                    <span class="badge bg-info text-dark fs-6 rounded-pill">Residential
-                                                     </span>
-                                                @endif
-                                                @if ($additional_info->commercial)
-                                                    <span class="badge bg-success text-white fs-6 rounded-pill">Commercial
-                                                     </span>
-                                                @endif
-                                                @if ($additional_info->new ==1)
-                                                    <span class="badge bg-primary text-white fs-6 rounded-pill">New
-                                                     </span>
-                                                     @else
-                                                     <span class="badge bg-warning text-white fs-6 rounded-pill">Used
-                                                    </span>
-                                                @endif
-                                            </span></span>
-
-                                    </div>
-                                </div>
-                                <!-- Product Single - Meta End -->
-
-
-
-
-                            </div>
-
-                            <div class="col-md-2">
-
-                                <a href="#" title="Brand Logo" class="d-none d-md-block"><img
-                                        src="{{ asset('spm.png') }}" alt="Brand Logo"></a>
-
-                                <div class="divider divider-center"><i class="icon-circle-blank"></i></div>
-
-                                <div class="feature-box fbox-plain fbox-dark fbox-sm">
-                                    <div class="fbox-icon">
-                                        <i class="icon-thumbs-up2"></i>
-                                    </div>
-                                    <div class="fbox-content fbox-content-sm">
-                                        <h3>100% Original</h3>
-                                        <p class="mt-0">We guarantee you the sale of Original Property.</p>
-                                    </div>
-                                </div>
-
-                                <div class="feature-box fbox-plain fbox-dark fbox-sm mt-4">
-                                    <div class="fbox-icon">
-                                        <i class="icon-credit-cards"></i>
-                                    </div>
-                                    <div class="fbox-content fbox-content-sm">
-                                        <h3>Payment Options</h3>
-                                        <p class="mt-0">We contact with you face to face</p>
-                                    </div>
-                                </div>
-
-
-
-
-
-                            </div>
-
-                            <div class="w-100"></div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-                <div>
-
-                    <div class="row">
-                        <div class="col-12 mt-5  ">
-                            <div class="tab-content clearfix  p-2 ">
-
-                                <div class="card-body p-2" style="background-color: beige">
-                                    <h3><span class=" d-md-inline-block"> Additional Information</span></h3>
-                                    <div class="row  text-center">
-                                        @if ($additional_info->bedroom)
-                                            <div class="col-lg-4"><span
-                                                    class="border py-2 mt-1 bg-light d-block mb-2 mb-lg-0">
-                                                    <span class="icon-bed"></span> {{ $additional_info->bedroom }} Bedroom
-                                                </span></div>
-                                        @endif
-                                        @if ($additional_info->attached_bath)
-                                            <div class="col-lg-4"><span
-                                                    class="border py-2 mt-1 bg-light d-block mb-2 mb-lg-0">
-                                                    <span class="icon-bath"></span>
-                                                    <span class="author-number">{{ $additional_info->attached_bath }}
-                                                        Attached Bath</span>
-                                                </span></div>
-                                        @endif
-                                        @if ($additional_info->common_bath)
-                                            <div class="col-lg-4"><span class="border py-2 mt-1 bg-light d-block"><span
-                                                        class="icon-shower"></span>
-                                                    <span class="author-number">{{ $additional_info->common_bath }} common
-                                                        bath</span></span></div>
-                                        @endif
-                                        @if ($additional_info->floor)
-                                            <div class="col-lg-4"><span
-                                                    class="border py-2 mt-1 bg-light d-block mb-2 mb-lg-0"> <span
-                                                        class="icon-building"></span>
-                                                    <span class="author-number">{{ $additional_info->floor }}
-                                                        Floor</span></span></div>
-                                        @endif
-
-
-
-                                        @if ($additional_info->sq_ft)
-                                            <div class="col-lg-4"><span
-                                                    class="border py-2 mt-1 bg-light d-block mb-2 mb-lg-0">
-                                                    <span class="icon-ruler-combined"></span>
-                                                    <span class="author-number">{{ $additional_info->sq_ft }} Sq.ft</span>
-
-                                                </span></div>
-                                        @endif
-                                        @if ($additional_info->dining_space)
-                                            <div class="col-lg-4"><span class="border py-2 mt-1 bg-light d-block"> <span
-                                                        class="icon-utensils"></span>
-                                                    <span class="author-number">{{ $additional_info->dining_space }}Dining
-                                                        Space</span></span></div>
-                                        @endif
-                                        @if ($additional_info->living_room)
-                                            <div class="col-lg-4"><span class="border py-2 mt-1 bg-light d-block"> <span
-                                                        class="icon-realestate-chair"></span>
-                                                    <span class="author-number">{{ $additional_info->living_room }}Living
-                                                        room</span></span></div>
-                                        @endif
-                                        @if ($additional_info->balconies)
-                                            <div class="col-lg-4"><span class="border py-2 mt-1 bg-light d-block"> <span
-                                                        class="icon-realestate-door"></span>
-                                                    <span class="author-number">{{ $additional_info->balconies }}
-                                                        Belcony</span></span></div>
-                                        @endif
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <hr>
-
-
-
-                            <div class="tabs clearfix mb-0   " style="background-color: beige">
-
-                                <h3>
-                                    <span class=" d-md-inline-block ms-4 mt-3"> Description</span>
-                                </h3>
-                                <div class="tab-container">
-
-                                    <div class="tab-content clearfix p-2">
-                                        {!! $property->description !!}
-                                    </div>
-                                </div>
-
-                            </div>
-                            <hr>
-                            <div class="tabs clearfix mb-0 p-2"style="background-color: beige">
-                                @php
-                                    $benifit = json_decode($property->benifits);
-                                    $separator = '_';
-
-                                @endphp
-
-                                <h3><span class="d-md-inline-block"> Benifits</span></h3>
-                                <div class="tab-container">
-
-                                    <div class="tab-content clearfix">
-                                        <div class="row  text-center">
-
-                                            @foreach ($benifit as $key => $item)
-                                                @if (!is_null($item))
-                                                    <div class="col-lg-4"><span class="border py-2 mt-1 bg-light d-block">
-                                                            <span class="icon-line-circle-check text-primary"></span>
-                                                            <span class="author-number">
-                                                                {{ strtoupper(str_replace($separator, ' ', $key)) }}</span></span>
-                                                    </div>
-                                                @endif
-                                            @endforeach
-                                        </div>
-
-
-                                    </div>
-
-
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <br><br>
-
-                <div class="w-100">
-
-                    <h4>More blogs</h4>
-
-                    <div class="owl-carousel product-carousel carousel-widget" data-margin="30" data-pagi="false"
-                        data-autoplay="5000" data-items-xs="1" data-items-md="2" data-items-lg="3" data-items-xl="4">
-                        @foreach ($blogs as $item)
-                            @php
-                                $first_image = $item->propertyPicture[0];
-                            @endphp
-
-                            <div class="oc-item">
-                                <div class="product">
-                                    <div class="product-image">
-                                        <img src="{{ $first_image->link }}" alt="Checked Short Dress">
-
-                                        <div class="badge bg-danger p-2"> buy </div>
-                                        <div class="bg-overlay">
-                                            <div class="bg-overlay-content align-items-end justify-content-between"
-                                                data-hover-animate="fadeIn" data-hover-speed="400">
-                                                <a href="{{ route('property.show', $item->slug) }}"
-                                                    class="btn btn-dark me-2"><i class="icon-shopping-cart"></i></a>
-
-                                            </div>
-                                            <div class="bg-overlay-bg bg-transparent"></div>
-                                        </div>
-                                    </div>
-                                    <div class="product-desc center">
-                                        <div class="product-title">
-                                            <h3><a
-                                                    href="{{ route('property.show', $item->slug) }}">{{ $item->name }}</a>
-                                            </h3>
-                                        </div>
-                                        <hr>
-                                        <div class="product-price">Est. price <ins>{{ $item->price }}/-Bdt</ins></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-
-
-
-
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section><!-- #content end -->
+   	<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap pt-5" style="overflow: visible;">
+
+				<div class="container">
+					<!-- Single Page Content
+					============================================= -->
+					<div class="single-post mb-0">
+
+						<!-- Single Post
+						============================================= -->
+						<div class="entry">
+
+							<div class="row justify-content-center">
+								<div class="col-lg-6">
+									<!-- Entry Title
+									============================================= -->
+									<div class="entry-title">
+										<div class="entry-categories"><a href="demo-blog-categories.html">Coronavirus Update - World</a></div>
+										<h2>All online Conferences to save your box, get Inspired and Stay Connected</h2>
+									</div><!-- .entry-title end -->
+								</div>
+							</div>
+
+							<!-- Entry Meta
+							============================================= -->
+							<div class="d-flex justify-content-center mt-2">
+								<div class="entry-meta">
+									<ul>
+										<li>10th July 2014</li>
+										<li>By <a href="#">SemiColonWeb</a></li>
+									</ul>
+								</div>
+							</div><!-- .entry-meta end -->
+
+							<!-- Entry Image
+							============================================= -->
+							<div class="entry-image mt-5">
+								<a href="demos/blog/images/single/hero-full.jpg" data-lightbox="image"><img class="rounded" src="demos/blog/images/single/hero.jpg" alt="Blog Single"></a>
+							</div><!-- .entry-image end -->
+
+							<!-- Entry Content
+							============================================= -->
+							<div class="entry-content">
+
+								<div class="row">
+
+									<div class="col-lg-2 media-content" data-animate="fadeIn">
+										<div class="entry-title text-start">
+											<h4>All online Conferences to save your box, get Inspired and Stay Connected</h4>
+										</div>
+										<!-- Post Single - Share
+										============================================= -->
+										<div>
+											<h5 class="mb-2">Share this Post:</h5>
+											<div>
+												<a href="#" class="social-icon si-small si-rounded si-colored si-facebook">
+													<i class="icon-facebook"></i>
+													<i class="icon-facebook"></i>
+												</a>
+												<a href="#" class="social-icon si-small si-rounded si-colored ms-1 si-twitter">
+													<i class="icon-twitter"></i>
+													<i class="icon-twitter"></i>
+												</a>
+												<a href="#" class="social-icon si-small si-rounded si-colored ms-1 si-pinterest">
+													<i class="icon-pinterest"></i>
+													<i class="icon-pinterest"></i>
+												</a>
+												<a href="#" class="social-icon si-small si-rounded si-colored ms-1 si-rss">
+													<i class="icon-rss"></i>
+													<i class="icon-rss"></i>
+												</a>
+											</div>
+										</div><!-- Post Single - Share End -->
+									</div>
+
+									<div class="col-lg-1"></div>
+
+									<div class="text-content col-lg-6">
+
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p><br>
+
+										<h3>1. Content</h3>
+										In this cheat sheet, we will go over the following:
+										<ol class="list-numbers">
+											<li>Anatomy</li>
+											<li>Dropdown types and variations</li>
+											<li>Dropdown styles</li>
+											<li>Dropdown states</li>
+											<li>What the placeholder should say</li>
+											<li>When not to use a dropdown (and when to)</li>
+											<li>Native dropdowns</li>
+											<li>Accessibility checklist</li>
+											<li>Closing thoughts</li>
+										</ol>
+
+										<p>Nullam id dolor id nibh ultricies vehicula ut id elit. <a href="#">Curabitur blandit tempus porttitor</a>. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
+
+										<blockquote><p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p></blockquote><br>
+
+										<h3>2. Anatomy</h3>
+
+										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.</p>
+
+										<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. <a href="#">Nullam quis risus eget urna</a> mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p><br>
+
+										<h3>3. Standard Solution</h3>
+										<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper.</p>
+
+										<div class="row mb-4" data-lightbox="gallery">
+											<div class="col-md-6">
+												<a href="demos/blog/images/single/1-full.jpg" data-lightbox="gallery-item"><img class="rounded" src="demos/blog/images/single/1.jpg" alt="Alt Images"></a>
+											</div>
+											<div class="col-md-6">
+												<a href="demos/blog/images/single/2-full.jpg" data-lightbox="gallery-item"><img class="rounded" src="demos/blog/images/single/2.jpg" alt="Alt Images"></a>
+											</div>
+										</div>
+										<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.</p>
+
+										<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. <a href="#">Nullam quis risus eget urna</a> mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+										<div class="line"></div>
+
+										<!-- Tag Cloud
+										============================================= -->
+										<div class="tagcloud">
+											<h4>Related Tags</h4>
+											<a href="#">general</a>
+											<a href="#">information</a>
+											<a href="#">media</a>
+											<a href="#">press</a>
+											<a href="#">gallery</a>
+											<a href="#">illustration</a>
+										</div><!-- .tagcloud end -->
+
+										<div class="clear"></div>
+
+										
+									</div>
+									<!-- Post Single - Content End -->
+
+								</div>
+
+							</div>
+						</div><!-- .entry end -->
+
+						<h3 class="mb-0">Related Posts</h3>
+
+						<div class="row posts-md">
+							<div class="col-lg-3 col-sm-6">
+								<article class="entry">
+									<div class="entry-image">
+										<a href="#"><img src="demos/blog/images/video-thumbs/1.jpg" alt="Image 3"></a>
+									</div>
+									<div class="entry-title title-sm text-start">
+										<div class="entry-categories"><a href="demo-blog-categories.html">Travel</a></div>
+										<h3><a href="#" class="color-underline stretched-link">The Best Destinations in Asia for Solo Travel</a></h3>
+									</div>
+									<div class="entry-meta">
+										<ul>
+											<li><a href="#">Mar 11, 2016</a></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<article class="entry">
+									<div class="entry-image">
+										<a href="#"><img src="demos/blog/images/video-thumbs/2.jpg" alt="Image 3"></a>
+									</div>
+									<div class="entry-title title-sm text-start">
+										<div class="entry-categories"><a href="demo-blog-categories.html">Fashion</a></div>
+										<h3><a href="#" class="color-underline stretched-link">10 Trendy Fashion Instagram Profile You Need to Follow</a></h3>
+									</div>
+									<div class="entry-meta">
+										<ul>
+											<li><a href="#">Mar 11, 2016</a></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<article class="entry">
+									<div class="entry-image">
+										<a href="#"><img src="demos/blog/images/video-thumbs/3.jpg" alt="Image 3"></a>
+									</div>
+									<div class="entry-title title-sm text-start">
+										<div class="entry-categories"><a href="demo-blog-categories.html">Travel</a></div>
+										<h3><a href="#" class="color-underline stretched-link">23 Top Travel Bloggers Who Inspire Us To Travel</a></h3>
+									</div>
+									<div class="entry-meta">
+										<ul>
+											<li><a href="#">Mar 11, 2016</a></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+
+							<div class="col-lg-3 col-sm-6">
+								<article class="entry">
+									<div class="entry-image">
+										<a href="#"><img src="demos/blog/images/video-thumbs/4.jpg" alt="Image 3"></a>
+									</div>
+									<div class="entry-title title-sm text-start">
+										<div class="entry-categories"><a href="demo-blog-categories.html">Travel</a></div>
+										<h3><a href="#" class="color-underline stretched-link">23 Top Travel Bloggers Who Inspire Us To Travel</a></h3>
+									</div>
+									<div class="entry-meta">
+										<ul>
+											<li><a href="#">Mar 11, 2016</a></li>
+										</ul>
+									</div>
+								</article>
+							</div>
+						</div>
+
+					</div>
+					<!-- Single Page Content -->
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
 @endsection

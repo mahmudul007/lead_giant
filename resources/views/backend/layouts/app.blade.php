@@ -273,7 +273,7 @@
                         </div>
                     </li><!--end topbar-profile-->
                     <li class="notification-list">
-                        <a class="nav-link arrow-none nav-icon offcanvas-btn" href="#" data-bs-toggle="offcanvas" data-bs-target="#Appearance" role="button" aria-controls="Rightbar">
+                        <a class="nav-link arrow-none nav-icon offLead Giant-btn" href="#" data-bs-toggle="offLead Giant" data-bs-target="#Appearance" role="button" aria-controls="Rightbar">
                             <i class="ti ti-settings ti-spin"></i>
                         </a>
                     </li>

@@ -7,11 +7,11 @@
         <div class="section bg-transparent m-0 border-bottom py-5">
             <div class="container">
                 <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true" data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/linkedin.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/nat-geo.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/jetblue.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/zillow.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="demos/business/images/clients/amazon.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/linkedin.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/nat-geo.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/jetblue.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/zillow.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/amazon.svg" alt="Brands"></a></div>
                 </div>
             </div>
         </div>
@@ -31,68 +31,68 @@
 
                         <div class="feature-box flex-md-row-reverse text-md-end border-0">
                             <div class="fbox-icon">
-                                <a href="#"><img src="demos/seo/images/icons/seo.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                <a href="#"><img src="{{asset('frontend/demos/seo/images/icons/seo.svg')}}" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">SEO optimization</h3>
+                                <h3 class="nott ls0"> SEO optimization</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
                             </div>
                         </div>
 
-                        <div class="feature-box flex-md-row-reverse text-md-end border-0 mt-5">
+                        <div class="feature-box flex-md-row-reverse text-md-end border-0 mt-5 ">
                             <div class="fbox-icon">
-                                <a href="#"><img src="demos/seo/images/icons/adword.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                <a href="#"><img src="frontend/demos/seo/images/icons/adword.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Adwords Campaign</h3>
+                                <h3 class="nott ls0">B2B Lead Generation </h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
                             </div>
                         </div>
 
                         <div class="feature-box flex-md-row-reverse text-md-end border-0 mt-5">
                             <div class="fbox-icon">
-                                <a href="#"><img src="demos/seo/images/icons/analysis.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                <a href="#"><img src="frontend/demos/seo/images/icons/analysis.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Digital Analysis</h3>
+                                <h3 class="nott ls0">Data Scraping</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
-                        <img src="demos/seo/images/sections/2.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
+                    <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5 d-none">
+                        <img src="frontend/demos/seo/images/sections/2.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
                     </div>
 
                     <div class="col-lg-4 col-sm-6">
 
                         <div class="feature-box border-0">
                             <div class="fbox-icon">
-                                <a href="#"><img src="demos/seo/images/icons/social.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                <a href="#"><img src="frontend/demos/seo/images/icons/social.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Social Media Marketing</h3>
+                                <h3 class="nott ls0">Skip Tracing</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
                             </div>
                         </div>
 
                         <div class="feature-box border-0 mt-5">
                             <div class="fbox-icon">
-                                <a href="#"><img src="demos/seo/images/icons/experience.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                <a href="#"><img src="frontend/demos/seo/images/icons/experience.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Customer Experience</h3>
+                                <h3 class="nott ls0">Ad operations</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
                             </div>
                         </div>
 
                         <div class="feature-box border-0 mt-5">
                             <div class="fbox-icon">
-                                <a href="#"><img src="demos/seo/images/icons/content_marketing.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                <a href="#"><img src="frontend/demos/seo/images/icons/content_marketing.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Content Marketing</h3>
+                                <h3 class="nott ls0">Email Marketing</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
 
         <!-- Form Section
         ============================================= -->
-        <div class="section m-0" style="background: url('demos/seo/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
+        <div class="section m-0" style="background: url('frontend/demos/seo/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
 
@@ -163,7 +163,7 @@
 
         <!-- Works/Projects
         ============================================= -->
-        <div class="section m-0" style="background: url('demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
+        <div class="section m-0" style="background: url('frontend/demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
             <div class="container">
                 <div class="heading-block border-bottom-0 center">
                     <div class="badge rounded-pill badge-default">Completed Projects</div>
@@ -175,7 +175,7 @@
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
                         <div class="grid-inner">
                             <div class="portfolio-image">
-                                <img src="demos/seo/images/works/1.jpg" alt="The Atmosphere">
+                                <img src="frontend/demos/seo/images/works/1.jpg" alt="The Atmosphere">
                                 <div class="bg-overlay">
                                     <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
                                         <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -193,7 +193,7 @@
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-illustrations">
                         <div class="grid-inner">
                             <div class="portfolio-image">
-                                <img src="demos/seo/images/works/2.jpg" alt="Wavelength Structure">
+                                <img src="frontend/demos/seo/images/works/2.jpg" alt="Wavelength Structure">
                                 <div class="bg-overlay">
                                     <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
                                         <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -211,7 +211,7 @@
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
                         <div class="grid-inner">
                             <div class="portfolio-image">
-                                <img src="demos/seo/images/works/3.jpg" alt="Greenhouse Garden">
+                                <img src="frontend/demos/seo/images/works/3.jpg" alt="Greenhouse Garden">
                                 <div class="bg-overlay">
                                     <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
                                         <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -229,7 +229,7 @@
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
                         <div class="grid-inner">
                             <div class="portfolio-image">
-                                <img src="demos/seo/images/works/4.jpg" alt="Industrial Hub">
+                                <img src="frontend/demos/seo/images/works/4.jpg" alt="Industrial Hub">
                                 <div class="bg-overlay">
                                     <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
                                         <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -247,7 +247,7 @@
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
                         <div class="grid-inner">
                             <div class="portfolio-image">
-                                <img src="demos/seo/images/works/5.jpg" alt="Corporate Headquarters">
+                                <img src="frontend/demos/seo/images/works/5.jpg" alt="Corporate Headquarters">
                                 <div class="bg-overlay">
                                     <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
                                         <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -265,7 +265,7 @@
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-illustrations">
                         <div class="grid-inner">
                             <div class="portfolio-image">
-                                <img src="demos/seo/images/works/6.jpg" alt="Space Station">
+                                <img src="frontend/demos/seo/images/works/6.jpg" alt="Space Station">
                                 <div class="bg-overlay">
                                     <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
                                         <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
@@ -296,7 +296,7 @@
                 <div class="col-md-4 mt-5">
                     <div class="feature-box fbox-center border-0">
                         <div class="fbox-icon">
-                            <a href="#"><img src="demos/seo/images/icons/research.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            <a href="#"><img src="frontend/demos/seo/images/icons/research.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                         </div>
                         <div class="fbox-content">
                             <h3 class="nott ls0">1. Planning &amp; Research</h3>
@@ -308,7 +308,7 @@
                 <div class="col-md-4 mt-5">
                     <div class="feature-box fbox-center border-0">
                         <div class="fbox-icon">
-                            <a href="#"><img src="demos/seo/images/icons/optimizing.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            <a href="#"><img src="frontend/demos/seo/images/icons/optimizing.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                         </div>
                         <div class="fbox-content">
                             <h3 class="nott ls0">2. Optimizing</h3>
@@ -320,7 +320,7 @@
                 <div class="col-md-4 mt-5">
                     <div class="feature-box fbox-center border-0">
                         <div class="fbox-icon">
-                            <a href="#"><img src="demos/seo/images/icons/result.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                            <a href="#"><img src="frontend/demos/seo/images/icons/result.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                         </div>
                         <div class="fbox-content">
                             <h3 class="nott ls0">3. Result</h3>
@@ -333,7 +333,7 @@
 
         <!-- Testimonials
         ============================================= -->
-        <div class="section mt-0" style="background: url('demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
+        <div class="section mt-0" style="background: url('frontend/demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
             <div class="container">
                 <div class="heading-block border-bottom-0 center">
                     <div class="badge rounded-pill badge-default">Testimonials</div>
@@ -345,7 +345,7 @@
                     <div class="oc-item">
                         <div class="testimonial">
                             <div class="testi-image">
-                                <a href="#"><img src="demos/pet/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+                                <a href="#"><img src="frontend/demos/pet/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
                             </div>
                             <div class="testi-content">
                                 <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
@@ -360,7 +360,7 @@
                     <div class="oc-item">
                         <div class="testimonial">
                             <div class="testi-image">
-                                <a href="#"><img src="demos/pet/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+                                <a href="#"><img src="frontend/demos/pet/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
                             </div>
                             <div class="testi-content">
                                 <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
@@ -374,7 +374,7 @@
                     <div class="oc-item">
                         <div class="testimonial">
                             <div class="testi-image">
-                                <a href="#"><img src="demos/pet/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+                                <a href="#"><img src="frontend/demos/pet/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
                             </div>
                             <div class="testi-content">
                                 <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
@@ -388,7 +388,7 @@
                     <div class="oc-item">
                         <div class="testimonial">
                             <div class="testi-image">
-                                <a href="#"><img src="demos/pet/images/testimonials/4.jpg" alt="Customer Testimonails"></a>
+                                <a href="#"><img src="frontend/demos/pet/images/testimonials/4.jpg" alt="Customer Testimonails"></a>
                             </div>
                             <div class="testi-content">
                                 <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
@@ -402,7 +402,7 @@
                     <div class="oc-item">
                         <div class="testimonial">
                             <div class="testi-image">
-                                <a href="#"><img src="images/testimonials/5.jpg" alt="Customer Testimonails"></a>
+                                <a href="#"><img src="frontend/images/testimonials/5.jpg" alt="Customer Testimonails"></a>
                             </div>
                             <div class="testi-content">
                                 <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
@@ -417,88 +417,7 @@
             </div>
         </div>
 
-        <!-- Blogs
-        ============================================= -->
-        <div class="container py-4">
-            <div class="heading-block border-bottom-0 center">
-                <div class="badge rounded-pill badge-default">Latest Articles</div>
-                <h3 class="nott ls0">Recently From the Blog</h3>
-            </div>
+      @include('frontend.layouts.partial.blogs')
 
-            <div class="row mt-5 clearfix">
-                <div class="col-md-4">
-                    <article class="entry">
-                        <div class="entry-image mb-3">
-                            <a href="#"><img src="demos/seo/images/blog/1.jpg" alt="Image 3"></a>
-                        </div>
-                        <div class="entry-title">
-                            <h3><a href="#">Top Most SEO Optizied Websites</a></h3>
-                        </div>
-                        <div class="entry-meta">
-                            <ul>
-                                <li><i class="icon-line2-user"></i><a href="#"> John Doe</a></li>
-                                <li><i class="icon-calendar-times1"></i><a href="#"> 11 Mar 2021</a></li>
-                            </ul>
-                        </div>
-                        <div class="entry-content clearfix">
-                            <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem progressive technology through pariatur quibusdam veritatis quisquam. Efficiently communicate alternative.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-md-4">
-                    <article class="entry">
-                        <div class="entry-image mb-3">
-                            <a href="#"><img src="demos/seo/images/blog/2.jpg" alt="Image 3"></a>
-                        </div>
-                        <div class="entry-title">
-                            <h3><a href="#">10 Recent SEO Tips for Startups</a></h3>
-                        </div>
-                        <div class="entry-meta">
-                            <ul>
-                                <li><i class="icon-line2-user"></i><a href="#"> Semicolonweb</a></li>
-                                <li><i class="icon-calendar-times1"></i><a href="#"> 18 Apr 2021</a></li>
-                            </ul>
-                        </div>
-                        <div class="entry-content clearfix">
-                            <p>Interactively predominate progressive technology through distinctive materials. Progressively benchmark extensible intellectual. Exercitationem progressive technology through pariatur.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-md-4">
-                    <article class="entry">
-                        <div class="entry-image mb-3">
-                            <a href="#"><img src="demos/seo/images/blog/3.jpg" alt="Image 3"></a>
-                        </div>
-                        <div class="entry-title">
-                            <h3><a href="#">3 Ways to Transform Your Site Into a SEO</a></h3>
-                        </div>
-                        <div class="entry-meta">
-                            <ul>
-                                <li><i class="icon-line2-user"></i><a href="#"> John Doe</a></li>
-                                <li><i class="icon-calendar-times1"></i><a href="#"> 06 Aug 2021</a></li>
-                            </ul>
-                        </div>
-                        <div class="entry-content clearfix">
-                            <p>Globally synergize premium metrics with holistic e-markets. Professionally morph interoperable networks vis-a-vis value-added methods.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Promo/Contact
-        ============================================= -->
-        <div class="section mt-5 footer-stick promo-section bg-transparent" style="padding: 100px 0; overflow: visible">
-            <div class="container">
-                <div class="heading-block border-bottom-0 center">
-                    <h5 class="text-uppercase ls1 mb-1">Grab your Free Trail and Explore the Options</h5>
-                    <h2 class="nott ls0">Try Keyword Search 30 Days Free With Canvas<span>SEO</span></h2>
-                    <a href="demo-seo-contact.html" class="button button-large button-rounded nott ms-0 ls0 mt-4">Contact Us Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </section><!-- #content end -->

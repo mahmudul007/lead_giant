@@ -115,9 +115,9 @@
                                  ============================================= -->
                         <div id="logo" class="me-lg-3">
                             <a href="{{route('frontend.index')}}"  class="standard-logo" data-dark-logo="spm.png"><img src={{asset("spm.png")}}
-                                    alt="Canvas Logo"></a>
+                                    alt="Lead Giant Logo"></a>
                             <a href="{{route('frontend.index')}}"  class="retina-logo" data-dark-logo="spm.png"><img src={{asset("spm.png")}}
-                                    alt="Canvas Logo"></a>
+                                    alt="Lead Giant Logo"></a>
                         </div><!-- #logo end -->
 
                         <div id="primary-menu-trigger">
@@ -195,11 +195,7 @@
 								<li class="top-links-item"><a href="demo-seo-faqs.html">FAQs</a></li>
 								<li class="top-links-item"><a href="demo-seo-contact.html">Contact</a></li>
 								<li class="top-links-item"><a href="#"><img src="{{asset('frontend/demos/seo/images/flags/eng.png')}}" alt="Lang">Eng</a>
-									<ul class="top-links-sub-menu">
-										<li class="top-links-item"><a href="#"><img src="{{asset('frontend/demos/seo/images/flags/fre.png')}}" alt="Lang">French</a></li>
-										<li class="top-links-item"><a href="#"><img src="{{asset('frontend/demos/seo/images/flags/ara.png')}}" alt="Lang">Arabic</a></li>
-										<li class="top-links-item"><a href="#"><img src="{{asset('frontend/demos/seo/images/flags/tha.png')}}" alt="Lang">Thai</a></li>
-									</ul>
+								
 								</li>
 							</ul>
 						</div><!-- .top-links end -->
@@ -216,7 +212,7 @@
 							<li><a href="https://youtube.com/semicolonweb" class="si-youtube" target="_blank"><span class="ts-icon"><i class="icon-youtube"></i></span><span class="ts-text">Youtube</span></a></li>
 							<li><a href="https://instagram.com/semicolonweb" class="si-instagram" target="_blank"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
 							<li><a href="tel:+10.11.85412542" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+10.11.85412542</span></a></li>
-							<li><a href="mailto:info@canvas.com" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">info@canvas.com</span></a></li>
+							<li><a href="mailto:info@Lead Giant.com" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">info@Lead Giant.com</span></a></li>
 						</ul><!-- #top-social end -->
 
 					</div>
@@ -260,9 +256,9 @@
 
 							<ul class="menu-container">
 								<li class="menu-item current"><a class="menu-link" href="demo-seo.html"><div>Home</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="demo-seo-about.html"><div>What We Do</div></a></li>
+								{{-- <li class="menu-item"><a class="menu-link" href="demo-seo-about.html"><div>What We Do</div></a></li> --}}
 								<li class="menu-item mega-menu"><div class="menu-link"><div>Services</div></div>
-									<div class="mega-menu-content mega-menu-style-2 px-0">
+									{{-- <div class="mega-menu-content mega-menu-style-2 px-0">
 										<div class="container">
 											<div class="row">
 												<a href="demo-seo-optimizations.html" class="mega-menu-column sub-menu-container col-lg-4 border-bottom h-bg-light py-4">
@@ -336,7 +332,7 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</div> --}}
 								</li>
 								<li class="menu-item"><a class="menu-link" href="demo-seo-faqs.html"><div>FAQs</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="demo-seo-contact.html"><div>Contact</div></a></li>

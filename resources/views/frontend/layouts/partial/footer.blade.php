@@ -1,120 +1,143 @@
-<div class="position-relative" style="background-color: rgba(51,94,238,0.08);">
-    <svg class="svg-separator" viewBox="0 0 1440 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none">
-        <path d="M0 24H1440V0C722.5 52 0 0 0 0V24Z" fill="#335EEE"></path>
-    </svg>
-</div>
+	<!-- Footer
+		============================================= -->
+		<footer id="footer" class="border-0 bg-white">
+			<div class="container">
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap pb-5 clearfix">
 
-<!-- Footer
-============================================= -->
-<footer id="footer" class="border-0 dark " style="background-color:dark">
+					<div class="row col-mb-50">
+						<div class="col-md-8">
 
-    <div class="container">
+							<div class="widget clearfix">
 
-        <!-- Footer Widgets
-            ============================================= -->
-        <div class="footer-widgets-wrap">
+								<img src="fahad_logo.png" alt="Footer Logo" class="alignleft" style="height:75px;width:115px;margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
 
-            <div class="row">
-                <div class="col-6 col-lg-4">
-                    <img class="mb-5 bg-white" src="{{asset('spm.png')}}" alt=""
-                        width="120px">
-                    <p class="text-white-50">Home is not just a place, it's a feeling of warmth, belonging, and endless possibilities. Step into our remarkable property
-                         and embark on a journey where luxury meets serenity, and dreams become a beautiful reality.</p>
-                    <div class="clear"></div>
-                    <div>
-                        <a href="https://www.facebook.com/profile.php?id=100092644669210" target="blank" class="social-icon me-2 si-light si-rounded si-small si-facebook">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
+								<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
 
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <h4>Features</h4>
-                    <ul class="list-unstyled mb-0 text-small">
-                        <h6>Agency Login</h6>
-                        @guest
-                        @if (Route::has('login'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                        @endif
+								<div class="line line-sm"></div>
 
-                        <!--@if (Route::has('register'))-->
-                        <!--    <li class="nav-item">-->
-                        <!--        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>-->
-                        <!--    </li>-->
-                        <!--@endif-->
-                    @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }}
-                            </a>
+								<div class="row">
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+											<li><a href="#">Home</a></li>
+											
+											
+										</ul>
+									</div>
 
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                @can('view backend')
-                                <a class="dropdown-item" href="{{route('admin.dashboard') }}"
-                                 >
-                                    {{ __('Dashboard') }}
-                                </a>
-                                @endcan
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+                                            <li><a href="#">Contact</a></li>
+										</ul>
+									</div>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-                            </div>
-                        </li>
-                    @endguest
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-3 mt-5 mt-lg-0">
-                    <h4>Resources</h4>
-                    <ul class="list-unstyled mb-0 text-small">
-                        <li class="mb-2"><a href="{{route('property.index')}}" class="text-light">Property</a></li>
-                        <li class="mb-2"><a href="{{route('service.index')}}" class="text-light">service</a></li>
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+											<li><a href="#">Services</a></li>
+										
+										</ul>
+									</div>
 
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mt-5 mt-lg-0">
-                    <h4>About</h4>
-                    <ul class="list-unstyled mb-0 text-small">
-                        <li class="mb-2"><a href="{{route('frontend.about')}}" class="text-light">Abouy us</a></li>
-                        <li class="mb-2"><a href="{{route('frontend.contact')}}" class="text-light">Locations</a></li>
+									<div class="col-lg-3 col-6 bottommargin-sm widget_links">
+										<ul>
+											<li><a href="#">FAQs</a></li>
+											
+										</ul>
+									</div>
+								</div>
 
-                    </ul>
-                </div>
-            </div>
+							</div>
 
-        </div><!-- .footer-widgets-wrap end -->
+						</div>
 
-    </div>
-    <!-- Copyrights ============================================= -->
-    <div id="copyrights" class="dark">
+						<div class="col-md-4">
+							<div class="widget clearfix">
 
-        <div class="container">
+								<div class="row clearfix">
+									<div class="col-12">
+										<div class="feature-box fbox-plain fbox-sm align-items-center">
+											<div class="fbox-icon">
+												<i class="icon-envelope text-dark"></i>
+											</div>
+											<div class="fbox-content">
+												<span class="text-muted">Call Us:</span><br>
+												<h3 class="nott ls0 fw-semibold">(10) 22 33445566</h3>
+											</div>
+										</div>
+									</div>
 
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6 text-white-50">
-                    Copyrights &copy; 2023 All Rights Reserved by sanmi property management<br>
+									<div class="col-12 mt-4">
+										<div class="feature-box fbox-plain fbox-sm align-items-center">
+											<div class="fbox-icon">
+												<i class="icon-phone3 text-dark"></i>
+											</div>
+											<div class="fbox-content">
+												<span class="text-muted">Email Us:</span><br>
+												<h3 class="nott ls0 fw-semibold">info@Lead Giant.com</h3>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                </div>
+							</div>
 
-                <div class="col-md-6 d-flex justify-content-md-end mt-4 mt-md-0">
-                    <div class="copyrights-menu copyright-links mb-0 clearfix">
-                        <a href="{{route('frontend.index')}}" class="text-white-50">Home</a>/<a href="{{route('frontend.about')}}"
-                            class="text-white-50">About Us</a>/<a  href="{{route('frontend.contact')}}" class="text-white-50">Contact</a>
-                    </div>
-                </div>
-            </div>
+							<div class="widget subscribe-widget clearfix">
+								<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+								<div class="widget-subscribe-form-result"></div>
+								<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+									<div class="input-group mx-auto">
+										<div class="input-group-text bg-transparent"><i class="icon-email2"></i></div>
+										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+										<button class="btn btn-success button button-color nott ls0 m-0" type="submit">Subscribe</button>
+									</div>
+								</form>
+							</div>
 
-        </div>
+							<div class="widget">
 
-    </div><!-- #copyrights end -->
+								<div class="row col-mb-30">
+									<div class="col-lg-6 col-md-12 col-6">
+										<a href="https://facebook.com/semicolonweb" target="_blank" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+										<a href="https://facebook.com/semicolonweb" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+									</div>
+									<div class="col-lg-6 col-md-12 col-6">
+										<a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
+											<i class="icon-rss"></i>
+											<i class="icon-rss"></i>
+										</a>
+										<a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+									</div>
+								</div>
 
-</footer><!-- #footer end -->
+							</div>
+						</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" style="background: url('frontend/demos/seo/images/hero/footer.svg') no-repeat top center; background-size: cover; padding-top: 70px;">
+				<div class="container clearfix">
+
+					<div class="row justify-content-between col-mb-30">
+						<div class="col-12 col-lg-auto text-center text-lg-start">
+							Copyrights &copy; 2020 All Rights Reserved by .<br>
+							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+						</div>
+
+						<div class="col-12 col-lg-auto text-center text-lg-end">
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div><!-- #copyrights end -->
+		</footer><!-- #footer end -->
