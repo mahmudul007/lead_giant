@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Property;
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
-class PropertyController extends Controller
+class BlogController extends Controller
 {
     private $path;
 
@@ -16,15 +16,15 @@ class PropertyController extends Controller
     public function show($property_slug)
     {
 
-        $property = Property::where('slug', $property_slug)->firstOrFail();
-        $blogs = Property::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
+        $Blog = Blog::where('slug', $property_slug)->firstOrFail();
+        $blogs = Blog::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
 
         return view($this->path . '.blogs.property', compact('property','blogs'));
     }
     public function index()
     {
 
-         $blogs = Property::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
+         $blogs = Blog::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
 
         return view($this->path . '.blogs.index', compact('blogs'));
     }

@@ -10,10 +10,10 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $property=Blog::orderBy('id', 'DESC') ->where('published',1)->paginate(9);
-        $service=Brand::orderBy('id', 'DESC') ->where('published',1)->paginate(9);
+        $blogs=Blog::orderBy('id', 'DESC') ->where('published',1)->paginate(9);
+        $brands=Brand::orderBy('id', 'DESC') ->where('published',1)->get()->all();
 
-        return view('frontend.index',compact('property','service'));
+        return view('frontend.index',compact('blogs','brands'));
     }
     public function contact(){
         return view('frontend.contact');
