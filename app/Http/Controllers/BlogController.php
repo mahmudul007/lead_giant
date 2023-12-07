@@ -23,7 +23,7 @@ class BlogController extends Controller
         
 
         $blog = Blog::where('slug', $property_slug)->firstOrFail();
-        $blogs = Blog::  orderby('created_at', 'desc') ->where('published',1)
+        $blogs = Blog:: whereNotIn('id',[ $blog->id])-> orderby('created_at', 'desc') ->where('published',1)
         ->take(4)
         ->get();;
        

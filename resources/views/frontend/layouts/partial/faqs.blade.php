@@ -224,13 +224,13 @@
 
 				<!-- Form Section
 				============================================= -->
-				<div class="section mb-3" style="background: url('demos/seo/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
+				<div class="section mb-3" style="background: url('{{asset('frontend/demos/seo/images/sections/1.jpg')}}') no-repeat center center; background-size: cover; padding: 100px 0;">
 					<div class="container">
 						<div class="row justify-content-between align-items-center">
 
 							<div class="col-md-4">
 								<div class="heading-block border-bottom-0 bottommargin-sm">
-									<div class="badge rounded-pill badge-default">Careers</div>
+									<div class="badge rounded-pill badge-default">Quotes</div>
 									<h3 class="nott ls0">Get your free Quote today</h3>
 								</div>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
@@ -240,26 +240,44 @@
 								<div class="card shadow-sm">
 									<div class="card-body">
 										<h4 class="mb-3">Apply Now</h4>
-										<div class="form-widget">
-											<div class="form-result"></div>
-											<form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+										@if (session()->has('message'))
+											<div class="alert alert-success">
+												{{ session()->get('message') }}
+											</div>
+										@endif
+										<div class="">
+											<div class=""></div>
+											<form class="row mb-0" name="name"
+												action="{{ url('contact/request/') }}" enctype="multipart/form-data"
+												method="post">
+												@csrf
 												<div class="col-12 form-group mb-3">
 													<label for="template-contactform-name">Name:*</label>
-													<input type="text" id="template-contactform-name" name="template-contactform-name" class="form-control input-sm required" value="">
+													<input type="text"  name="name"
+														class="form-control input-sm required" value="">
 												</div>
 												<div class="col-12 form-group mb-3">
 													<label for="template-contactform-email">Email Address:*</label>
-													<input type="email" id="template-contactform-email" name="template-contactform-email" class="form-control input-sm required" value="">
+													<input type="email"  name="email"
+														class="form-control input-sm required" value="">
+												</div>
+												<div class="col-12 form-group mb-3">
+													<label for="template-contactform-email">Phone number:*</label>
+													<input type="number"  name="phone"
+														class="form-control input-sm required" value="">
 												</div>
 												<div class="col-12 form-group mb-4">
 													<label for="template-contactform-website">Comments:*</label>
-													<input type="text" id="template-contactform-website" name="template-contactform-website" class="form-control input-sm required" value="">
+													<input type="text"  name="value"
+														class="form-control input-sm required" value="">
 												</div>
+		
 												<div class="col-12 form-group mb-0">
-													<button class="button button-rounded w-100 nott ls0 m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Apply Now</button>
+													<button class="button button-rounded w-100 nott ls0 m-0" type="submit"
+														name="template-contactform-submit" value="submit">Apply Now</button>
 												</div>
-
-												<input type="hidden" name="prefix" value="template-contactform-">
+		
+		
 											</form>
 										</div>
 									</div>
