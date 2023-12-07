@@ -12,8 +12,8 @@
 									<h2>Improve your SEO with Data.</h2>
 									<h3 class="text-rotater mb-2" data-separator="," data-rotate="fadeIn" data-speed="3500">- Boost your own <span class="t-rotate">Awesome,Beautiful,Great</span> Website.</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vitae mollitia dignissimos ab qui aspernatur.</p>
-									<a href="demo-seo-about.html" class="button button-rounded button-large nott ls0">Get Started</a>
-									<a href="demo-seo-contact.html" class="button button-rounded button-large button-light text-dark bg-white border nott ls0">Contact Us</a>
+									<a href="/" class="button button-rounded button-large nott ls0">Get Started</a>
+									<a href="#contact" class="button button-rounded button-large button-light text-dark bg-white border nott ls0">Contact Us</a>
 								</div>
 							</div>
 						</div>

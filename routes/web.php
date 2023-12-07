@@ -37,8 +37,8 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'user', 'as' => 'admin.', 'm
 
 
 
-Route::get('property/{slug?}', 'PropertyController@show')->name('property.show');
-Route::get('blogs/', 'PropertyController@index')->name('property.index');
+Route::get('blog/{slug?}', 'BlogController@show')->name('blog.show');
+Route::get('blogs/', 'BlogController@index')->name('blog.index');
 
 Route::get('service/{slug?}', 'brandsController@show')->name('service.show');
 Route::get('brands/', 'brandsController@index')->name('service.index');

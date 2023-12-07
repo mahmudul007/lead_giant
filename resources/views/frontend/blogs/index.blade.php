@@ -6,7 +6,7 @@ blogs
 @section('content')
   <!-- Content  ============================================= -->
   <div class="section topmargin-lg parallax"
-  style="padding: 80px 0 60px; background-image: url('frontend/demos/course/images/icon-pattern.jpg'); background-size: auto; background-repeat: repeat"
+  
   data-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -500px;"
   id="section-about">
 
@@ -18,15 +18,10 @@ blogs
 
   <div class="container">
 
-      <div class="heading-block border-bottom-0 mb-5 center">
-          <h3>Exclusive Property </h3>
-          <p class="text-primary">Discover your dream home in this exquisite real estate property. Situated in a sought-after neighborhood,
-            this charming residence offers a perfect blend of modern elegance and timeless appeal.</p>
-      </div>
 
       <div class="clear"></div>
 
-      <div class="row mt-2">
+
 
           <!-- Course 1
           ============================================= -->
@@ -34,84 +29,51 @@ blogs
 
             <!-- Course 1
             ============================================= -->
-            @foreach ($blogs as $item)
-            <div class="col-md-6  col-xl-4 mb-5">
-              <div class="card course-card hover-effect border-0">
-                  @php
-                      $first_image= $item->propertyPicture[0];
-
-                  @endphp
-                  <a href="{{route('property.show',$item->slug)}}"><img class="card-img-top"
-                          src="{{    $first_image->link}}" alt="Card image cap"></a>
-                  <div class="card-body">
-                      <h4 class="card-title fw-bold mb-2"><a href="{{route('property.show',$item->slug)}}">{{$item->name}}</a></h4>
-                      <p class="mb-3 card-title-sub text-uppercase fw-normal ls1"><a href="#"
-                              class="text-black-50">{{$item->location}}</a></p>
-
-
-
-                  </div>
-                  @php
-                     $add_info=json_decode($item->aditional_info);
-
-                  @endphp
-                  <div
-                      class="card-footer py-3 d-flex justify-content-between align-items-center bg-white text-muted">
-                      <div class="badge bg-primary">
-                          @if (!is_null($item->price))
-                          {{$item->price}}/-Bdt
-                          @else
-                          N/A
-                          @endif
-
-
-                      </div>
-                      <a href="#" class="text-dark position-relative"><i class="icon-bed"></i>
-                          <span class="author-number">
-                              @if (!is_null( $add_info->bedroom))
-                              {{ $add_info->bedroom}}Bed
-                              @else
-                              N/E
-                              @endif
-
-
-
-                          </span> </a>
-                      <a href="#" class="text-dark position-relative"><i class="icon-bath"></i>
-
-                          <span class="author-number">
-                              @if (!is_null(( $add_info->common_bath)||($add_info->attached_bath) ))
-                              {{ $add_info->common_bath + $add_info->attached_bath}} Bath
-                              @else
-                              N/E
-                              @endif
-
-
-
-                          </span></a>
-                      <a href="#" class="text-dark position-relative"><i
-                              class="icon-ruler-combined"></i>
-                          <span class="author-number">
-                              @if (!is_null( $add_info->sq_ft))
-                              {{ $add_info->sq_ft}}  Sq.ft
-                              @else
-                              N/E
-                              @endif</span></a>
-                  </div>
-              </div>
-          </div>
-            @endforeach
+            <div class="container py-4">
+                <div class="heading-block border-bottom-0 center">
+                    <div class="badge rounded-pill badge-default">Latest Articles</div>
+                    <h3 class="nott ls0">Recently From the Blog</h3>
+                </div>
+    
+                <div class="row mt-5 clearfix">
+    
+                    @foreach ($blogs as $blog )
+                  
+                    <div class="col-md-4">
+                        <article class="entry">
+                            <div class="entry-image mb-3">
+                                <a href="#"><img style="width: 350px" src="{{$blog->blogPicture[0]->link}}" alt="Image 3"></a>
+                            </div>
+                            <div class="entry-title">
+                                <h3><a href="#">{{$blog->title}}</a></h3>
+                            </div>
+                            <div class="entry-meta">
+                                <ul>
+                                    <li><i class="icon-line2-user"></i><a href="#"> Admin</a></li>
+                                    <li><i class="icon-calendar-times1"></i><a href="#"> {{$blog->created_at->diffForHumans()}}</a></li>
+                                </ul>
+                            </div>
+                            <div class="entry-content clearfix" style=" max-height: 300px;  overflow:hidden">
+                                <p>{!!$blog->blogtext!!}</p>
+                            </div>
+                            <a href="{{route('blog.show',$blog->slug)}}">read more</a>
+                        </article>
+                    </div>
+                    @endforeach
+    
+                   
+    
+                  
+                </div>
+    
+            </div>
 
 
         </div>
-      </div>
+  
   </div>
 
-  <!-- Wave Shape Divider - Bottom
-  ============================================= -->
-  <div class="wave-bottom"
-      style="position: absolute; top: auto; bottom: 0; left: 0; width: 100%; background-image: url('frontend/demos/course/images/wave-3.svg'); height: 12px; z-index: 2; background-repeat: repeat-x; transform: rotate(180deg);">
-  </div>
+
 </div>
 <!-- Slider
 

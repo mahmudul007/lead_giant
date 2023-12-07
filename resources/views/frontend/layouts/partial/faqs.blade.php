@@ -4,7 +4,7 @@
 		============================================= -->
 		<section id="content">
 
-			<div class="content-wrap pb-0">
+			<div class="content-wrap pb-0" id="faq">
 
 				<div class="container bottommargin">
 					<div class="row justify-content-center">
@@ -252,7 +252,7 @@
 													<input type="email" id="template-contactform-email" name="template-contactform-email" class="form-control input-sm required" value="">
 												</div>
 												<div class="col-12 form-group mb-4">
-													<label for="template-contactform-website">Website:*</label>
+													<label for="template-contactform-website">Comments:*</label>
 													<input type="text" id="template-contactform-website" name="template-contactform-website" class="form-control input-sm required" value="">
 												</div>
 												<div class="col-12 form-group mb-0">

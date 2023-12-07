@@ -5,20 +5,24 @@
         <!-- Client Carousel
         ============================================= -->
         <div class="section bg-transparent m-0 border-bottom py-5">
+           
             <div class="container">
+                <h3>We works With</h3>
                 <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true" data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/linkedin.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/nat-geo.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/jetblue.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/zillow.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="frontend/demos/business/images/clients/amazon.svg" alt="Brands"></a></div>
+                    @foreach ($brands as $client)
+                    <div class="oc-item"><a href="#">
+                        <img  src="{{$client->brandPicture->link}}" alt="Brands"></a></div>
+
+                    @endforeach
+                    
+                   
                 </div>
             </div>
         </div>
 
         <!-- Features
         ============================================= -->
-        <div class="section bg-transparent mt-4 mb-0 pb-0">
+        <div class="section bg-transparent mt-4 mb-0 pb-0" id="services">
             <div class="container">
                 <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
                     <div class="badge rounded-pill badge-default">Services</div>
@@ -61,9 +65,9 @@
 
                     </div>
 
-                    <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5 d-none">
+                    {{-- <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5 d-none">
                         <img src="frontend/demos/seo/images/sections/2.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
-                    </div>
+                    </div> --}}
 
                     <div class="col-lg-4 col-sm-6">
 
@@ -135,7 +139,7 @@
                                             <input type="email" id="template-contactform-email" name="template-contactform-email" class="form-control input-sm required" value="">
                                         </div>
                                         <div class="col-12 form-group mb-4">
-                                            <label for="template-contactform-website">Website:*</label>
+                                            <label for="template-contactform-website">Comments:*</label>
                                             <input type="text" id="template-contactform-website" name="template-contactform-website" class="form-control input-sm required" value="">
                                         </div>
                                         <div class="col-12 form-group d-none">
@@ -283,7 +287,7 @@
                 </div>
 
                 <div class="center">
-                    <a href="demo-seo-about.html" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Works</a>
+                    <a href="/" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Works</a>
                 </div>
 
             </div>
