@@ -116,12 +116,12 @@
                 </div>
             </div>
         </div>
-
+<hr/>
 
 
         <!-- Form Section
         ============================================= -->
-        <div class="section m-0"
+        <div class="section m-0 "
             style="background: url({{asset('frontend/demos/seo/images/sections/1.jpg')}}) no-repeat center center; background-size: cover; padding: 100px 0;">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
@@ -131,8 +131,7 @@
                             <div class="badge rounded-pill badge-default">Quotes</div>
                             <h3 class="nott ls0">Get your free Quote today</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem
-                            assumenda quae possimus sunt dignissimos tempora officia.</p>
+                        <p>Looking for a customized solution? You're just a step away! Fill out the form below with your details and requirements. Our team will review your request and get back to you with a tailored quote that fits your needs perfectly. We promise a quick response and a transparent pricing model. No hidden fees, no surprises – just the right solution at the right price. Let us help you make an informed decision. Get your quote now!</p>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
@@ -153,17 +152,17 @@
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-name">Name:*</label>
                                             <input type="text"  name="name"
-                                                class="form-control input-sm required" value="">
+                                                class="form-control input-sm required" value="" required>
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Email Address:*</label>
                                             <input type="email"  name="email"
-                                                class="form-control input-sm required" value="">
+                                                class="form-control input-sm " value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Phone number:*</label>
                                             <input type="number"  name="phone"
-                                                class="form-control input-sm required" value="">
+                                                class="form-control input-sm required" value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-4">
                                             <label for="template-contactform-website">Comments:*</label>
@@ -408,16 +407,15 @@
 
                     <div class="oc-item">
                         <div class="testimonial">
-                            <div class="testi-image">
+                            {{-- <div class="testi-image">
                                 <a href="#"><img src="frontend/demos/pet/images/testimonials/1.jpg"
                                         alt="Customer Testimonails"></a>
-                            </div>
+                            </div> --}}
                             <div class="testi-content">
-                                <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum
-                                    libero illo rerum repellendus!</p>
+                                <p>They're quick! I wasn't expecting this to be delivered for another few days, but they got it to me within 12 hours</p>
                                 <div class="testi-meta">
-                                    John Doe
-                                    <span>XYZ Inc.</span>
+                                    anthonyg5457
+                                    <span>United States</span>
                                 </div>
                             </div>
                         </div>
@@ -425,64 +423,132 @@
 
                     <div class="oc-item">
                         <div class="testimonial">
-                            <div class="testi-image">
+                            {{-- <div class="testi-image">
                                 <a href="#"><img src="frontend/demos/pet/images/testimonials/2.jpg"
                                         alt="Customer Testimonails"></a>
-                            </div>
+                            </div> --}}
                             <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati
-                                    id culpa corporis molestias.</p>
+                                <p>explained the job in detail, a little back and forth was needed to ensure we both understood the task which Saddam had no problem with. list produced targets the exact area of interest, great job</p>
                                 <div class="testi-meta">
-                                    Collis Ta'eed
-                                    <span>Envato Inc.</span>
+                                    kevin8132
+                                    <span>Ireland</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="oc-item">
                         <div class="testimonial">
-                            <div class="testi-image">
+                            {{-- <div class="testi-image">
                                 <a href="#"><img src="frontend/demos/pet/images/testimonials/3.jpg"
                                         alt="Customer Testimonails"></a>
-                            </div>
+                            </div> --}}
                             <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati
-                                    id culpa corporis molestias.</p>
+                                <p>Incredible service. Arrived Incredibly quickly (less than 24 hours) and the data is accurate and legitimate. Very Impressed to be honest. Thank you.</p>
                                 <div class="testi-meta">
-                                    Collis Ta'eed
-                                    <span>Envato Inc.</span>
+                                    alistairwesson
+                                    <span>United Kingdom</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="oc-item">
                         <div class="testimonial">
-                            <div class="testi-image">
+                            {{-- <div class="testi-image">
                                 <a href="#"><img src="frontend/demos/pet/images/testimonials/4.jpg"
                                         alt="Customer Testimonails"></a>
-                            </div>
+                            </div> --}}
                             <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati
-                                    id culpa corporis molestias.</p>
+                                <p>I'm very surprised by the quality of the leads he sent me. The communication was clear and concise and he wasn't dishonest about anything in the end, he delivered a wrong file, but managed to re-send the correct one within 5 minutes. Very skilled Individual and once again, I'm impressed by leads quality. I will definitely order again! See less</p>
                                 <div class="testi-meta">
-                                    Mary Jane
-                                    <span>Google Inc.</span>
+                                    eavacinc
+                                    <span>Croatia</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="oc-item">
                         <div class="testimonial">
-                            <div class="testi-image">
+                            {{-- <div class="testi-image">
                                 <a href="#"><img src="frontend/images/testimonials/5.jpg"
                                         alt="Customer Testimonails"></a>
-                            </div>
+                            </div> --}}
                             <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati
-                                    id culpa corporis molestias.</p>
+                                <p>Lead Giant always does an amazing job. Have bired about 10 times now. Best of the best will continue to hire thank you</p>
                                 <div class="testi-meta">
-                                    Steve Jobs
-                                    <span>Apple Inc.</span>
+                                    bizmane09
+                                    <span>United States
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            {{-- <div class="testi-image">
+                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
+                                        alt="Customer Testimonails"></a>
+                            </div> --}}
+                            <div class="testi-content">
+                                <p>I work with Lead Giant on a frequent basis, they are incredible at their job! Highly recommended!!</p>
+                                <div class="testi-meta">
+                                    danrozansky
+                                    <span>United States
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            {{-- <div class="testi-image">
+                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
+                                        alt="Customer Testimonails"></a>
+                            </div> --}}
+                            <div class="testi-content">
+                                <p>Excellent work. Great communication, fast delivery and high quality result. Really enjoy working with Lead Giant. Highly recommend.</p>
+                                <div class="testi-meta">
+                                    jd1423
+
+                                    <span>United States
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            {{-- <div class="testi-image">
+                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
+                                        alt="Customer Testimonails"></a>
+                            </div> --}}
+                            <div class="testi-content">
+                                <p>Great communication and fast delivery of project. We always use Lead Giant as our go to guy for b2b lead information. They asks questions before committing to the project to ensure he delivers exactly what we need. Highly recommended.</p>
+                                <div class="testi-meta">
+                                    daniellewood3
+
+
+                                    <span>United Kingdom
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            {{-- <div class="testi-image">
+                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
+                                        alt="Customer Testimonails"></a>
+                            </div> --}}
+                            <div class="testi-content">
+                                <p>Lead Giant provided a very good product with excellent communication. They were very attentive to my needs. I am very happy with my product and will use them again</p>
+                                <div class="testi-meta">
+                                    danudutyjr
+
+
+                                    <span>United States
+
+                                    </span>
                                 </div>
                             </div>
                         </div>

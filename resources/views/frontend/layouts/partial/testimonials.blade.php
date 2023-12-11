@@ -37,11 +37,8 @@
                                         alt="Customer Testimonails"></a>
                             </div>
                             <div class="testi-content">
-                                <h4 class="fw-normal">Synergistically pontificate scalable manufactured
-                                    products after worldwide customer service. Phosfluorescently harness
-                                    open-source relationships rather than competitive internal or
-                                    "organic" sources. Globally.</h4>
-                                <div class="testi-meta"> John Doe<span>XYZ Inc.</span></div>
+                                <h4 class="fw-normal">They're quick! I wasn't expecting this to be delivered for another few days, but they got it to me within 12 hours</h4>
+                                <div class="testi-meta"> anthonyg5457<span>United States</span></div>
                             </div>
                         </div>
                     </div>
@@ -52,11 +49,8 @@
                                         alt="Customer Testimonails"></a>
                             </div>
                             <div class="testi-content">
-                                <h4 class="fw-normal">Progressively scale front-end models whereas
-                                    standardized technology. Collaboratively disintermediate user
-                                    friendly communities vis-a-vis cross-platform results. Completely
-                                    productize client-centric benefits vis-a-vis optimal.</h4>
-                                <div class="testi-meta"> Bailey Wonger<span>Apple Inc.</span></div>
+                                <h4 class="fw-normal">explained the job in detail, a little back and forth was needed to ensure we both understood the task which Saddam had no problem with. list produced targets the exact area of interest, great job</h4>
+                                <div class="testi-meta"> kevin8132<span>Ireland</span></div>
                             </div>
                         </div>
                     </div>
