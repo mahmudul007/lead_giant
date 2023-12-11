@@ -122,7 +122,7 @@
         <!-- Form Section
         ============================================= -->
         <div class="section m-0"
-            style="background: url('frontend/demos/seo/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
+            style="background: url({{asset('frontend/demos/seo/images/sections/1.jpg')}}) no-repeat center center; background-size: cover; padding: 100px 0;">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
 
@@ -184,8 +184,8 @@
                     </div>
 
                     <div class="col-md-4 mt-5 mt-md-0 center">
-                        <a href="#" data-lightbox="iframe" class="play-icon shadow"><i
-                                class="icon-play"></i></a>
+                        {{-- <a href="#" data-lightbox="iframe" class="play-icon shadow"><i
+                                class="icon-play"></i></a> --}}
                     </div>
 
                 </div>

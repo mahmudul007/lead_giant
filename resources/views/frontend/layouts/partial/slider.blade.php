@@ -1,5 +1,4 @@
-<!-- Slider
-		============================================= -->
+<!-- Slider ============================================= -->
 		<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 include-header">
 			<div class="slider-inner" style="background: #FFF url({{asset('frontend/demos/seo/images/hero/hero-1.jpg')}}) center center no-repeat; background-size: cover;">
 
@@ -26,4 +25,5 @@
 				</div>
 
 			</div>
-		</section><!-- #slider end -->
+		</section>
+	<!-- #slider end -->
