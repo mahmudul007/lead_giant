@@ -20,6 +20,26 @@
                 </div>
             </div>
         </div>
+        {{-- about us  --}}
+        <div class="section bg-transparent mt-4 mb-0 pb-0" id="about_us">
+            <div class="container">
+                <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
+                    <div class="badge rounded-pill badge-default">About</div>
+                    <h3 class="nott ls0 mb-3">About Us</h3>
+
+                </div>
+                <div class="nott ls0 mb-3 ">
+
+                    <p>From Digital Marketing to Web Development, Lead giant gives you full-on service to excel your
+                        business through the digital channel. Since 2016, our super team have proven their expertise by
+                        providing high-quality digital marketing and Ecommerce website development service to hundreds of
+                        businesses.</p>
+                    </div>
+            </div>
+            
+             
+           
+        </div>
 
         <!-- Features
         ============================================= -->
@@ -41,7 +61,7 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0"> SEO optimization</h3>
+                                <h3 class="nott ls0">  Social Media management</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!
                                 </p>
                             </div>
@@ -53,7 +73,7 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">B2B Lead Generation </h3>
+                                <h3 class="nott ls0"> Lead Generation </h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
                             </div>
                         </div>
@@ -64,7 +84,7 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Data Scraping</h3>
+                                <h3 class="nott ls0">Digital ad operations</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
                             </div>
                         </div>
@@ -83,7 +103,7 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Skip Tracing</h3>
+                                <h3 class="nott ls0">Website Development</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!
                                 </p>
                             </div>
@@ -95,7 +115,7 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Ad operations</h3>
+                                <h3 class="nott ls0">Mobile app development</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
                             </div>
                         </div>
@@ -106,7 +126,7 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Email Marketing</h3>
+                                <h3 class="nott ls0">SEO and Digital Marketing</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
                             </div>
                         </div>
@@ -116,13 +136,13 @@
                 </div>
             </div>
         </div>
-<hr/>
+        <hr />
 
 
         <!-- Form Section
         ============================================= -->
         <div class="section m-0 "
-            style="background: url({{asset('frontend/demos/seo/images/sections/1.jpg')}}) no-repeat center center; background-size: cover; padding: 100px 0;">
+            style="background: url({{ asset('frontend/demos/seo/images/sections/1.jpg') }}) no-repeat center center; background-size: cover; padding: 100px 0;">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
 
@@ -131,7 +151,11 @@
                             <div class="badge rounded-pill badge-default">Quotes</div>
                             <h3 class="nott ls0">Get your free Quote today</h3>
                         </div>
-                        <p>Looking for a customized solution? You're just a step away! Fill out the form below with your details and requirements. Our team will review your request and get back to you with a tailored quote that fits your needs perfectly. We promise a quick response and a transparent pricing model. No hidden fees, no surprises – just the right solution at the right price. Let us help you make an informed decision. Get your quote now!</p>
+                        <p>Looking for a customized solution? You're just a step away! Fill out the form below with your
+                            details and requirements. Our team will review your request and get back to you with a
+                            tailored quote that fits your needs perfectly. We promise a quick response and a transparent
+                            pricing model. No hidden fees, no surprises – just the right solution at the right price.
+                            Let us help you make an informed decision. Get your quote now!</p>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
@@ -145,28 +169,27 @@
                                 @endif
                                 <div class="">
                                     <div class=""></div>
-                                    <form class="row mb-0" name="name"
-                                        action="{{ url('contact/request/') }}" enctype="multipart/form-data"
-                                        method="post">
+                                    <form class="row mb-0" name="name" action="{{ url('contact/request/') }}"
+                                        enctype="multipart/form-data" method="post">
                                         @csrf
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-name">Name:*</label>
-                                            <input type="text"  name="name"
+                                            <input type="text" name="name"
                                                 class="form-control input-sm required" value="" required>
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Email Address:*</label>
-                                            <input type="email"  name="email"
-                                                class="form-control input-sm " value=""required>
+                                            <input type="email" name="email" class="form-control input-sm "
+                                                value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Phone number:*</label>
-                                            <input type="number"  name="phone"
+                                            <input type="number" name="phone"
                                                 class="form-control input-sm required" value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-4">
-                                            <label for="template-contactform-website">Comments:*</label>
-                                            <input type="text"  name="value"
+                                            <label for="template-contactform-website">Service Needed:*</label>
+                                            <input type="text" name="value"
                                                 class="form-control input-sm required" value="">
                                         </div>
 
@@ -191,160 +214,8 @@
 
             </div>
         </div>
+        {{-- @include('frontend.layouts.partial.latest_work') --}}
 
-        <!-- Works/Projects
-        ============================================= -->
-        <div class="section m-0"
-            style="background: url('frontend/demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
-            <div class="container">
-                <div class="heading-block border-bottom-0 center">
-                    <div class="badge rounded-pill badge-default">Completed Projects</div>
-                    <h3 class="nott ls0">Our Latest Works</h3>
-                </div>
-
-                <div id="portfolio" class="portfolio row grid-container gutter-20">
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="frontend/demos/seo/images/works/1.jpg" alt="The Atmosphere">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark"
-                                            data-hover-animate="fadeIn" data-hover-speed="500"><i
-                                                class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="#">The Atmosphere</a></h3>
-                                <span>Digital Marketing</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-illustrations">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="frontend/demos/seo/images/works/2.jpg" alt="Wavelength Structure">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark"
-                                            data-hover-animate="fadeIn" data-hover-speed="500"><i
-                                                class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Wavelength Structure</h3>
-                                <span>SEO</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="frontend/demos/seo/images/works/3.jpg" alt="Greenhouse Garden">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark"
-                                            data-hover-animate="fadeIn" data-hover-speed="500"><i
-                                                class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Simplicity Pages</h3>
-                                <span>Analytics</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="frontend/demos/seo/images/works/4.jpg" alt="Industrial Hub">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark"
-                                            data-hover-animate="fadeIn" data-hover-speed="500"><i
-                                                class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>SEO Analysis</h3>
-                                <span>SEO</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="frontend/demos/seo/images/works/5.jpg" alt="Corporate Headquarters">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark"
-                                            data-hover-animate="fadeIn" data-hover-speed="500"><i
-                                                class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Marketing Strategy</h3>
-                                <span>Digital Marketing</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-illustrations">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="frontend/demos/seo/images/works/6.jpg" alt="Space Station">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark"
-                                            data-hover-animate="fadeIn" data-hover-speed="500"><i
-                                                class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"
-                                        data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Space Station</h3>
-                                <span>Social Media</span>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-
-                <div class="center">
-                    <a href="/" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View
-                        All Works</a>
-                </div>
-
-            </div>
-        </div>
 
         <!-- Features
         ============================================= -->
@@ -388,6 +259,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 mt-5">
+                    <div class="feature-box fbox-center border-0">
+                        <div class="fbox-icon">
+                            <a href="#"><img src="frontend/demos/seo/images/icons/result.svg"
+                                    alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott ls0">3. Result</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="feature-box fbox-center border-0">
+                        <div class="fbox-icon">
+                            <a href="#"><img src="frontend/demos/seo/images/icons/result.svg"
+                                    alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott ls0">3. Result</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -412,7 +307,8 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>They're quick! I wasn't expecting this to be delivered for another few days, but they got it to me within 12 hours</p>
+                                <p>They're quick! I wasn't expecting this to be delivered for another few days, but they
+                                    got it to me within 12 hours</p>
                                 <div class="testi-meta">
                                     anthonyg5457
                                     <span>United States</span>
@@ -428,7 +324,9 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>explained the job in detail, a little back and forth was needed to ensure we both understood the task which Saddam had no problem with. list produced targets the exact area of interest, great job</p>
+                                <p>explained the job in detail, a little back and forth was needed to ensure we both
+                                    understood the task which Saddam had no problem with. list produced targets the
+                                    exact area of interest, great job</p>
                                 <div class="testi-meta">
                                     kevin8132
                                     <span>Ireland</span>
@@ -443,7 +341,8 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>Incredible service. Arrived Incredibly quickly (less than 24 hours) and the data is accurate and legitimate. Very Impressed to be honest. Thank you.</p>
+                                <p>Incredible service. Arrived Incredibly quickly (less than 24 hours) and the data is
+                                    accurate and legitimate. Very Impressed to be honest. Thank you.</p>
                                 <div class="testi-meta">
                                     alistairwesson
                                     <span>United Kingdom</span>
@@ -458,7 +357,11 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>I'm very surprised by the quality of the leads he sent me. The communication was clear and concise and he wasn't dishonest about anything in the end, he delivered a wrong file, but managed to re-send the correct one within 5 minutes. Very skilled Individual and once again, I'm impressed by leads quality. I will definitely order again! See less</p>
+                                <p>I'm very surprised by the quality of the leads he sent me. The communication was
+                                    clear and concise and he wasn't dishonest about anything in the end, he delivered a
+                                    wrong file, but managed to re-send the correct one within 5 minutes. Very skilled
+                                    Individual and once again, I'm impressed by leads quality. I will definitely order
+                                    again! See less</p>
                                 <div class="testi-meta">
                                     eavacinc
                                     <span>Croatia</span>
@@ -473,7 +376,8 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>Lead Giant always does an amazing job. Have bired about 10 times now. Best of the best will continue to hire thank you</p>
+                                <p>Lead Giant always does an amazing job. Have bired about 10 times now. Best of the
+                                    best will continue to hire thank you</p>
                                 <div class="testi-meta">
                                     bizmane09
                                     <span>United States
@@ -489,7 +393,8 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>I work with Lead Giant on a frequent basis, they are incredible at their job! Highly recommended!!</p>
+                                <p>I work with Lead Giant on a frequent basis, they are incredible at their job! Highly
+                                    recommended!!</p>
                                 <div class="testi-meta">
                                     danrozansky
                                     <span>United States
@@ -505,7 +410,8 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>Excellent work. Great communication, fast delivery and high quality result. Really enjoy working with Lead Giant. Highly recommend.</p>
+                                <p>Excellent work. Great communication, fast delivery and high quality result. Really
+                                    enjoy working with Lead Giant. Highly recommend.</p>
                                 <div class="testi-meta">
                                     jd1423
 
@@ -522,7 +428,9 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>Great communication and fast delivery of project. We always use Lead Giant as our go to guy for b2b lead information. They asks questions before committing to the project to ensure he delivers exactly what we need. Highly recommended.</p>
+                                <p>Great communication and fast delivery of project. We always use Lead Giant as our go
+                                    to guy for b2b lead information. They asks questions before committing to the
+                                    project to ensure he delivers exactly what we need. Highly recommended.</p>
                                 <div class="testi-meta">
                                     daniellewood3
 
@@ -541,7 +449,8 @@
                                         alt="Customer Testimonails"></a>
                             </div> --}}
                             <div class="testi-content">
-                                <p>Lead Giant provided a very good product with excellent communication. They were very attentive to my needs. I am very happy with my product and will use them again</p>
+                                <p>Lead Giant provided a very good product with excellent communication. They were very
+                                    attentive to my needs. I am very happy with my product and will use them again</p>
                                 <div class="testi-meta">
                                     danudutyjr
 

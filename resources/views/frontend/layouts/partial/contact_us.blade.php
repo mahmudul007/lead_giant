@@ -14,11 +14,10 @@
 								</div>
 								<div class="fbox-content">
 									<h3 class="nott ls0 mb-4">Location:</h3>
-									<p class="text-smaller mb-3">Tangail</p>
+									<p class="text-smaller mb-3">Lead Giant</p>
 									<address>
 										<a href="https://maps.google.com">
-										<u>795 Folsom Ave, Suite 600<br>
-										San Francisco, CA 94107</u>
+										<u>Avenue-1, Block-B, Mirpur-1, Dhaka-1216</u>
 										</a>
 									</address>
 								</div>
@@ -32,9 +31,9 @@
 								</div>
 								<div class="fbox-content">
 									<h3 class="nott ls0 mb-4">Contact Us:</h3>
-									<p class="text-smaller mb-3">Tangail,Dhaka</p>
-									<a class="btn btn-link" href="mailto:info@Lead Giant.com"><u>noreply@Lead Giant.com</u></a>
-									<a class="btn btn-link" href="tel:10-22-33445566"><u>(10) 22 33445566</u></a>
+									<p class="text-smaller mb-3">Avenue-1, Block-B, Mirpur-1, Dhaka-1216</p>
+									<a class="btn btn-link" href="mailto:info@Lead Giant.com"><u>fahad.bubt26@gmail.com</u></a>
+									<a class="btn btn-link" href="tel:10-22-33445566"><u>01956004778</u></a>
 								</div>
 							</div>
 						</div>
@@ -46,8 +45,8 @@
 								</div>
 								<div class="fbox-content">
 									<h3 class="nott ls0 mb-4">Live Chat:</h3>
-									<p class="text-smaller mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-									<a href="#"><u>Click Here</u></a>
+									<p class="text-smaller mb-3">write text to get immediate feedback</p>
+									<a target="blank" href="https://m.me/102176832364524"><u>Click Here</u></a>
 								</div>
 							</div>
 						</div>

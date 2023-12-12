@@ -80,21 +80,24 @@
 
                         <!-- Top Social ============================================= -->
                         <ul id="top-social">
-                            <li><a href="https://facebook.com/semicolonweb" class="si-facebook" target="_blank"><span
+                            <li><a href="https://www.facebook.com/facebook.leadgiant/" class="si-facebook" target="_blank"><span
                                         class="ts-icon"><i class="icon-facebook"></i></span><span
                                         class="ts-text">Facebook</span></a></li>
-                            <li><a href="https://twitter.com/__semicolon" class="si-twitter" target="_blank"><span
+                            <li><a href="https://twitter.com/lead_giant" class="si-twitter" target="_blank"><span
                                         class="ts-icon"><i class="icon-twitter"></i></span><span
-                                        class="ts-text">Twitter</span></a></li>
-                            <li><a href="https://youtube.com/semicolonweb" class="si-youtube" target="_blank"><span
+                                        class="ts-text">X(Twitter)</span></a></li>
+                                        <li><a href="https://www.linkedin.com/company/leadgiant/" class="si-twitter" target="_blank"><span
+                                            class="ts-icon"><i class="icon-linkedin-sign"></i></span><span
+                                            class="ts-text">Linkedin</span></a></li>
+                            <li><a href="https://www.fiverr.com/users/khan_saddam/" class="si-youtube" target="_blank"><span
                                         class="ts-icon"><i class="icon-youtube"></i></span><span
-                                        class="ts-text">Youtube</span></a></li>
-                            <li><a href="https://instagram.com/semicolonweb" class="si-instagram" target="_blank"><span
-                                        class="ts-icon"><i class="icon-instagram2"></i></span><span
-                                        class="ts-text">Instagram</span></a></li>
-                            <li><a href="tel:+10.11.85412542" class="si-call"><span class="ts-icon"><i
+                                        class="ts-text">Fiverr</span></a></li>
+                            <li><a href="https://www.upwork.com/freelancers/~0141b05ecc39a5fa6a" class="si-instagram" target="_blank"><span
+                                        class="ts-icon"> <img src="upwork.png" alt=""> </span><span
+                                        class="ts-text">Upwork</span></a></li>
+                            <li><a href="tel:+8801956004778" class="si-call"><span class="ts-icon"><i
                                             class="icon-call"></i></span><span
-                                        class="ts-text">+10.11.85412542</span></a></li>
+                                        class="ts-text">+88 01956004778</span></a></li>
                             <li><a href="mailto:info@Lead Giant.com" class="si-email3"><span class="ts-icon"><i
                                             class="icon-envelope-alt"></i></span><span class="ts-text">info@Lead
                                         Giant.com</span></a></li>
@@ -156,9 +159,9 @@
 								<li class="menu-item"><a class="menu-link" href="#services">
 									<div>Services</div>
 								</a></li>
-                                {{-- <li class="menu-item"><a class="menu-link" href="#faq">
-                                        <div>FAQs</div>
-                                    </a></li> --}}
+                                <li class="menu-item"><a class="menu-link" href="#about_us">
+                                        <div>About</div>
+                                    </a></li>
                                 <li class="menu-item"><a class="menu-link" href="#contact">
                                         <div>Contact</div>
                                     </a></li>
@@ -205,7 +208,38 @@
     <!-- DatePicker JS -->
     <script src={{ asset('frontend/js/components/moment.js') }}></script>
     <script src={{ asset('frontend/js/components/daterangepicker.js') }}></script>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102176832364524");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     @yield('script')
+
 
 </body>
 
