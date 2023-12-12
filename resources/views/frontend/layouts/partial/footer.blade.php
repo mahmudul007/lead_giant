@@ -11,7 +11,7 @@
 
 							<div class="widget clearfix">
 
-								<img src="{{asset('fahad_logo.png')}}" alt="Footer Logo" class="alignleft" style="height:75px;width:115px;margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
+								<img src="{{asset('footer.png')}}" alt="Footer Logo" class="alignleft" style="height:75px;width:115px;margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
 
 								<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
 

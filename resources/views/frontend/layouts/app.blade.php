@@ -64,7 +64,7 @@
                         <div class="top-links">
                             <ul class="top-links-container">
                                 <li class="top-links-item"><a href="/">Home</a></li>
-                                <li class="top-links-item"><a href="#faq">FAQs</a></li>
+                                {{-- <li class="top-links-item"><a href="#faq">FAQs</a></li> --}}
                                 <li class="top-links-item"><a href="#contact">Contact</a></li>
                                 <li class="top-links-item"><a href="#"><img
                                             src="{{ asset('frontend/demos/seo/images/flags/eng.png') }}"
@@ -129,7 +129,7 @@
 								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
 							</div><!-- #top-search end --> --}}
 
-                            <a href="#" class="button button-rounded ms-3 d-none d-sm-block">Get Started</a>
+                            <a href="#contact" class="button button-rounded ms-3 d-none d-sm-block">Contact Us</a>
 
                         </div>
 
@@ -156,9 +156,9 @@
 								<li class="menu-item"><a class="menu-link" href="#services">
 									<div>Services</div>
 								</a></li>
-                                <li class="menu-item"><a class="menu-link" href="#faq">
+                                {{-- <li class="menu-item"><a class="menu-link" href="#faq">
                                         <div>FAQs</div>
-                                    </a></li>
+                                    </a></li> --}}
                                 <li class="menu-item"><a class="menu-link" href="#contact">
                                         <div>Contact</div>
                                     </a></li>
