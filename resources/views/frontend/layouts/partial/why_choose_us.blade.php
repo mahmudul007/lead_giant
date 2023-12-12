@@ -296,17 +296,12 @@
                     <h3 class="nott ls0">What Clients Says</h3>
                 </div>
 
-                <div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix"
-                    data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000"
-                    data-items-sm="1" data-items-md="2" data-items-xl="3">
+                <div id="oc-testi" class="bg-white text-dark owl-carousel carousel-widget dark topmargin border-bottom border-top border-light" data-items-xl="3" data-items-lg="3" data-items-md="2" auto data-items-xs="1" data-pagi="false" data-loop="true" data-margin="0" data-autoplay="3000">
 
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/demos/pet/images/testimonials/1.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+                          
+                            <div class="overflow-hidden ">
                                 <p>They're quick! I wasn't expecting this to be delivered for another few days, but they
                                     got it to me within 12 hours</p>
                                 <div class="testi-meta">
@@ -317,13 +312,10 @@
                         </div>
                     </div>
 
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/demos/pet/images/testimonials/2.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center ">
+                        <div class="testimonial bg-white text-dark">
+                           
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>explained the job in detail, a little back and forth was needed to ensure we both
                                     understood the task which Saddam had no problem with. list produced targets the
                                     exact area of interest, great job</p>
@@ -334,13 +326,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/demos/pet/images/testimonials/3.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+                          
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>Incredible service. Arrived Incredibly quickly (less than 24 hours) and the data is
                                     accurate and legitimate. Very Impressed to be honest. Thank you.</p>
                                 <div class="testi-meta">
@@ -350,13 +339,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/demos/pet/images/testimonials/4.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+                          
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>I'm very surprised by the quality of the leads he sent me. The communication was
                                     clear and concise and he wasn't dishonest about anything in the end, he delivered a
                                     wrong file, but managed to re-send the correct one within 5 minutes. Very skilled
@@ -369,13 +355,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>Lead Giant always does an amazing job. Have bired about 10 times now. Best of the
                                     best will continue to hire thank you</p>
                                 <div class="testi-meta">
@@ -386,13 +369,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item  p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+                           
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>I work with Lead Giant on a frequent basis, they are incredible at their job! Highly
                                     recommended!!</p>
                                 <div class="testi-meta">
@@ -403,13 +383,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>Excellent work. Great communication, fast delivery and high quality result. Really
                                     enjoy working with Lead Giant. Highly recommend.</p>
                                 <div class="testi-meta">
@@ -421,13 +398,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>Great communication and fast delivery of project. We always use Lead Giant as our go
                                     to guy for b2b lead information. They asks questions before committing to the
                                     project to ensure he delivers exactly what we need. Highly recommended.</p>
@@ -442,13 +416,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            {{-- <div class="testi-image">
-                                <a href="#"><img src="frontend/images/testimonials/5.jpg"
-                                        alt="Customer Testimonails"></a>
-                            </div> --}}
-                            <div class="testi-content">
+                    <div class="oc-item p-5 d-flex flex-column text-center">
+                        <div class="testimonial bg-white text-dark">
+                           
+                            <div style="overflow: auto; max-height: 200px;">
                                 <p>Lead Giant provided a very good product with excellent communication. They were very
                                     attentive to my needs. I am very happy with my product and will use them again</p>
                                 <div class="testi-meta">
