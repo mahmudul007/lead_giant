@@ -89,10 +89,10 @@
                                         <li><a href="https://www.linkedin.com/company/leadgiant/" class="si-twitter" target="_blank"><span
                                             class="ts-icon"><i class="icon-linkedin-sign"></i></span><span
                                             class="ts-text">Linkedin</span></a></li>
-                            <li><a href="https://www.fiverr.com/users/khan_saddam/" class="si-youtube" target="_blank"><span
-                                        class="ts-icon"><img src="fiver.png" alt=""> </span><span
+                            <li><a href="https://www.fiverr.com/users/khan_saddam/" class="si-fiver" target="_blank"><span
+                                        class="ts-icon"><img class="bg-white rounded-pill " height="25px" src="fiver.png" alt=""> </span><span
                                         class="ts-text">Fiverr</span></a></li>
-                            <li><a href="https://www.upwork.com/freelancers/~0141b05ecc39a5fa6a" class="si-instagram" target="_blank"><span
+                            <li><a href="https://www.upwork.com/freelancers/~0141b05ecc39a5fa6a" class="si-upwork" target="_blank"><span
                                         class="ts-icon"> <img height="25px" src="upwork.png" alt=""> </span><span
                                         class="ts-text">Upwork</span></a></li>
                             <li><a href="tel:+8801956004778" class="si-call"><span class="ts-icon"><i
