@@ -116,9 +116,10 @@
 										<a href="https://www.linkedin.com/company/leadgiant/" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Follow</strong><br>on Linkedin</small></a>
 									</div>
 									<div class="col-lg-6 col-md-12 col-6">
-										<a href="https://twitter.com/lead_giant" target="_blank" class="social-icon si-dark si-colored  text-dark mb-0" style="margin-right: 10px;">
-											<i class="icon-line-cross"></i>
-											<i class="icon-line-cross"></i>
+										<a href="https://twitter.com/lead_giant" target="_blank" class="social-icon si-colored  si-twitter   mb-0" style="margin-right: 10px;">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										
 										</a>
 										<a href="https://twitter.com/lead_giant" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Follow</strong><br>on X (twitter)</small></a>
 									</div>

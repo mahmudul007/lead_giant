@@ -90,10 +90,10 @@
                                             class="ts-icon"><i class="icon-linkedin-sign"></i></span><span
                                             class="ts-text">Linkedin</span></a></li>
                             <li><a href="https://www.fiverr.com/users/khan_saddam/" class="si-youtube" target="_blank"><span
-                                        class="ts-icon"><i class="icon-youtube"></i></span><span
+                                        class="ts-icon"><img src="fiver.png" alt=""> </span><span
                                         class="ts-text">Fiverr</span></a></li>
                             <li><a href="https://www.upwork.com/freelancers/~0141b05ecc39a5fa6a" class="si-instagram" target="_blank"><span
-                                        class="ts-icon"> <img src="upwork.png" alt=""> </span><span
+                                        class="ts-icon"> <img height="25px" src="upwork.png" alt=""> </span><span
                                         class="ts-text">Upwork</span></a></li>
                             <li><a href="tel:+8801956004778" class="si-call"><span class="ts-icon"><i
                                             class="icon-call"></i></span><span
