@@ -10,16 +10,16 @@ class ContactReqController extends Controller
 {
     public function contact_req(Request $request)
     {
-       
+
      $request->validate([
-           
+
             'email' => 'required|email',
-        
+
         ]);
-       
+
         $contact = new ContactRequest();
         $contact->name = $request->name;
-        $contact->email = $request->email;
+        $contact->email  = $request->email;
         $contact->value = $request->value;
         $contact->phone = $request->phone;
         $contact->save();
