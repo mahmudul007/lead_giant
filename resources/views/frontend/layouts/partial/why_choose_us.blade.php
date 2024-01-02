@@ -2,12 +2,40 @@
 
     <div class="content-wrap pt-0">
 
+        {{-- about us  --}}
+        <div class="section bg-transparent mt-4 mb-0 pb-0" id="about_us">
+            <div class="container">
+                <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
+                    <div class="badge rounded-pill badge-default">About</div>
+                    <h3 class="nott ls0 mb-3">About Us</h3>
+
+                </div>
+                <div class="nott ls0 mb-3 ">
+
+                    <p>Established in 2016, Lead Giant has emerged as a formidable force in the digital marketing landscape, distinguished by its innovative
+                        approach and unparalleled expertise. Boasting a remarkable track record of executing nearly 2000 successful projects across
+                        esteemed platforms such as Fiverr and Upwork, our team's proficiency and dedication have solidified our reputation as a trusted
+                        industry leader. Our comprehensive service portfolio encompasses a wide array of specialized solutions, including B2B lead
+                        generation strategies tailored to foster robust business relationships, meticulous social media management techniques designed to
+                        amplify brand visibility and engagement, proficient virtual assistant services ensuring operational efficiency, cutting-edge SEO
+                        optimization tactics to enhance online visibility, strategic digital ad operations maximizing ROI, and bespoke website development
+                        catering to unique business requirements. Whether you represent a local business aspiring to dominate your niche market or a global
+                        enterprise with ambitions for widespread acclaim, Lead Giant's adept team collaboratively partners with you to devise and implement
+                        bespoke digital strategies aligned with your distinct objectives, ultimately facilitating transformative growth and sustained success.
+                        Partner with us, and let's synergize to elevate your brand to unparalleled digital prominence and prosperity.</p>
+                    </div>
+            </div>
+            
+             
+           
+        </div>
+
         <!-- Client Carousel
         ============================================= -->
         <div class="section bg-transparent m-0 border-bottom py-5">
 
             <div class="container">
-                <h3>We works With</h3>
+                <h3>Our Valuable Clients</h3>
                 <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true"
                     data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3"
                     data-items-md="4" data-items-lg="5" data-items-xl="6">
@@ -20,26 +48,7 @@
                 </div>
             </div>
         </div>
-        {{-- about us  --}}
-        <div class="section bg-transparent mt-4 mb-0 pb-0" id="about_us">
-            <div class="container">
-                <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
-                    <div class="badge rounded-pill badge-default">About</div>
-                    <h3 class="nott ls0 mb-3">About Us</h3>
-
-                </div>
-                <div class="nott ls0 mb-3 ">
-
-                    <p>From Digital Marketing to Web Development, Lead giant gives you full-on service to excel your
-                        business through the digital channel. Since 2016, our super team have proven their expertise by
-                        providing high-quality digital marketing and Ecommerce website development service to hundreds of
-                        businesses.</p>
-                    </div>
-            </div>
-            
-             
-           
-        </div>
+        
 
         <!-- Features
         ============================================= -->
@@ -47,7 +56,7 @@
             <div class="container">
                 <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
                     <div class="badge rounded-pill badge-default">Services</div>
-                    <h3 class="nott ls0 mb-3">What We Do</h3>
+                    <h3 class="nott ls0 mb-3">Our Services</h3>
                     <p>Dynamically provide access to resource-leveling mindshare vis-a-vis bricks-and-clicks ideas
                         authoritatively.</p>
                 </div>
@@ -61,8 +70,11 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">  Social Media management</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!
+                                <h3 class="nott ls0" style="color:aquamarine">DIGITAL AD-OPERATIONS</h3>
+                                <p>Facebook, Instagram, Twitter,
+                                    Google, Youtube, LinkedIn ad-
+                                    operations with professional
+                                    campaign management system.
                                 </p>
                             </div>
                         </div>
