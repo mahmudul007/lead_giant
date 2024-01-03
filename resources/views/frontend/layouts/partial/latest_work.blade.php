@@ -5,12 +5,13 @@
             <div class="container">
                 <div class="heading-block border-bottom-0 center">
                     <div class="badge rounded-pill badge-default">Completed Projects</div>
-                    <h3 class="nott ls0">Our Latest Works</h3>
+                    <h3 class="nott ls0">Previous Work Samples
+                    </h3>
                 </div>
 
                 <div id="portfolio" class="portfolio row grid-container gutter-20">
 
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
+                    {{-- <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
                         <div class="grid-inner">
                             <div class="portfolio-image">
                                 <img src="frontend/demos/seo/images/works/1.jpg" alt="The Atmosphere">
@@ -74,7 +75,7 @@
                                 <span>Analytics</span>
                             </div>
                         </div>
-                    </article>
+                    </article> --}}
 
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
                         <div class="grid-inner">
@@ -92,8 +93,8 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3>SEO Analysis</h3>
-                                <span>SEO</span>
+                                <h3>Lead Generation</h3>
+                              
                             </div>
                         </div>
                     </article>
@@ -114,8 +115,8 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3>Marketing Strategy</h3>
-                                <span>Digital Marketing</span>
+                                <h3>Digital Ad Operations</h3>
+                              
                             </div>
                         </div>
                     </article>
@@ -136,18 +137,18 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3>Space Station</h3>
-                                <span>Social Media</span>
+                                <h3>Web Development</h3>
+                               
                             </div>
                         </div>
                     </article>
 
                 </div>
 
-                <div class="center">
+                {{-- <div class="center">
                     <a href="/" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View
                         All Works</a>
-                </div>
+                </div> --}}
 
             </div>
         </div>

@@ -70,7 +70,7 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0" style="color:aquamarine">DIGITAL AD-OPERATIONS</h3>
+                                <h3 class="nott ls0" style="color:#65c0a3">DIGITAL AD-OPERATIONS</h3>
                                 <p>Facebook, Instagram, Twitter,
                                     Google, Youtube, LinkedIn ad-
                                     operations with professional
@@ -85,8 +85,12 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0"> Lead Generation </h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+                                <h3 class="nott ls0" style="color:#76a9d4 ">CONTENT MANAGEMENT
+                                </h3>
+                                <p>Professional content management
+                                    and content creation for social
+                                    media management and ad
+                                    operations</p>
                             </div>
                         </div>
 
@@ -96,16 +100,19 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Digital ad operations</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                                <h3 class="nott ls0" style="color:#76a9d4 ">WEBSITE DEVELOPMENT</h3>
+                                <p>Dynamic website and web
+                                    applications development using
+                                    powerful PHP-Laravel, React, Express
+                                    and other powerful technologies.</p>
                             </div>
                         </div>
 
                     </div>
 
-                    {{-- <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5 d-none">
-                        <img src="frontend/demos/seo/images/sections/2.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
-                    </div> --}}
+                    <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5 d-none">
+                        <img src="521.png"  alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
+                    </div>
 
                     <div class="col-lg-4 col-sm-6">
 
@@ -115,8 +122,13 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Website Development</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!
+                                <h3 class="nott ls0" style="color: #ed4d7b">LEAD GENERATION</h3>
+                                <p>B2B Lead Generation, Sales Funnel,
+                                    Prospect List building, Email list
+                                    building, Sales Funnel, Social media
+                                    ad funnel and other effective lead
+                                    generation strategies
+                                    
                                 </p>
                             </div>
                         </div>
@@ -127,8 +139,12 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">Mobile app development</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+                                <h3 class="nott ls0 " style="color: #f1bb28" >VIRTUAL ASSISTANT</h3>
+                                <p>Full on admin support including
+                                    communication, data entry, web
+                                    scrapping, contact list building,
+                                    appointment setting and many
+                                    more</p>
                             </div>
                         </div>
 
@@ -138,8 +154,10 @@
                                         alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
-                                <h3 class="nott ls0">SEO and Digital Marketing</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+                                <h3 class="nott ls0" style="color:#65c0a3">DIGITAL MARKETING</h3>
+                                <p>Email Marketing, SEO, Social Media
+                                    Marketing and other digital marketing
+                                    supports</p>
                             </div>
                         </div>
 
@@ -163,11 +181,7 @@
                             <div class="badge rounded-pill badge-default">Quotes</div>
                             <h3 class="nott ls0">Get your free Quote today</h3>
                         </div>
-                        <p>Looking for a customized solution? You're just a step away! Fill out the form below with your
-                            details and requirements. Our team will review your request and get back to you with a
-                            tailored quote that fits your needs perfectly. We promise a quick response and a transparent
-                            pricing model. No hidden fees, no surprises – just the right solution at the right price.
-                            Let us help you make an informed decision. Get your quote now!</p>
+                        <p>Looking for a customized solution? You're just a step away! Fill out the form below with your details and requirements. Our team will review your request and get back to you with a tailored quote that fits your needs perfectly. We promise a quick response and a transparent pricing model. No hidden fees, no surprises – just the right solution at the right price. Let us help you make an informed decision. Get your quote now!</p>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
@@ -226,7 +240,7 @@
 
             </div>
         </div>
-        {{-- @include('frontend.layouts.partial.latest_work') --}}
+        @include('frontend.layouts.partial.latest_work')
 
 
         <!-- Features
