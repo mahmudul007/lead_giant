@@ -1,4 +1,4 @@
-	<!-- Footer
+	{{-- <!-- Footer
 		============================================= -->
 		<footer id="footer" class="border-0 bg-white">
 			<div class="container">
@@ -86,17 +86,7 @@
 
 							</div>
 
-							{{-- <div class="widget subscribe-widget clearfix">
-								<h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
-								<div class="widget-subscribe-form-result"></div>
-								<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
-									<div class="input-group mx-auto">
-										<div class="input-group-text bg-transparent"><i class="icon-email2"></i></div>
-										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-										<button class="btn btn-success button button-color nott ls0 m-0" type="submit">Subscribe</button>
-									</div>
-								</form>
-							</div> --}}
+						
 
 							<div class="widget">
 
@@ -166,4 +156,125 @@
 
 				</div>
 			</div><!-- #copyrights end -->
-		</footer><!-- #footer end -->
+		</footer><!-- #footer end --> --}}
+		<footer id="footer" class="border-0 bg-white">
+			<div class="container">
+			<div class="footer-widgets-wrap">
+	
+				<div class="row justify-content-center">
+					
+	
+					<div class="clear line"></div>
+	
+					<div class="row justify-content-between w-100 col-mb-50 mt-4">
+	
+						<div class="col-lg-3 col-md-4">
+							<img src="{{asset('fahad_logo.png')}}" alt="Footer Logo" class="mb-4" margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
+							<div>
+								<a href=" https://www.facebook.com/facebook.leadgiant/" target="_blank" class="social-icon si-facebook si-small border-light-lg">
+									<i class="icon-facebook-f"></i>
+									<i class="icon-facebook-f"></i>
+								</a>
+	
+								<a href="https://twitter.com/lead_giant" target="_blank" class="social-icon si-twitter si-small border-light-lg">
+									<i class="icon-twitter2"></i>
+									<i class="icon-twitter2"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/leadgiant/" target="_blank" class="social-icon si-linkedin si-small border-light-lg">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+	
+								<a href="https://www.upwork.com/freelancers/~0141b05ecc39a5fa6a" target="_blank" class="social-icon si-upwork si-small border-light-lg">
+									
+										<img src="upwork.png" alt="">
+										<img src="upwork.png" alt="">
+								
+									
+								</a>
+								<a href="https://www.fiverr.com/users/khan_saddam/" target="_blank" class="social-icon si-fiver si-small border-light-lg">
+									
+									<img src="fiver.png" alt="">
+									<img src="fiver.png" alt="">
+								
+									
+								</a>
+	
+								<a href="mailto:fahad.bubt26@gmail.com" class="social-icon si-email3 si-small border-light-lg">
+									<i class="icon-line-mail"></i>
+									<i class="icon-line-mail"></i>
+								</a>
+							</div>
+						</div>
+	
+						<div class="col-md-8">
+	
+							<div class="row gutter-50">
+								<div class="col-lg-4 col-6">
+	
+									<div class="widget widget_links">
+	
+										
+	
+										<ul>
+											<li><a href="/">Home</a></li>
+											<li><a href="#blog">Blogs</a></li>
+											<li><a href="#qt">Get free quote</a></li>
+											<li><a href="#testi">Testimonial</a></li>
+											
+										</ul>
+	
+									</div>
+	
+								</div>
+	
+								<div class="col-lg-4 col-6">
+	
+									<div class="widget widget_links">
+	
+									
+	
+										<ul>
+											<li><a href="#about_us">About us</a></li>
+											<li><a href="#services">Services</a></li>
+											<li><a href="#team">Our team</a></li>
+											<li><a href="#workflow">Work flow</a></li>
+										
+										</ul>
+	
+									</div>
+	
+								</div>
+	
+								<div class="col-lg-4 col-6">
+	
+									<div class="widget">
+	
+										<h4 class="text-larger nott ls0">Contact Us</h4>
+	
+										<ul class="list-unstyled">
+											
+											<li><a href="#"><i class="icon-line-phone mr-2"></i> <span class="fs-6"> Phone:</span> 01956004778</a></li>
+											<li><a href="mailto:fahad.bubt26@gmail.com"><i class="icon-line-mail mr-2"><span class="fs-6">Email:</span>fahad.bubt26@gmail.com </i>
+												<li><a href="#"><i class="icon-line-map mr-2"></i> Avenue-1, Block-B, Mirpur-1, Dhaka-1216</a></li>
+
+												<li><a target="blank" href="https://m.me/102176832364524"><i class="icon-rocketchat mr-2"></i> <span class="fs-6">Live Chat:</span> Click here</a></li>
+												
+										
+										</ul>
+	
+									</div>
+	
+								</div>
+							</div>
+	
+						</div>
+	
+					</div>
+	
+	
+				</div>
+	
+			</div>
+			</div>
+		</footer>

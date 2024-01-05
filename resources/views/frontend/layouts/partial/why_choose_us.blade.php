@@ -48,6 +48,9 @@
                 </div>
             </div>
         </div>
+     
+			
+		
         
 
         <!-- Features
@@ -57,8 +60,7 @@
                 <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
                     <div class="badge rounded-pill badge-default">Services</div>
                     <h3 class="nott ls0 mb-3">Our Services</h3>
-                    <p>Dynamically provide access to resource-leveling mindshare vis-a-vis bricks-and-clicks ideas
-                        authoritatively.</p>
+                 
                 </div>
                 <div class="row justify-content-between align-items-center">
 
@@ -167,13 +169,78 @@
             </div>
         </div>
         <hr />
+        <div class="content-wrap  d-flex align-items-center" id="team">
+            <div class="container clearfix">
+
+                <div class="row justify-content-center gutter-50 col-mb-50">
+
+                    <div class="col-xl-6 col-lg-8 text-center">
+                        <h3 class="h1 fw-bold mb-3">Our Awesome Team</h3>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3" >
+                        <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                            <div class="team-image ">
+                                <img class="rounded-circle" style="height: 286px" src="team/2.jpg" alt="John Doe">
+                            </div>
+                            <div class="team-desc p-3">
+                                <div class="team-title pt-0"><h4>Fahad Husain Khan</h4><span class="fst-normal">Owner/President</span></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                            <div class="team-image">
+                                <img class="rounded-circle" style="height: 286px" src="team/4.jpg" alt="John Doe">
+                            </div>
+                            <div class="team-desc p-3">
+                                <div class="team-title pt-0"><h4>Saddam Housain Khan</h4><span class="fst-normal">Head of growth and Planning</span></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                            <div class="team-image">
+                                <img class="rounded-circle" style="height: 286px" src="team/2.jpg" alt="John Doe">
+                            </div>
+                            <div class="team-desc p-3">
+                                <div class="team-title pt-0"><h4>Rofikul Islam</h4><span class="fst-normal">Operations Manager</span></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                            <div class="team-image">
+                                <img src="team/3.jpg" class="rounded-circle" style="height: 286px" alt="John Doe">
+                            </div>
+                            <div class="team-desc p-3">
+                                <div class="team-title pt-0"><h4>Sharmita Jahan</h4><span class="fst-normal">Accounts Manager</span></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                
+
+                </div>
+            </div>
+        </div>
+        <hr />
 
 
         <!-- Form Section
         ============================================= -->
+     
         <div class="section m-0 "
-            style="background: url({{ asset('frontend/demos/seo/images/sections/1.jpg') }}) no-repeat center center; background-size: cover; padding: 100px 0;">
-            <div class="container">
+            style="background: url({{ asset('quotes_picture.png') }}) no-repeat center center; background-size: cover; padding: 100px 0;">
+           
+            <div class="container" id="qt">
+              
                 <div class="row justify-content-between align-items-center">
 
                     <div class="col-md-4">
@@ -187,7 +254,7 @@
                     <div class="col-lg-3 col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <h4 class="mb-3">Apply Now</h4>
+                            
                                 @if (session()->has('message'))
                                     <div class="alert alert-success">
                                         {{ session()->get('message') }}
@@ -200,28 +267,28 @@
                                         @csrf
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-name">Name:*</label>
-                                            <input type="text" name="name"
-                                                class="form-control input-sm required" value="" required>
+                                            <input type="text" name="name" placeholder="your name"
+                                                class="form-control input-sm required" value="" required >
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Email Address:*</label>
-                                            <input type="email" name="email" class="form-control input-sm "
+                                            <input type="email" name="email" class="form-control input-sm " placeholder=" email address"
                                                 value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Phone number:*</label>
                                             <input type="number" name="phone"
-                                                class="form-control input-sm required" value=""required>
+                                                class="form-control input-sm required" placeholder="phone number" value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-4">
                                             <label for="template-contactform-website">Service Needed:*</label>
                                             <input type="text" name="value"
-                                                class="form-control input-sm required" value="">
+                                                class="form-control input-sm required" placeholder="service needed" value="">
                                         </div>
 
                                         <div class="col-12 form-group mb-0">
-                                            <button class="button button-rounded w-100 nott ls0 m-0" type="submit"
-                                                name="template-contactform-submit" value="submit">Apply Now</button>
+                                            <button style="background-color: #e34e31" class="button button-rounded rounded-pill w-100 nott ls0 m-0" type="submit"
+                                                name="template-contactform-submit"  value="submit">Submit</button>
                                         </div>
 
 
@@ -243,83 +310,17 @@
         @include('frontend.layouts.partial.latest_work')
 
 
-        <!-- Features
-        ============================================= -->
-        <div class="container clearfix py-5">
-            <div class="row">
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="frontend/demos/seo/images/icons/research.svg"
-                                    alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">1. Planning &amp; Research</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="frontend/demos/seo/images/icons/optimizing.svg"
-                                    alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">2. Optimizing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="frontend/demos/seo/images/icons/result.svg"
-                                    alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">3. Result</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="frontend/demos/seo/images/icons/result.svg"
-                                    alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">3. Result</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="frontend/demos/seo/images/icons/result.svg"
-                                    alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">3. Result</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
 
         <!-- Testimonials
         ============================================= -->
         <div class="section mt-0"
             style="background: url('frontend/demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
-            <div class="container">
+            <div class="container" id="testi">
                 <div class="heading-block border-bottom-0 center">
                     <div class="badge rounded-pill badge-default">Testimonials</div>
-                    <h3 class="nott ls0">What Clients Says</h3>
+                    <h3 class="nott ls0">What our clients tell about us
+                    </h3>
                 </div>
 
                 <div id="oc-testi" class="bg-white text-dark owl-carousel carousel-widget dark topmargin border-bottom border-top border-light" data-items-xl="3" data-items-lg="3" data-items-md="2" auto data-items-xs="1" data-pagi="false" data-loop="true" data-margin="0" data-autoplay="3000">
@@ -462,6 +463,11 @@
                 </div>
             </div>
         </div>
+        
+    
+    
+
+    @include('frontend.layouts.partial.work_process')
 
         @include('frontend.layouts.partial.blogs')
 

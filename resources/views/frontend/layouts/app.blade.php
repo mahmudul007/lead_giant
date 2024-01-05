@@ -128,7 +128,7 @@
 								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
 							</div><!-- #top-search end --> --}}
 
-                            <a href="#contact" class="button button-rounded ms-3 d-none d-sm-block">Contact Us</a>
+                            <a href="#contact" class="button button-rounded ms-3 d-none d-sm-block rounded-pill">Contact Us</a>
 
                         </div>
 

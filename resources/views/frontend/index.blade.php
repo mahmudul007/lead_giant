@@ -11,6 +11,6 @@ Home
     {{-- @include('frontend.layouts.partial.faqs') --}}
     {{-- @include('frontend.layouts.partial.testimonials') --}}
 
-    @include('frontend.layouts.partial.contact_us')
+    {{-- @include('frontend.layouts.partial.contact_us') --}}
 
 @endsection

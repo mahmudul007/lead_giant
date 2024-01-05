@@ -31,8 +31,8 @@
                 </div>
                 @endforeach
 
-                <div class="center">
-                    <a href="{{route('blog.index')}}" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Blog</a>
+                <div class="center ">
+                    <a href="{{route('blog.index')}}" class="button button-large button-rounded rounded-pill text-capitalize ms-0 mt-5 ls0">View All Blog</a>
                 </div>
 
               
