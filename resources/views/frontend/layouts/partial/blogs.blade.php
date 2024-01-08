@@ -9,10 +9,11 @@
 
                 @foreach ($blogs as $blog )
               
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <article class="entry">
                         <div class="entry-image mb-3">
-                            <a href="{{route('blog.show',$blog->slug)}}"><img style="width: 350px" src="{{$blog->blogPicture[0]->link}}" alt="Image 3"></a>
+                            <a href="{{route('blog.show',$blog->slug)}}">
+                                <img style="width: 350px" src="{{$blog->blogPicture[0]->link}}" alt="Image 3"></a>
                         </div>
                         <div class="entry-title">
                             <h3><a href="{{route('blog.show',$blog->slug)}}">{{$blog->title}}</a></h3>

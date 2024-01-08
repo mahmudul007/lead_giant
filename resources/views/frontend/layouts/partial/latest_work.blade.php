@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3>Lead Generation</h3>
+                                <h3 class="text-center">Lead Generation</h3>
                               
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3>Digital Ad Operations</h3>
+                                <h3 class="text-center">Digital Ad Operations</h3>
                               
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3>Web Development</h3>
+                                <h3 class="text-center">Web Development</h3>
                                
                             </div>
                         </div>

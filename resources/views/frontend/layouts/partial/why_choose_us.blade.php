@@ -10,19 +10,9 @@
                     <h3 class="nott ls0 mb-3">About Us</h3>
 
                 </div>
-                <div class="nott ls0 mb-3 ">
+                <div class="nott ls0 mb-3 " >
 
-                    <p>Established in 2016, Lead Giant has emerged as a formidable force in the digital marketing landscape, distinguished by its innovative
-                        approach and unparalleled expertise. Boasting a remarkable track record of executing nearly 2000 successful projects across
-                        esteemed platforms such as Fiverr and Upwork, our team's proficiency and dedication have solidified our reputation as a trusted
-                        industry leader. Our comprehensive service portfolio encompasses a wide array of specialized solutions, including B2B lead
-                        generation strategies tailored to foster robust business relationships, meticulous social media management techniques designed to
-                        amplify brand visibility and engagement, proficient virtual assistant services ensuring operational efficiency, cutting-edge SEO
-                        optimization tactics to enhance online visibility, strategic digital ad operations maximizing ROI, and bespoke website development
-                        catering to unique business requirements. Whether you represent a local business aspiring to dominate your niche market or a global
-                        enterprise with ambitions for widespread acclaim, Lead Giant's adept team collaboratively partners with you to devise and implement
-                        bespoke digital strategies aligned with your distinct objectives, ultimately facilitating transformative growth and sustained success.
-                        Partner with us, and let's synergize to elevate your brand to unparalleled digital prominence and prosperity.</p>
+                    <p style="text-align: justify;">Established in 2016, Lead Giant has emerged as a formidable force in the digital marketing landscape, distinguished by its innovative approach and unparalleled expertise. Boasting a remarkable track record of executing nearly 2000 successful projects across esteemed platforms such as Fiverr and Upwork, our team's proficiency and dedication have solidified our reputation as a trusted industry leader. Our comprehensive service portfolio encompasses a wide array of specialized solutions, including B2B lead generation strategies tailored to foster robust business relationships, meticulous social media management techniques designed to amplify brand visibility and engagement, proficient virtual assistant services ensuring operational efficiency, cutting-edge SEO optimization tactics to enhance online visibility, strategic digital ad operations maximizing ROI, and bespoke website development catering to unique business requirements. Whether you represent a local business aspiring to dominate your niche market or a global enterprise with ambitions for widespread acclaim, Lead Giant's adept team collaboratively partners with you to devise and implement bespoke digital strategies aligned with your distinct objectives, ultimately facilitating transformative growth and sustained success.Partner with us, and let's synergize to elevate your brand to unparalleled digital prominence and prosperity.</p>
                     </div>
             </div>
             
@@ -35,7 +25,7 @@
         <div class="section bg-transparent m-0 border-bottom py-5">
 
             <div class="container">
-                <h3>Our Valuable Clients</h3>
+                <h3 class="text-center">Our Valuable Clients</h3>
                 <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true"
                     data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3"
                     data-items-md="4" data-items-lg="5" data-items-xl="6">
@@ -237,7 +227,7 @@
         ============================================= -->
      
         <div class="section m-0 "
-            style="background: url({{ asset('quotes_picture.png') }}) no-repeat center center; background-size: cover; padding: 100px 0;">
+            style="background: url({{ asset('quotes_picture.png') }}) no-repeat center center; background-size: contain; padding: 100px 0;">
            
             <div class="container" id="qt">
               

@@ -1,9 +1,9 @@
 <!-- Slider ============================================= -->
 		<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 include-header">
-			<div class="slider-inner" style="background: #FFF url({{asset('hero-1.png')}}) center center no-repeat; background-size: cover;">
+			<div class="slider-inner" >
 
 				<div class="vertical-middle slider-element-fade">
-					<div class="container py-5">
+					<div class="container py-5"style="background: #FFF url({{asset('hero-1.png')}}) center center no-repeat; background-size: cover;">
 						<div class="row pt-5">
 							<div class="col-lg-5 col-md-8">
 								<div class="slider-title">
