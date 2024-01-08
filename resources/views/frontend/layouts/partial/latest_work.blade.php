@@ -78,10 +78,6 @@
 
                 </div>
 
-                {{-- <div class="center">
-                    <a href="/" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View
-                        All Works</a>
-                </div> --}}
 
             </div>
         </div>

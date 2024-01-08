@@ -39,7 +39,7 @@ blogs
     
                     @foreach ($blogs as $blog )
                   
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <article class="entry">
                             <div class="entry-image mb-3">
                                 <a href="#"><img style="width: 350px" src="{{$blog->blogPicture[0]->link}}" alt="Image 3"></a>

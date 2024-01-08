@@ -113,10 +113,10 @@
                         <!-- Logo    ============================================= -->
                         <div id="logo">
                             <a href="/" class="standard-logo" data-dark-logo="fahad_logo.png">
-                                <img style="height: 50px;widht:75px"
+                                <img style="height: 70px;widht:75px"
                                     src="{{asset('fahad_logo.png')}}" alt="Lead giant Logo"></a>
                             <a href="/" class="retina-logo" data-dark-logo="lfahad_logo.png">
-                                <img style="height: 50px;widht:75px"
+                                <img style="height: 70px;widht:75px"
                                 src="{{asset('fahad_logo.png')}}" alt="Lead giant Logo"></a>
                         </div><!-- #logo end -->
 
