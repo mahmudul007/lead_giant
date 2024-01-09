@@ -6,7 +6,7 @@
         <div class="section bg-transparent mt-4 mb-0 pb-0" id="about_us">
             <div class="container">
                 <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
-                    <div class="badge rounded-pill badge-default">About</div>
+              
                     <h3 class="nott ls0 mb-3">About Us</h3>
 
                 </div>
@@ -22,10 +22,14 @@
 
         <!-- Client Carousel
         ============================================= -->
-        <div class="section bg-transparent m-0 border-bottom py-5">
-
+        <div class="section bg-transparent m-0  py-5">
+            <div class="heading-block border-bottom-0 center">
+              
+                <h3 class="nott ls0">Our Valuable Clients</h3>
+              
+            </div>
             <div class="container">
-                <h3 class="text-center">Our Valuable Clients</h3>
+                
                 <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true"
                     data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3"
                     data-items-md="4" data-items-lg="5" data-items-xl="6">
@@ -48,13 +52,14 @@
         <div class="section bg-transparent mt-4 mb-0 pb-0" id="services">
             <div class="container">
                 <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
-                    <div class="badge rounded-pill badge-default">Services</div>
+                  
                     <h3 class="nott ls0 mb-3">Our Services</h3>
                  
                 </div>
-                <div class="row justify-content-between align-items-center">
+                <div class="row justify-content-between align-items-center ">
+                    <img src="services.png" alt="">
 
-                    <div class="col-lg-4 col-sm-6">
+                    {{-- <div class="col-lg-4 col-sm-6">
 
                         <div class="feature-box flex-md-row-reverse text-md-end border-0">
                             <div class="fbox-icon">
@@ -153,12 +158,12 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>
         </div>
-        <hr />
+ 
         <div class="content-wrap  d-flex align-items-center" id="team">
             <div class="container clearfix">
 
@@ -220,7 +225,7 @@
                 </div>
             </div>
         </div>
-        <hr />
+    
 
 
         <!-- Form Section
@@ -307,13 +312,13 @@
         <div class="section mt-0"
             style="background: url('frontend/demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
             <div class="container" id="testi">
-                <div class="heading-block border-bottom-0 center">
-                    <div class="badge rounded-pill badge-default">Testimonials</div>
+                <div class="heading-block  center">
+                   
                     <h3 class="nott ls0">What our clients tell about us
                     </h3>
                 </div>
 
-                <div id="oc-testi" class="bg-white text-dark owl-carousel carousel-widget dark topmargin border-bottom border-top border-light" data-items-xl="3" data-items-lg="3" data-items-md="2" auto data-items-xs="1" data-pagi="false" data-loop="true" data-margin="0" data-autoplay="3000">
+                <div id="oc-testi" class="bg-white text-dark owl-carousel carousel-widget dark topmargin  border-top border-light" data-items-xl="3" data-items-lg="3" data-items-md="2" auto data-items-xs="1" data-pagi="false" data-loop="true" data-margin="0" data-autoplay="3000">
 
                     <div class="oc-item p-5 d-flex flex-column text-center">
                         <div class="testimonial bg-white text-dark">

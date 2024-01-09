@@ -1,10 +1,10 @@
      <!-- Works/Projects
         ============================================= -->
         <div class="section m-0"
-            style="background: url('frontend/demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
+           >
             <div class="container">
                 <div class="heading-block border-bottom-0 center">
-                    <div class="badge rounded-pill badge-default">Completed Projects</div>
+                  
                     <h3 class="nott ls0">Previous Work Samples
                     </h3>
                 </div>

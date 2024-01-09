@@ -1,7 +1,7 @@
 
         <div class="container py-4">
             <div class="heading-block border-bottom-0 center">
-                <div class="badge rounded-pill badge-default">Latest Articles</div>
+              
                 <h3 class="nott ls0">Recently From the Blog</h3>
             </div>
 
