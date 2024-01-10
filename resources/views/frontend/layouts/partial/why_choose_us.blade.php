@@ -6,33 +6,48 @@
         <div class="section bg-transparent mt-4 mb-0 pb-0" id="about_us">
             <div class="container">
                 <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
-              
+
                     <h3 class="nott ls0 mb-3">About Us</h3>
 
                 </div>
-                <div class="nott ls0 mb-3 " >
+                <div class="nott ls0 mb-3 ">
 
-                    <p style="text-align: justify;">Established in 2016, Lead Giant has emerged as a formidable force in the digital marketing landscape, distinguished by its innovative approach and unparalleled expertise. Boasting a remarkable track record of executing nearly 2000 successful projects across esteemed platforms such as Fiverr and Upwork, our team's proficiency and dedication have solidified our reputation as a trusted industry leader. Our comprehensive service portfolio encompasses a wide array of specialized solutions, including B2B lead generation strategies tailored to foster robust business relationships, meticulous social media management techniques designed to amplify brand visibility and engagement, proficient virtual assistant services ensuring operational efficiency, cutting-edge SEO optimization tactics to enhance online visibility, strategic digital ad operations maximizing ROI, and bespoke website development catering to unique business requirements. Whether you represent a local business aspiring to dominate your niche market or a global enterprise with ambitions for widespread acclaim, Lead Giant's adept team collaboratively partners with you to devise and implement bespoke digital strategies aligned with your distinct objectives, ultimately facilitating transformative growth and sustained success.Partner with us, and let's synergize to elevate your brand to unparalleled digital prominence and prosperity.</p>
-                    </div>
+                    <p style="text-align: justify;">Established in 2016, Lead Giant has emerged as a formidable force in
+                        the digital marketing landscape, distinguished by its innovative approach and unparalleled
+                        expertise. Boasting a remarkable track record of executing nearly 2000 successful projects
+                        across esteemed platforms such as Fiverr and Upwork, our team's proficiency and dedication have
+                        solidified our reputation as a trusted industry leader. Our comprehensive service portfolio
+                        encompasses a wide array of specialized solutions, including B2B lead generation strategies
+                        tailored to foster robust business relationships, meticulous social media management techniques
+                        designed to amplify brand visibility and engagement, proficient virtual assistant services
+                        ensuring operational efficiency, cutting-edge SEO optimization tactics to enhance online
+                        visibility, strategic digital ad operations maximizing ROI, and bespoke website development
+                        catering to unique business requirements. Whether you represent a local business aspiring to
+                        dominate your niche market or a global enterprise with ambitions for widespread acclaim, Lead
+                        Giant's adept team collaboratively partners with you to devise and implement bespoke digital
+                        strategies aligned with your distinct objectives, ultimately facilitating transformative growth
+                        and sustained success.Partner with us, and let's synergize to elevate your brand to unparalleled
+                        digital prominence and prosperity.</p>
+                </div>
             </div>
-            
-             
-           
+
+
+
         </div>
 
         <!-- Client Carousel
         ============================================= -->
         <div class="section bg-transparent m-0  py-5">
             <div class="heading-block border-bottom-0 center">
-              
+
                 <h3 class="nott ls0">Our Valuable Clients</h3>
-              
+
             </div>
             <div class="container">
-                
-                <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true"
-                    data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3"
-                    data-items-md="4" data-items-lg="5" data-items-xl="6">
+
+                <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100"
+                    data-loop="true" data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2"
+                    data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
                     @foreach ($brands as $client)
                         <div class="oc-item"><a href="#">
                                 <img src="{{ $client->brandPicture->link }}" alt="Brands"></a></div>
@@ -42,19 +57,19 @@
                 </div>
             </div>
         </div>
-     
-			
-		
-        
+
+
+
+
 
         <!-- Features
         ============================================= -->
         <div class="section bg-transparent mt-4 mb-0 pb-0" id="services">
             <div class="container">
                 <div class="heading-block border-bottom-0 center mx-auto mb-0" style="max-width: 550px">
-                  
+
                     <h3 class="nott ls0 mb-3">Our Services</h3>
-                 
+
                 </div>
                 <div class="row justify-content-between align-items-center ">
                     <img src="services.png" alt="">
@@ -163,7 +178,7 @@
                 </div>
             </div>
         </div>
- 
+
         <div class="content-wrap  d-flex align-items-center" id="team">
             <div class="container clearfix">
 
@@ -174,11 +189,79 @@
                     </div>
 
                     <div class="clear"></div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div
+                                class="card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                                <div class="card-body text-center">
+                                    <a  href="https://www.linkedin.com/in/fahad-husain-k-581016117/"
+                                            target="blank">
+                                    <img src="team/fahad.jpeg" alt="user" height="200"
+                                        class="rounded-circle mt-n3">
+                                    <h4 class="mb-1 text-dark"> Fahad Husain Khan </h4>
+                                    <p class="text-muted ">Owner/President</p>
+                                </a>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                        <div class="col-lg-3">
+                            <div
+                                class="card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                                <div class="card-body text-center">
+                                    <a  href="https://www.linkedin.com/in/saddam-housain-khan-038287118/"  target="blank">
+                                    <img src="team/saddam.png" alt="user" height="200"
+                                        class="rounded-circle mt-n3">
+                                    <h4 class="mb-1 text-dark"> Saddam Housain Khan</h4>
+                                    <p class="text-muted ">Head of growth and Planning</p>
+                                </a>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                        <div class="col-lg-3">
+                            <div
+                                class="card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                                <div class="card-body text-center">
+                                    <a href="https://www.linkedin.com/in/leadhunterbd1/"
+                                            target="blank">
+                                    <img src="team/dummy.jpeg" alt="user" height="200"
+                                        class="rounded-circle mt-n3">
+                                    <h4 class="mb-1 text-dark">  Rofikul Islam</h4>
+                                    <p class="text-muted ">Operations Manager</p>
+                                </a>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                        <div class="col-lg-3">
+                            <div
+                                class="card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                                <div class="card-body text-center ">
+                                    <a class="text-dark"
+                                    href="https://www.linkedin.com/in/sharmita-jahan-swarna-433106174/" target="blank">
+                                    <img src="team/swarna.png" alt="user" height="200"
+                                        class="rounded-circle mt-n3">
+                                    <h4 class="mb-1 ">Sharmita
+                                            Jahan </h4>
+                                    <p class="text-muted ">Accounts Manager</p>
+                                </a>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col-->
+                        {{-- <div class="col-lg-3">
+                            <div class="card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
+                                <div class="card-body text-center">
+                                    <img src="team/swarna.png" alt="user" height="200"
+                                        class="rounded-circle mt-n3">
+                                    <h5 class="mb-1">Sharmita Jahan</h5>
+                                    <p class="text-muted ">Accounts Manager</p>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div><!--end col--> --}}
+                    </div>
 
-                    <div class="col-sm-6 col-md-6 col-lg-3" >
+                    {{-- <div class="col-sm-6 col-md-6 col-lg-3" >
                         <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
                             <div class="team-image ">
-                                <img class="rounded-circle" style="height: 286px" src="team/2.jpg" alt="John Doe">
+                                <img class="rounded-circle" style="height: 286px" src="team/fahad.jpeg" alt="John Doe">
                             </div>
                             <div class="team-desc p-3">
                                 <div class="team-title pt-0"><h4>Fahad Husain Khan</h4><span class="fst-normal">Owner/President</span></div>
@@ -189,7 +272,7 @@
                     <div class="col-sm-6 col-md-6 col-lg-3">
                         <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
                             <div class="team-image">
-                                <img class="rounded-circle" style="height: 286px" src="team/4.jpg" alt="John Doe">
+                                <img class="rounded-circle" style="height: 286px" src="team/saddam.jpeg" alt="John Doe">
                             </div>
                             <div class="team-desc p-3">
                                 <div class="team-title pt-0"><h4>Saddam Housain Khan</h4><span class="fst-normal">Head of growth and Planning</span></div>
@@ -200,7 +283,7 @@
                     <div class="col-sm-6 col-lg-3">
                         <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
                             <div class="team-image">
-                                <img class="rounded-circle" style="height: 286px" src="team/2.jpg" alt="John Doe">
+                                <img class="rounded-circle" style="height: 286px" src="team/dummy.jpeg" alt="John Doe">
                             </div>
                             <div class="team-desc p-3">
                                 <div class="team-title pt-0"><h4>Rofikul Islam</h4><span class="fst-normal">Operations Manager</span></div>
@@ -211,31 +294,31 @@
                     <div class="col-sm-6 col-lg-3">
                         <div class="team card shadow-sm border-0 h-shadow h-translatey-sm all-ts rounded-4 overflow-hidden">
                             <div class="team-image">
-                                <img src="team/3.jpg" class="rounded-circle" style="height: 286px" alt="John Doe">
+                                <img src="team/swarna.png" class="rounded-circle " style="height: 286px" alt="John Doe">
                             </div>
                             <div class="team-desc p-3">
                                 <div class="team-title pt-0"><h4>Sharmita Jahan</h4><span class="fst-normal">Accounts Manager</span></div>
                                 
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
-                
+
 
                 </div>
             </div>
         </div>
-    
+
 
 
         <!-- Form Section
         ============================================= -->
-     
+
         <div class="section m-0 "
             style="background: url({{ asset('quotes_picture.png') }}) no-repeat center center; background-size: contain; padding: 100px 0;">
-           
+
             <div class="container" id="qt">
-              
+
                 <div class="row justify-content-between align-items-center">
 
                     <div class="col-md-4">
@@ -243,13 +326,17 @@
                             <div class="badge rounded-pill badge-default">Quotes</div>
                             <h3 class="nott ls0">Get your free Quote today</h3>
                         </div>
-                        <p>Looking for a customized solution? You're just a step away! Fill out the form below with your details and requirements. Our team will review your request and get back to you with a tailored quote that fits your needs perfectly. We promise a quick response and a transparent pricing model. No hidden fees, no surprises – just the right solution at the right price. Let us help you make an informed decision. Get your quote now!</p>
+                        <p>Looking for a customized solution? You're just a step away! Fill out the form below with your
+                            details and requirements. Our team will review your request and get back to you with a
+                            tailored quote that fits your needs perfectly. We promise a quick response and a transparent
+                            pricing model. No hidden fees, no surprises – just the right solution at the right price.
+                            Let us help you make an informed decision. Get your quote now!</p>
                     </div>
 
                     <div class="col-lg-3 col-md-4">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                            
+
                                 @if (session()->has('message'))
                                     <div class="alert alert-success">
                                         {{ session()->get('message') }}
@@ -263,27 +350,31 @@
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-name">Name:*</label>
                                             <input type="text" name="name" placeholder="your name"
-                                                class="form-control input-sm required" value="" required >
+                                                class="form-control input-sm required" value="" required>
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Email Address:*</label>
-                                            <input type="email" name="email" class="form-control input-sm " placeholder=" email address"
-                                                value=""required>
+                                            <input type="email" name="email" class="form-control input-sm "
+                                                placeholder=" email address" value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-3">
                                             <label for="template-contactform-email">Phone number:*</label>
                                             <input type="number" name="phone"
-                                                class="form-control input-sm required" placeholder="phone number" value=""required>
+                                                class="form-control input-sm required" placeholder="phone number"
+                                                value=""required>
                                         </div>
                                         <div class="col-12 form-group mb-4">
                                             <label for="template-contactform-website">Service Needed:*</label>
                                             <input type="text" name="value"
-                                                class="form-control input-sm required" placeholder="service needed" value="">
+                                                class="form-control input-sm required" placeholder="service needed"
+                                                value="">
                                         </div>
 
                                         <div class="col-12 form-group mb-0">
-                                            <button style="background-color: #e34e31" class="button button-rounded rounded-pill w-100 nott ls0 m-0" type="submit"
-                                                name="template-contactform-submit"  value="submit">Submit</button>
+                                            <button style="background-color: #e34e31"
+                                                class="button button-rounded rounded-pill w-100 nott ls0 m-0"
+                                                type="submit" name="template-contactform-submit"
+                                                value="submit">Submit</button>
                                         </div>
 
 
@@ -305,7 +396,7 @@
         @include('frontend.layouts.partial.latest_work')
 
 
-       
+
 
         <!-- Testimonials
         ============================================= -->
@@ -313,16 +404,19 @@
             style="background: url('frontend/demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
             <div class="container" id="testi">
                 <div class="heading-block  center">
-                   
+
                     <h3 class="nott ls0">What our clients tell about us
                     </h3>
                 </div>
 
-                <div id="oc-testi" class="bg-white text-dark owl-carousel carousel-widget dark topmargin  border-top border-light" data-items-xl="3" data-items-lg="3" data-items-md="2" auto data-items-xs="1" data-pagi="false" data-loop="true" data-margin="0" data-autoplay="3000">
+                <div id="oc-testi"
+                    class="bg-white text-dark owl-carousel carousel-widget dark topmargin  border-top border-light"
+                    data-items-xl="3" data-items-lg="3" data-items-md="2" auto data-items-xs="1" data-pagi="false"
+                    data-loop="true" data-margin="0" data-autoplay="3000">
 
                     <div class="oc-item p-5 d-flex flex-column text-center">
                         <div class="testimonial bg-white text-dark">
-                          
+
                             <div class="overflow-hidden ">
                                 <p>They're quick! I wasn't expecting this to be delivered for another few days, but they
                                     got it to me within 12 hours</p>
@@ -336,7 +430,7 @@
 
                     <div class="oc-item p-5 d-flex flex-column text-center ">
                         <div class="testimonial bg-white text-dark">
-                           
+
                             <div style="overflow: auto; max-height: 200px;">
                                 <p>explained the job in detail, a little back and forth was needed to ensure we both
                                     understood the task which Saddam had no problem with. list produced targets the
@@ -350,7 +444,7 @@
                     </div>
                     <div class="oc-item p-5 d-flex flex-column text-center">
                         <div class="testimonial bg-white text-dark">
-                          
+
                             <div style="overflow: auto; max-height: 200px;">
                                 <p>Incredible service. Arrived Incredibly quickly (less than 24 hours) and the data is
                                     accurate and legitimate. Very Impressed to be honest. Thank you.</p>
@@ -363,7 +457,7 @@
                     </div>
                     <div class="oc-item p-5 d-flex flex-column text-center">
                         <div class="testimonial bg-white text-dark">
-                          
+
                             <div style="overflow: auto; max-height: 200px;">
                                 <p>I'm very surprised by the quality of the leads he sent me. The communication was
                                     clear and concise and he wasn't dishonest about anything in the end, he delivered a
@@ -393,7 +487,7 @@
                     </div>
                     <div class="oc-item  p-5 d-flex flex-column text-center">
                         <div class="testimonial bg-white text-dark">
-                           
+
                             <div style="overflow: auto; max-height: 200px;">
                                 <p>I work with Lead Giant on a frequent basis, they are incredible at their job! Highly
                                     recommended!!</p>
@@ -440,7 +534,7 @@
                     </div>
                     <div class="oc-item p-5 d-flex flex-column text-center">
                         <div class="testimonial bg-white text-dark">
-                           
+
                             <div style="overflow: auto; max-height: 200px;">
                                 <p>Lead Giant provided a very good product with excellent communication. They were very
                                     attentive to my needs. I am very happy with my product and will use them again</p>
@@ -458,11 +552,11 @@
                 </div>
             </div>
         </div>
-        
-    
-    
 
-    @include('frontend.layouts.partial.work_process')
+
+
+
+        @include('frontend.layouts.partial.work_process')
 
         @include('frontend.layouts.partial.blogs')
 
