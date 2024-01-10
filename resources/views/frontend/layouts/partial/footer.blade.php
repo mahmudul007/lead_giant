@@ -11,7 +11,7 @@
 	
 						<div class="col-lg-3 col-md-4 ">
 							<img src="{{asset('fahad_logo.png')}}" alt="Footer Logo" class="mb-4" margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
-							<div class="ms-2 d-flex gap-2">
+							<div class="ms-3 d-flex " style="gap: 10px">
 								<a href=" https://www.facebook.com/facebook.leadgiant/" target="_blank" class="social-icon si-facebook si-small border-light-lg">
 									<i class="icon-facebook-f"></i>
 									<i class="icon-facebook-f"></i>
@@ -118,6 +118,11 @@
 							</div>
 	
 						</div>
+						<div class="row ">
+							<div class="col-md-12 text-center text-md-center">
+								Copyrights © 2016 All Rights Reserved by Lead Giant.
+							</div>
+						</div>
 	
 					</div>
 	
@@ -125,5 +130,7 @@
 				</div>
 	
 			</div>
+		
 			</div>
+			
 		</footer>
