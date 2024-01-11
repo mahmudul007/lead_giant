@@ -86,8 +86,8 @@
                                             class="ts-icon"><i class="icon-linkedin-sign"></i></span><span
                                             class="ts-text">Linkedin</span></a></li>
                             <li><a href="https://www.fiverr.com/users/khan_saddam/" class="si-fiver" target="_blank"><span
-                                        class="ts-icon"><img class="bg-white rounded-pill " height="25px" src="fiver.png" alt=""> </span><span
-                                        class="ts-text"  >Fiverr</span></a></li>
+                                        class="ts-icon"><img class=" rounded-pill " height="25px" src="fiver.png" alt=""> </span><span
+                                        class="ts-text text-success"  >Fiverr</span></a></li>
                             <li><a href="https://www.upwork.com/freelancers/~0141b05ecc39a5fa6a" class="si-upwork" target="_blank"><span
                                         class="ts-icon"> <img height="25px" src="upwork.png" alt=""> </span><span
                                         class="ts-text" >Upwork</span></a></li>
