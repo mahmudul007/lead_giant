@@ -136,6 +136,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('admin.blogs.index')}}">Blogs </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('admin.works.index')}}">Works </a>
+                                </li>
                                 @endcan
 
 

@@ -41,7 +41,7 @@
 									
 								</a>
 	
-								<a href="mailto:fahad.bubt26@gmail.com" class="social-icon si-email3 si-small border-light-lg">
+								<a href="mailto:contact.leadgiant@gmail.com" class="social-icon si-email3 si-small border-light-lg">
 									<i class="icon-line-mail"></i>
 									<i class="icon-line-mail"></i>
 								</a>
@@ -102,7 +102,7 @@
 												
 											
 											<li><a href="#"><i class="icon-line-phone mr-2"></i> <span class="fs-6"> +88</span> 01956004778</a></li>
-											<li><a href="mailto:fahad.bubt26@gmail.com"><i class="icon-line-mail mr-2"><span class="fs-6"> </span>fahad.bubt26@gmail.com </i>
+											<li><a href="mailto:contact.leadgiant@gmail.com"><i class="icon-line-mail mr-2"><span class="fs-6"> </span>contact.leadgiant@gmail.com </i>
 												<li><a href="#"><i class="icon-line-map mr-2 "></i>
 													
 													 Avenue-1, Block-B, Mirpur, Dhaka-1216</a></li>

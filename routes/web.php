@@ -40,6 +40,8 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'user', 'as' => 'admin.', 'm
 Route::get('blog/{slug?}', 'BlogController@show')->name('blog.show');
 Route::get('blogs/', 'BlogController@index')->name('blog.index');
 
+Route::get('works/', 'WorkController@index')->name('work.index');
+
 Route::get('service/{slug?}', 'brandsController@show')->name('service.show');
 Route::get('brands/', 'brandsController@index')->name('service.index');
 

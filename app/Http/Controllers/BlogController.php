@@ -15,11 +15,7 @@ class BlogController extends Controller
     }
     public function show($property_slug)
     {
-        // $shareButton=\Share::page('/blogs', 'Share title')
-        // ->facebook()
-        // ->twitter()
-        // ->linkedin('Extra linkedin summary can be passed here')
-        // ->whatsapp();
+        
         
 
         $blog = Blog::where('slug', $property_slug)->firstOrFail();
@@ -33,7 +29,7 @@ class BlogController extends Controller
     public function index()
     {
 
-         $blogs = Blog::   orderby('created_at', 'desc') ->where('published',1)->get()->all();
+         $blogs = Blog::   orderby('created_at', 'desc') ->where('published',1)->paginate(12);
 
         return view($this->path . '.blogs.index', compact('blogs'));
     }
