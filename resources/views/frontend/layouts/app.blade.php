@@ -53,14 +53,14 @@
 
       
 
-        <div id="top-bar" class="transparent-topbar">
+        <div id="top-bar" class="transparent-topbar d-lg-none d-xl-block">
             <div class="container clearfix">
 
-                <div class="row justify-content-between">
+                <div class="row justify-content-between ">
                     <div class="col-12 col-md-auto">
 
                         <!-- Top Links
-      ============================================= -->
+                                   ============================================= -->
                         <div class="top-links">
                             <ul class="top-links-container">
                                 <li class="top-links-item"><a href="/">Home</a></li>
@@ -122,11 +122,7 @@
 
                         <div class="header-misc">
 
-                            {{-- <!-- Top Search
-							============================================= -->
-							<div id="top-search" class="header-misc-icon">
-								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
-							</div><!-- #top-search end --> --}}
+                          
 
                             <a href="#contact" class="button button-rounded ms-3 d-none d-sm-block rounded-pill">Contact Us</a>
 
