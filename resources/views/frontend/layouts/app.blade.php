@@ -77,25 +77,25 @@
                         <!-- Top Social ============================================= -->
                         <ul id="top-social">
                             <li><a href="https://www.facebook.com/facebook.leadgiant/" class="si-facebook" target="_blank"><span
-                                        class="ts-icon"><i class="icon-facebook"></i></span><span
+                                        class="ts-icon"><i class="icon-facebook fs-6"></i></span><span
                                         class="ts-text">Facebook</span></a></li>
                             <li><a href="https://twitter.com/lead_giant" class="si-twitter" target="_blank"><span
-                                        class="ts-icon"><i class="icon-twitter"></i></span><span
+                                        class="ts-icon"><i class="icon-twitter fs-6"></i></span><span
                                         class="ts-text">X(Twitter)</span></a></li>
-                                        <li><a href="https://www.linkedin.com/company/leadgiant/" class="si-twitter" target="_blank"><span
-                                            class="ts-icon"><i class="icon-linkedin-sign"></i></span><span
+                                        <li><a href="https://www.linkedin.com/company/leadgiant/" class="si-linkedin" target="_blank"><span
+                                            class="ts-icon"><i class="icon-linkedin-sign fs-6"></i></span><span
                                             class="ts-text">Linkedin</span></a></li>
                             <li><a href="https://www.fiverr.com/users/khan_saddam/" class="si-fiver" target="_blank"><span
-                                        class="ts-icon"><img class=" rounded-pill " height="25px" src="fiver.png" alt=""> </span><span
+                                        class="ts-icon"><img class=" rounded-pill " height="22px" src="fiver.png" alt=""> </span><span
                                         class="ts-text text-success"  >Fiverr</span></a></li>
                             <li><a href="https://www.upwork.com/freelancers/~0141b05ecc39a5fa6a" class="si-upwork" target="_blank"><span
-                                        class="ts-icon"> <img height="25px" src="upwork.png" alt=""> </span><span
+                                        class="ts-icon"> <img height="23px" src="upwork.png" alt=""> </span><span
                                         class="ts-text" >Upwork</span></a></li>
-                            <li><a href="tel:+8801956004778" class="si-call"><span class="ts-icon"><i
+                            <li><a href="tel:+8801956004778" class="si-call"><span class="ts-icon fs-6"><i
                                             class="icon-call"></i></span><span
                                         class="ts-text">+88 01956004778</span></a></li>
                             <li><a href="mailto:info@Lead Giant.com" class="si-email3"><span class="ts-icon"><i
-                                            class="icon-envelope-alt"></i></span><span class="ts-text">info@Lead
+                                            class="icon-envelope-alt fs-6"></i></span><span class="ts-text">info@Lead
                                         Giant.com</span></a></li>
                         </ul><!-- #top-social end -->
 
