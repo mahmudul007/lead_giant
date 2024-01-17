@@ -12,10 +12,18 @@
                 <div id="portfolio" class="portfolio row grid-container gutter-20">
                     @foreach ($works as $work)
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
-                        <div class="grid-inner">
+                        <div class="grid-inner">                   
                             <div class="portfolio-image">
-                                <img src="{{$work->worksPicture[0]->link}}" alt="Industrial Hub">
-                               
+                            <div class="thumbnail-container">
+                                <img src="{{$work->worksPicture[0]->link}}" class="thumbnail" alt="Thumbnail Image 1">
+                            </div>                           
+                            <div id="largeImageContainer" style="display: none;">
+                                <span class="close-btn" onclick="closeLargeImage()">&times;</span>
+                                <img src="" id="largeImage" alt="Large Image">
+                            </div>
+                            <div id="largeImageContainer" style="display: none;">
+                                <img src="" id="largeImage" alt="Large Image">
+                            </div>
                             </div>
                             <div class="portfolio-desc">
                                 <span class="text-center">{{$work->category}}</span>

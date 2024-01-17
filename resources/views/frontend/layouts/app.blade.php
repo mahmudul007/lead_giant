@@ -36,6 +36,56 @@
  ============================================= -->
     {{-- <title>Lead Giant </title> --}}
     @yield('css')
+ 
+    <style>
+        #largeImageContainer {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            max-width: 100%;
+            max-height: 100%;
+            text-align: center;
+        }
+
+        #largeImage {
+            width: 100%;
+            height: auto;
+        }
+
+        .thumbnail-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .thumbnail {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 767px) {
+            /* Adjust styles for smaller screens */
+            .thumbnail-container {
+                text-align: center;
+            }
+
+            #largeImageContainer {
+                width: 80%;
+                max-width: 300px;
+            }
+        }
+    </style>
+    
 
     <!-- Document Title
  ============================================= -->
@@ -53,7 +103,7 @@
 
       
 
-        <div id="top-bar" class="transparent-topbar d-lg-none d-xl-block">
+        {{-- <div id="top-bar" class="transparent-topbar d-lg-none d-xl-block">
             <div class="container clearfix">
 
                 <div class="row justify-content-between ">
@@ -103,11 +153,11 @@
                 </div>
 
             </div>
-        </div><!-- #top-bar end -->
+        </div><!-- #top-bar end --> --}}
         <!-- Header ============================================= -->
-        <header id="header" class="transparent-header floating-header header-size-md">
+        <header id="header" class="header-size-md">
             <div id="header-wrap">
-                <div class="container">
+                <div class="container  " style="box-shadow: none !important" >
                     <div class="header-row">
 
                         <!-- Logo    ============================================= -->
@@ -231,6 +281,27 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
     @yield('script')
+
+    <script>
+        function closeLargeImage() {
+            $("#largeImageContainer").hide();
+        }
+    
+        $(document).ready(function () {
+            $(".thumbnail").click(function () {
+                var smallImageSrc = $(this).attr('src');
+                $("#largeImage").attr('src', smallImageSrc);
+                $("#largeImageContainer").show();
+            });
+    
+            $(document).click(function (event) {
+                if (!$(event.target).closest('.thumbnail-container').length && !$(event.target).is('.thumbnail-container')) {
+                    closeLargeImage();
+                }
+            });
+        });
+    </script>
+    
 
 
 </body>
