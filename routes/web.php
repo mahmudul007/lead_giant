@@ -1,9 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\ContactReqController;
-
+use App\Http\Controllers\Frontend\HomeController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +13,7 @@ use App\Http\Controllers\ContactReqController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
-
+ */
 
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     include_route_files(__DIR__ . '/frontend/');
@@ -33,22 +31,16 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'user', 'as' => 'admin.', 'm
     include_route_files(__DIR__ . '/backend/');
 });
 
-
-
-
-
 Route::get('blog/{slug?}', 'BlogController@show')->name('blog.show');
 Route::get('blogs/', 'BlogController@index')->name('blog.index');
 
 Route::get('works/', 'WorkController@index')->name('work.index');
+Route::get('work/{id?}', 'WorkController@show')->name('work.show');
 
 Route::get('service/{slug?}', 'brandsController@show')->name('service.show');
 Route::get('brands/', 'brandsController@index')->name('service.index');
 
-
-Route::post('contact/request/', [ContactReqController::class,'contact_req'])->name('contact.request');
-
-
+Route::post('contact/request/', [ContactReqController::class, 'contact_req'])->name('contact.request');
 
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', [HomeController::class, 'index'])->name('index');
@@ -56,4 +48,3 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/about', [HomeController::class, 'about'])->name('about');
 });
 Auth::routes();
-

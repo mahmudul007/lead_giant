@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Work;
-use Illuminate\Http\Request;
 
 class WorkController extends Controller
 {
@@ -13,14 +13,21 @@ class WorkController extends Controller
         $path = 'frontend';
         $this->path = $path;
     }
-  
+
     public function index()
     {
 
-         $works = Work::orderby('created_at', 'desc')->paginate(12);
+        $works = Work::orderby('created_at', 'desc')->paginate(12);
 
         return view($this->path . '.works.index', compact('works'));
     }
-  
+
+    public function show($id)
+    {
+        $work = Work::findOrFail($id);
+        $works = Work::whereNotIn('id', [$work->id])->orderby('created_at', 'desc')->take(4)->get();
+
+        return view($this->path . '.works.work', compact('work', 'works'));
+    }
 
 }

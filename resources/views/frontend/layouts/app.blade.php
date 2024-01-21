@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 
@@ -6,7 +5,7 @@
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="SemiColonWeb" />
-   
+
     <!-- Stylesheets
  ============================================= -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" rel="stylesheet"
@@ -36,7 +35,7 @@
  ============================================= -->
     {{-- <title>Lead Giant </title> --}}
     @yield('css')
- 
+
     <style>
         #largeImageContainer {
             position: fixed;
@@ -74,6 +73,7 @@
         }
 
         @media screen and (max-width: 767px) {
+
             /* Adjust styles for smaller screens */
             .thumbnail-container {
                 text-align: center;
@@ -85,7 +85,7 @@
             }
         }
     </style>
-    
+
 
     <!-- Document Title
  ============================================= -->
@@ -101,7 +101,7 @@
  ============================================= -->
     <div id="wrapper" class="clearfix">
 
-      
+
 
         {{-- <div id="top-bar" class="transparent-topbar d-lg-none d-xl-block">
             <div class="container clearfix">
@@ -157,24 +157,25 @@
         <!-- Header ============================================= -->
         <header id="header" class="header-size-md">
             <div id="header-wrap">
-                <div class="container  " style="box-shadow: none !important" >
+                <div class="container  " style="box-shadow: none !important">
                     <div class="header-row">
 
                         <!-- Logo    ============================================= -->
                         <div id="logo">
                             <a href="/" class="standard-logo" data-dark-logo="fahad_logo.png">
-                                <img style="height: 70px;widht:75px"
-                                    src="{{asset('fahad_logo.png')}}" alt="Lead giant Logo"></a>
+                                <img style="height: 70px;widht:75px" src="{{ asset('fahad_logo.png') }}"
+                                    alt="Lead giant Logo"></a>
                             <a href="/" class="retina-logo" data-dark-logo="lfahad_logo.png">
-                                <img style="height: 70px;widht:75px"
-                                src="{{asset('fahad_logo.png')}}" alt="Lead giant Logo"></a>
+                                <img style="height: 70px;widht:75px" src="{{ asset('fahad_logo.png') }}"
+                                    alt="Lead giant Logo"></a>
                         </div><!-- #logo end -->
 
                         <div class="header-misc">
 
-                          
 
-                            <a href="#contact" class="button button-rounded ms-3 d-none d-sm-block rounded-pill">Contact Us</a>
+
+                            <a href="#contact" class="button button-rounded ms-3 d-none d-sm-block rounded-pill">Contact
+                                Us</a>
 
                         </div>
 
@@ -197,10 +198,10 @@
                                 <li class="menu-item current"><a class="menu-link" href="/">
                                         <div>Home</div>
                                     </a></li>
-                                
-								<li class="menu-item"><a class="menu-link" href="#services">
-									<div>Services</div>
-								</a></li>
+
+                                <li class="menu-item"><a class="menu-link" href="#services">
+                                        <div>Services</div>
+                                    </a></li>
                                 <li class="menu-item"><a class="menu-link" href="#about_us">
                                         <div>About</div>
                                     </a></li>
@@ -258,50 +259,32 @@
     </div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "102176832364524");
-      chatbox.setAttribute("attribution", "biz_inbox");
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "102176832364524");
+        chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v18.0'
-        });
-      };
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v18.0'
+            });
+        };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
     @yield('script')
 
-    <script>
-        function closeLargeImage() {
-            $("#largeImageContainer").hide();
-        }
-    
-        $(document).ready(function () {
-            $(".thumbnail").click(function () {
-                var smallImageSrc = $(this).attr('src');
-                $("#largeImage").attr('src', smallImageSrc);
-                $("#largeImageContainer").show();
-            });
-    
-            $(document).click(function (event) {
-                if (!$(event.target).closest('.thumbnail-container').length && !$(event.target).is('.thumbnail-container')) {
-                    closeLargeImage();
-                }
-            });
-        });
-    </script>
-    
+
 
 
 </body>
